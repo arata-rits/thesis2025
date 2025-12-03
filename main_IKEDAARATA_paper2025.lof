@@ -1,0 +1,45 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces オレンジLEDが使用されたサイネージ}}{1}{}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces フルカラーLEDが使用されたデジタルサイネージ}}{2}{}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces 電子化された意見箱}}{2}{}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces デジタルサイネージジャパンの来場客数の推移}}{3}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces 3D大型ビジョン広告}}{5}{}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces RGBカメラを用いた骨格推定によるデジタルサイネージの表示}}{6}{}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces データマイニング技術を用いた広告効果の実験環境}}{7}{}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces 4Kと8Kの画素数}}{7}{}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces SONYが発売する空間再現ディスプレイ}}{8}{}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces カバー画像によるQRコードの秘匿}}{9}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces フリッカが入った画像}}{11}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces フリッカ現象の発生原理}}{12}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces 肉眼で見た時のステゴパネル\relax }}{13}{}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces カメラで見た時のステゴパネル\relax }}{13}{}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces スタティック方式ステゴパネルの点灯イメージ}}{14}{}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces 使用したドットマトリクスLED}}{15}{}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces HUB75のピン配置\relax }}{15}{}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces HUB75の点灯イメージ\relax }}{17}{}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces 点灯の順序\relax }}{19}{}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces プログラム実行時の様子\relax }}{19}{}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces 情報・背景差分方式プログラムのフローチャート\relax }}{20}{}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces 点灯の順序\relax }}{22}{}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces ダイナミック点灯方式プログラムのフローチャート\relax }}{23}{}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces プログラム実行時の様子\relax }}{24}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces 光の三原色\footnotemark }}{25}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces アナグリフ式3Dメガネ}}{26}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces アナグリフ式立体画像}}{26}{}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces トリケラパネルによるQRコードの重ね合わせ}}{27}{}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces カラーフィルタによる色の抽出}}{27}{}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces 各機器を配置した様子}}{29}{}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces プログラム実行時}}{29}{}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces プログラムのフローチャート}}{30}{}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces 赤色を抽出した画像}}{32}{}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces 緑色を抽出した画像}}{32}{}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces 青色を抽出した画像}}{32}{}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces トリケラパネルによる視認性評価}}{33}{}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces クジラ}}{34}{}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces カバ}}{34}{}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces ペンギン}}{34}{}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces 可視光線の波長}}{35}{}%
+\addvspace {10\p@ }

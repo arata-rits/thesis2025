@@ -1,0 +1,197 @@
+\documentclass[12pt,eclepsfｘ,a4j,twoside,openright]{jreport}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{./tex_files/hangcaption}
+\usepackage{amssymb}
+\usepackage{./tex_files/fancyheadings}
+\usepackage{pifont}
+\usepackage{url}
+%\usepackage{amsmath}
+\usepackage{./tex_files/cite}
+\renewcommand\citeleft{}
+\renewcommand\citeright{}
+\renewcommand\citeform[1]{[#1]}
+\usepackage{./tex_files/here}
+\usepackage[subrefformat=parens]{subcaption}
+\usepackage{listings, jlisting}
+\lstset{
+	language={Python},
+	basicstyle={\small},
+	identifierstyle={\small},
+	commentstyle={\small\ttfamily},
+	keywordstyle={\small\bfseries},
+	ndkeywordstyle={\small},
+	stringstyle={\small\ttfamily},
+	frame={tb},
+	breaklines=true,
+	columns=[1]{fullflexible},
+	numbers=left,
+	xrightmargin=0zw,
+	xleftmargin=0zw,
+	numberstyle={\scriptsize},
+	stepnumber=1,
+	numbersep=1zw,
+	morecomment=[l]{//}
+}
+
+\begin{document}
+\clearpage
+\thispagestyle{empty}
+\vspace*{20pt}
+%\newpage
+\thispagestyle{empty}
+
+%/**********************************************************************/
+%		表紙
+%/**********************************************************************/
+
+\thispagestyle{empty}
+\vspace*{5mm}
+\begin{center}
+{\LARGE 修士論文 \\}	%卒業論文，修士論文，博士論文のいずれか
+\vspace{15mm}
+\baselineskip=13mm
+{\Huge{カラーQRコードの提案とその応用例について}}	%論文のタイトル，改行したい場合は\\で区切る
+\vspace{7mm}
+
+%{\Large
+%\[ \mbox{Research on performance evaluation of}\choose
+%\mbox{SoC installed in recent smartphones}
+%\]}	%英語のタイトルをつけるとかっこいい
+
+{\Large
+\[ \mbox{Proposal for a color QR code and its application examples}\choose
+\]}	%英語のタイトルをつけるとかっこいい
+
+
+
+\vspace{45mm}
+%{\LARGE 2006年\\}
+{\Huge{池田 新}\\}		%あなたの名前
+
+
+
+\vspace{10mm}
+{\LARGE 立命館大学大学院\\理工学研究科電子システム専攻\\		%所属です，学部と研究科は所属が違うので注意
+}
+\vspace{10mm}
+{\LARGE 2026年3月\\}		%日付です
+\end{center}
+
+\newpage
+\thispagestyle{empty}
+　
+　
+\newpage
+%/**********************************************************************/
+%		概要
+%/**********************************************************************/
+\addcontentsline{toc}{chapter}{内容梗概}		%A4で1ページから2ページで良いです．
+
+\pagenumbering{roman}
+%\baselineskip=32pt
+\begin{abstract}
+\thispagestyle{plain}
+
+
+近年，技術的背景や，権利的背景，社会的背景から， QRコード(Quick Response code)が広く普及している．QRコードは，高速読み取りが可能な二次元コードの一種であり，従来使用されてきたバーコードに比べて，記録可能な情報量が多く，誤り訂正能力が強いかつ高速な読み取りが可能という技術的な優位性があった．また，自動車部品のトレーサビリティ管理のために開発されたという背景がありながらも，特許権を行使しないと宣言したことで世界中での特許フリーな使用が可能となっている．さらには，スマートフォンのような，高性能かつ多機能なデバイスが世界的に普及したことで，広告媒体や，決済手法としてQRコードの利用がなされている．しかし，現状のQRコードは単一の色の濃淡で表現されており，その色については，符号化する情報量増加の余地が残されている．
+そこで本研究では，RGBを用いたカラーQRコードの実装を行い，その有用性について検討した．本研究で扱うカラーQRコードは，RGBの単色カラー画像に変換したQRコードを重ね合わせることにより作成し，計８色(赤，青，緑．シアン，マゼンタ，イエロー，白，黒)のカラー画像となっている．具体的には，カラーQRコードの検出アプリの実装，従来のQRとの検出距離の比較実験を行い，さらには，近年，技術向上が進んでいる画像生成AIを使用したQRコード検出可能なイラスト生成AIの実装方法について検討を行った．
+本研究の結果として，カラーQRコードは，従来のQRコードには検出性能で劣るといったデメリットがあるが，従来のQRコードではできなかった用途での利用が可能であることが確認できた．
+
+ 
+\end{abstract}
+
+
+%========================================
+%========================================
+%　　　　論文本体
+%========================================
+%========================================
+%\setcounter{tocdepth}{3}
+\pagestyle{fancy}
+\setcounter{page}{3}
+%\pagenumbering{roman}
+\tableofcontents
+%\clearpage
+\listoffigures
+%\clearpage
+\listoftables
+\clearpage
+
+\lhead{第 \thechapter 章} \rhead{}		%ここから各章毎のファイルを作成して論文とします．
+\input{chptr1}
+\input{chptr2}
+\input{chptr3}
+\input{chptr4}
+\input{chptr5}
+\input{chptr6}
+\input{chptr7}
+
+
+%------------------------------------------------------------------
+% 参考文献
+%------------------------------------------------------------------
+
+\addcontentsline{toc}{chapter}{参考文献}%参考文献は大変重要です，bibtexというものを使用すると使い回しができて便利です．
+\bibliographystyle{./tex_files/ieice_e}
+\bibliography{./tex_files/e_fmcam_ref}		%これがbibtexファイルです．参考文献のリストです．
+
+%------------------------------------------------------------------
+%付録
+%------------------------------------------------------------------
+
+\appendix
+\lhead{付録} \rhead{}
+\input{huroku}
+\newpage
+
+%------------------------------------------------------------------
+\chapter*{謝辞}							%謝辞は必ず書きます．好きにかけるのでどんどん書きましょう．
+\lhead{謝辞} \rhead{}
+\addcontentsline{toc}{chapter}{謝辞}
+%------------------------------------------------------------------
+本論文の作成にあたり, 貴重な助言, ご指導をして頂いた立命館大学理工学部電子情報工学科 熊木 武志教授に深く感謝の意を表します. また, 本研究に関わりご助言をして頂いた立命博士氏，琵琶太郎氏, 草津悟志氏に深く感謝致します. そして, 実験を行うにあたってご協力をして頂いた衣笠智樹氏, 茨木慎太郎氏に感謝致します. 最後に, 日頃から様々な事においてお世話になりましたX期生を始めとするマルチメディア集積回路システム研究室の皆様に最大の感謝をお贈り致します.
+
+\vspace{15mm}
+\begin{flushright}
+2023年3月　立命　太郎
+\end{flushright}
+%------------------------------------------------------------------
+%------------------------------------------------------------------
+\chapter*{研究業績リスト}	
+\addcontentsline{toc}{chapter}{発表論文リスト}
+\lhead{発表論文リスト} \rhead{}
+%------------------------------------------------------------------
+%皆さんの研究業績をここにどんどん書いてきましょう！筆頭でも共著でも良いです．少しでも良いので書くとかっこいいです．修士の場合は論文と国際学会は欲しいですね．
+
+\small
+\noindent
+{\bf 【国内研究会等発表】}		%ここに展示会参加等を書きましょう
+\begin{itemize}
+	\item
+	\underline{立命太郎}, 逢坂京太郎, 安藤義男，竹　信孝, 熊木武志, "2nmプロセスルールのSoCの製造技術可能性, "
+	ET\&IoT West 2021, Jul., 2021.
+\end{itemize}
+{\bf 【国外研究会等発表】}
+\begin{itemize}
+	\item
+	\underline{Taro Ritsumei} and Takeshi Kumaki, "Possibility of 2nm process rule SoC manufacturing technology,"
+	International Computers and communications (ICC), 2021.
+
+\end{itemize}
+{\bf 【その他研究活動】}		%ここに展示会参加等を書きましょう
+\begin{itemize}
+	\item 
+	ET\&IoT West 2021, Jul., 2021.
+	\item 
+	ET\&IoT 2021, Nov., 2021.
+
+\end{itemize}
+{\bf 【受賞】}		%ここに展示会参加等を書きましょう
+\begin{itemize}
+	\item
+	\underline{Yuta Moritake}, Yutaro Shimomura, Ryuya Kirihara, Yuki Hirota, Xiangbo Kong and Takeshi Kumaki, "Development of invisible information lighting display "Stego-panel IV","
+	IEEE Grobal Conference on Consumer Electronics (GCCE), Excellent Demo! award, Gold prize, Oct., 2021.
+\end{itemize}
+\clearpage
+
+\end{document}

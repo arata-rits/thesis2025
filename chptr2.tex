@@ -1,0 +1,107 @@
+%/**********************************************************************/
+%		第2章：LED照明によるフリッカノイズ現象とその関連研究
+%/**********************************************************************/
+\chapter{LED照明を用いたデジタルサイネージに関して}
+\label{lbl_chptr2}
+
+本章では, LEDを用いたデジタルサイネージについての技術と本論文に関わる研究について述べる.
+はじめに，2.1節で一般に使用されているデジタルサイネージについて述べる．次に2.2節，及び2.3節で，その関連研究を述べる．
+
+
+
+%/**********************************************************************/
+%		イントロの章
+%/**********************************************************************/
+
+
+\section{一般のデジタルサイネージ}
+デジタルサイネージとは，交通機関や，店舗，公共空間等で，電子的な表示装置を使って情報を発信するメディアのことである\cite{digital_signage2}．過去には木製の看板や，張り紙等を用いて情報の発信を行っていたが，LED及びディスプレイ技術の発展やネットワークの普及，制御回路の小型化に伴いデジタルサイネージが増加してきている．
+
+最近では，建物に取り付けられた3Dビジョンを用いた，モノや動物が飛び出してくるような広告が話題となっている(図\ref{sibuya})\cite{sibuya_3d}．
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{pics/sibuya_3Dvision}
+	\caption[3D大型ビジョン広告]{3D大型ビジョン広告\protect\footnotemark}
+	\label{sibuya}
+\end{figure}
+\footnotetext{https://www.rbbtoday.com/article/2023/06/26/210153.htmlより引用}
+
+
+
+
+\section{デジタルサイネージの有効性に関する研究}
+
+ここでデジタルサイネージの有効性を示す論文を二つ紹介する．論文\cite{paper_signage}では，デジタルサイネージに人々の注意を向ける方法として視聴者側によるタッチ操作等のインタラクティブ要素を取り上げ，各エフェクトに対する消費者の購買意欲を評価している．本論文に用いられているアプリケーションは，ディスプレイ上部に取り付けられたRGBカメラから人物の画像を取得し，骨格推定からユーザの動作を検知する．検知した動作をもとに，ユーザの動きに合わせてサイネージを覆ったぼかしが取り除かれることで，ユーザの広告に対する注意力の向上を図っている．この様子を図\ref{paper1}に示す．
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm]{pics/paper1}
+	\caption[RGBカメラを用いた骨格推定によるデジタルサイネージの表示]{RGBカメラを用いた骨格推定によるデジタルサイネージの表示\protect\footnotemark}
+	\label{paper1}
+\end{figure}
+\footnotetext{インタラクティブデジタルサイネージにおける映像エフェクトの違いによる広告効果の検証(https://www.jstage.jst.go.jp/article/itej/76/2/76\_297/\_pdf/-char/ja)より引用}
+
+研究の結果として，表示するエフェクトの違いと被験者に行った質問の正答率に有意差は見られていない．一方で，操作性が楽しいと感じるエフェクトほど購買意欲が高い傾向にあるという結果が得られている．
+
+
+
+
+
+また，論文\cite{6228274}では，データマイニング技術を使用してデジタルサイネージ広告の効果を調査している(図\ref{paper2})．デジタルサイネージ上部に消費者を撮影するカメラを取り付けることで，顔認識による広告視聴の有無や，視聴時間の追跡を行い，集めたデータの分析を行っている．研究の結果として，データマイニング技術を用いた広告効果の評価は，広告提供者がマーケティング手法を考える際の有益な評価手段になると結論付けている．
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm]{pics/paper2}
+	\caption[データマイニング技術を用いた広告効果の実験環境]{データマイニング技術を用いた広告効果の実験環境\protect\footnotemark}
+	\label{paper2}
+\end{figure}
+\footnotetext{A Study on the Effectiveness of Digital Signage Advertisement(https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=\&arnumber=6228274)より引用}
+
+
+\section{デジタルサイネージに関する技術}
+
+昨今のデジタルサイネージに関する技術傾向として，高解像度ディスプレイ，透明ディスプレイ，裸眼立体ディスプレイ等が挙げられる．
+
+
+高解像度ディスプレイについて，現在はハイビジョンや2Kと呼ばれる1,920×1,080，即ち，約200万画素で構成されるディスプレイが一般に普及している．これに対し，次世代の映像規格である4K，8Kが登場し，製品化がなされている(図\ref{4K_8K_pixel})．
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=13cm]{pics/4K_8K_pixel}
+	\caption[4Kと8Kの画素数]{4Kと8Kの画素数\protect\footnotemark}
+	\label{4K_8K_pixel}
+\end{figure}
+\footnotetext{総務省，4K8Kとは(https://www.soumu.go.jp/menu\_seisaku/ictseisaku/housou\_suishin/4k8k\_suishin/about.html)より引用}
+
+また，4K，8Kの映像では高精細化の他に，表現可能な色の範囲が拡大する広色域化，画面の高速表示，多階調表現等，現実に近い輝度表現が可能になっている\cite{4K_8K}．
+
+
+透明ディスプレイについて，論文\cite{7272046}では，PDLC (Polymer Dispersed Luiquid Crystals)技術と呼ばれる液晶中に特殊な高分子を利用するディスプレイ手法により，透過ディスプレイの作成を行っている．ここで，PDLC技術には印可電圧がOFFである高分子の散乱時と，印可電圧がONである透過時が存在するが，作成したディスプレイでは，散乱時で透過率1.27\%,透明時には透過率15.87\%に達したと述べられている．
+
+裸眼立体ディスプレイについて，映像を投影し，立体的に見せる手法や，三面にディスプレイを配置することで奥行きを表現する手法など様々あるが，特徴的な例として，SONYにより開発，販売がされている空間再現ディスプレイを紹介する\ref{sony}．SONYのSpatial Reality Display（空間再現ディスプレイ）ではディスプレイに取り付けられたカメラからユーザーの瞳の位置を捉えることで，視点位置に合わせた立体映像を表示する\cite{sony_display}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=13cm]{pics/sony}
+	\caption[SONYが発売する空間再現ディスプレイ]{SONYが発売する空間再現ディスプレイ\protect\footnotemark}
+	\label{sony}
+\end{figure}
+\footnotetext{https://www.nikkei.com/article/DGXMZO72038730Z10C21A5000000/より引用}
+
+
+
+
+更に，本論文に直接関連する論文を紹介する．論文\cite{color_mixture}では，色を混ぜる事で画像内に二次元コードを埋め込む手法を提案している(図\ref{QR_hiding})．人間が高速に画面が切り替わるディスプレイを見た際には，視覚システムにより加法混色が発生する．一方で，CMOSセンサを用いたカメラでシャッタースピードを速めて観測した際には，画面の切り替わりを捉えることができる．この原理を用いて，肉眼ではQRコードを視認できない情報秘匿技術の開発を試みている，結論として，QRコードを覆うカバー画像に対して，画像のような静的なものであれば実用的であるが，動画のような動的なカバー画像に対しては実用的でないと述べている．
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=13cm]{pics/QR_hiding}
+	\caption[カバー画像によるQRコードの秘匿]{カバー画像によるQRコードの秘匿\protect\footnotemark}
+	\label{QR_hiding}
+\end{figure}
+\footnotetext{\cite{color_mixture}Mimetic Code Using Successive Additive Color Mixtureより引用}

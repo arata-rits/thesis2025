@@ -1,0 +1,28 @@
+\contentsline {chapter}{内容梗概}{i}{}%
+\contentsline {chapter}{\numberline {第1章}序論}{1}{}%
+\contentsline {section}{\numberline {1.1}研究背景}{1}{}%
+\contentsline {section}{\numberline {1.2}本研究の目的}{3}{}%
+\contentsline {chapter}{\numberline {第2章}LED照明を用いたデジタルサイネージに関して}{5}{}%
+\contentsline {section}{\numberline {2.1}一般のデジタルサイネージ}{5}{}%
+\contentsline {section}{\numberline {2.2}デジタルサイネージの有効性に関する研究}{6}{}%
+\contentsline {section}{\numberline {2.3}デジタルサイネージに関する技術}{7}{}%
+\contentsline {chapter}{\numberline {第3章}ダイナミック点灯方式を用いたステゴパネルの開発}{11}{}%
+\contentsline {section}{\numberline {3.1}フリッカ現象とダイナミック点灯について}{11}{}%
+\contentsline {section}{\numberline {3.2}ステゴパネルについて}{12}{}%
+\contentsline {section}{\numberline {3.3}ドットマトリクスLEDを用いたダイナミック点灯方式ステゴパネル}{14}{}%
+\contentsline {subsection}{\numberline {3.3.1}HUB75規格のドットマトリクスLEDについて}{14}{}%
+\contentsline {subsection}{\numberline {3.3.2}情報・背景差分方式によるステゴパネルの実装}{17}{}%
+\contentsline {subsection}{\numberline {3.3.3}ダイナミック点灯方式によるステゴパネルの実装}{22}{}%
+\contentsline {chapter}{\numberline {第4章}光の三原色を用いたトリケラパネルの開発}{25}{}%
+\contentsline {section}{\numberline {4.1}光の三原色について}{25}{}%
+\contentsline {section}{\numberline {4.2}トリケラパネルとは}{26}{}%
+\contentsline {section}{\numberline {4.3}3種類のQRコードを表示するトリケラパネルの実装}{28}{}%
+\contentsline {section}{\numberline {4.4}イラストを表示するトリケラパネルの実装}{33}{}%
+\contentsline {chapter}{\numberline {第5章}結論}{37}{}%
+\contentsline {section}{\numberline {5.1}まとめ}{37}{}%
+\contentsline {section}{\numberline {5.2}今後の展望}{37}{}%
+\contentsline {subsection}{\numberline {5.2.1}ステゴパネルの展望}{37}{}%
+\contentsline {subsection}{\numberline {5.2.2}トリケラパネルの展望}{38}{}%
+\contentsline {chapter}{参考文献}{38}{}%
+\contentsline {chapter}{謝辞}{45}{}%
+\contentsline {chapter}{発表論文リスト}{47}{}%

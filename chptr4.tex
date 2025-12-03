@@ -1,0 +1,272 @@
+%/**********************************************************************/
+%		第2章：LED照明によるフリッカノイズ現象とその関連研究
+%/**********************************************************************/
+\chapter{光の三原色を用いたトリケラパネルの開発}
+\label{lbl_chptr2}
+
+
+フリッカ現象を用いたステゴパネルでは，視認手法の違いによる取得情報の変化を実装してきた．ステゴパネルにより実現したい仕様は，同一のデジタルサイネージで複数人が違う情報を読み取ることであった．このような仕様を別手法により実装することを考え，当研究に至った．
+
+
+
+%/**********************************************************************/
+%		イントロの章
+%/**********************************************************************/
+
+
+\section{光の三原色について}
+
+トリケラパネル開発のベースとなる光が持つ色の性質について述べる．フルカラーのLEDパネルや，液晶ディスプレイ等では様々な色が表現されているが，これは赤，青，緑という三色の光を混ぜ合わせることで表現している．この元となる三色を「光の三原色」と呼ぶ\cite{color}．図5.1は光の三原色による混色を表したものである．
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm]{pics/three_primary_colors}
+	\caption[光の三原色\protect\footnotemark]{光の三原色\protect\footnotemark}
+	\label{fig:5-1}
+\end{figure}
+\footnotetext{光はRGBでできている(https://global.canon/ja/technology/kids/mystery/m\_04\_02.html)より引用}
+
+光の三原色を活用した事例としてアナグリフ式の３Dメガネがある．この方式では左右に赤，青と異なる色のついたレンズを使用することで，赤色と青色を乗せた映像を左右に分離して見ることができる．これにより視聴者は映像を立体的に視認することができる\cite{3d}.
+図\ref{fig:5-2}は一般にアナグリフ式の3D映像視聴用に使用される3Dメガネである．また図\ref{fig:5-3}はアナグリフ式の立体画像である．この映像から右目の赤色レンズで透過される画像と左目の青色レンズで透過される画像がずれて重なっていることがわかる．
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=8cm]{pics/3Dglass}
+	\caption[アナグリフ式3Dメガネ]{アナグリフ式3Dメガネ\protect\footnotemark}
+	\label{fig:5-2}
+\end{figure}
+\footnotetext{https://amzn.asia/d/8i4H9SF1より引用}
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=8cm]{pics/anaglyph}
+	\caption[アナグリフ式立体画像]{アナグリフ式立体画像\protect\footnotemark}
+	\label{fig:5-3}
+\end{figure}
+\footnotetext{https://www.youtube.com/watch?app=desktop\&v=DYeYHpOlUYgより引用}
+
+
+
+
+\section{トリケラパネルとは}
+本論文で提案するトリケラパネルとは，光の三原色を用いることにより実現する，複数の情報読み取りを可能にするデジタルサイネージのことである．この名称は，三つ組を意味するTriple，色を意味するColorと照明パネルという言葉を融合した造語である．ステゴパネルの派生技術であることを踏まえ，恐竜の名前も意識している．
+このパネルは，LEDマトリクスにより3色の画像を重ね合わせた表示をする．図\ref{mixedQR}はQRコードの重ね合わせを表したものである．実装時は画素毎に重ね合わせた画像の色を与え点灯を行う．
+
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{pics/mixedQR}
+	\caption[トリケラパネルによるQRコードの重ね合わせ]{トリケラパネルによるQRコードの重ね合わせ}
+	\label{mixedQR}
+\end{figure}
+
+
+
+
+
+視認側はカラーセロハンを用いて色の抽出を行う．物理的にはカラーフィルタ等，電子的には画像処理を利用できる．これにより特定の表示画像を視認することが可能となる．図\ref{colorfilter}はセロハンを用いて色の抽出を行う例である．
+
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{pics/light_filter}
+	\caption[カラーフィルタによる色の抽出]{カラーフィルタによる色の抽出}
+	\label{colorfilter}
+\end{figure}
+
+
+
+
+\section{3種類のQRコードを表示するトリケラパネルの実装}
+
+トリケラパネルを開発するにあたり，実装には，Rasberry Pi 3 Model B，HUB75規格の$32\times64$ LEDドットマトリクスディスプレイ，DC安定化電源を用いた．また，Raspberry Piを用いても高速な処理が行える様にC言語を用いて制御プログラムを作成している．図\ref{tricolor_device}が使用した機器を配置した様子である．今回の実験では，3種類のQRコードを重ね合わせる処理を行う．
+図\ref{tricolor_QR}がプログラム実行時の様子である．
+
+
+
+これから分かるように，画像の四隅の模様が白色で点灯している．これはQRコードを認知するための模様であり，3つの画像に共通していることから，3色すべてのLEDが光ることで白色に発光する．
+また，図\ref{tricolor_flow}が作成した制御プログラムのフローチャートである．このプログラムは，ダイナミック方式によるステゴパネルの点灯に用いたプログラムをベースとして改良している．改良点は，点灯する色の決定にcase文を用いている点となる．これは，点灯させる色の種類が8色あることからプログラムの簡潔さを考慮している．
+
+
+\newpage
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=11cm]{pics/display_device}
+	\caption[各機器を配置した様子]{各機器を配置した様子}
+	\label{tricolor_device}
+\end{figure}
+
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=11cm]{pics/tricolor_QR}
+	\caption[プログラム実行時]{プログラム実行時}
+	\label{tricolor_QR}
+\end{figure}
+
+\newpage
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=13cm]{pics/tricolor_flow}
+	\caption[プログラムのフローチャート]{プログラムのフローチャート}
+	\label{tricolor_flow}
+\end{figure}
+
+
+
+
+プログラム実行後，スマートフォンを用いて色の抽出によるQRコードの読み取りを試みた．
+検証方法として，複数回折り重ねたカラーセロハンをスマホカメラの前に配しフィルタとした．色ごとに抽出した画像が図\ref{tricolorQR_R}から図\ref{tricolorQR_B}である．
+
+
+検証の結果として，画像からは３種類のＱＲコードが想定通り抽出できたことが分かった．しかしながら，QRコードの読み取りによるリンクへの移動は困難であった．この理由として，文字と背景の色差が考えられる．一般のQRコードは，背景の色と印字の色差により情報の読み取りを行っている．この理由からQRコード印字の際には白背景に黒字で表示することが推奨されている．今回の実験の場合では，肉眼ではQRコードが表示されていると確認できたものの，カメラ側で読み取れるほどの色差を生じることができなかったと考えられる．
+
+
+\newpage
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=7cm]{pics/tricolorQR_R}
+	\caption[赤色を抽出した画像]{赤色を抽出した画像}
+	\label{tricolorQR_R}
+\end{figure}
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=7cm]{pics/tricolorQR_G}
+	\caption[緑色を抽出した画像]{緑色を抽出した画像}
+	\label{tricolorQR_G}
+\end{figure}
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=7cm]{pics/tricolorQR_B}
+	\caption[青色を抽出した画像]{青色を抽出した画像}
+	\label{tricolorQR_B}
+\end{figure}
+
+
+
+
+
+\section{イラストを表示するトリケラパネルの実装}
+QRコードのトリケラパネルによる抽出実験を踏まえて，各色による画像抽出の視認性評価を行った．
+肉眼でも判別がしやすい動物のイラストを用いて3枚の単色画像を混ぜ合わせたプログラムを作成した．
+マトリクスLEDで表示した時の様子が図\ref{tricolor_animal}である．想定した通り3種類のイラストが重なり合った画像が表示された．
+
+
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=13cm]{pics/tricolor_animal}
+	\caption[トリケラパネルによる視認性評価]{トリケラパネルによる視認性評価}
+	\label{tricolor_animal}
+\end{figure}
+
+
+
+この表示から，カラーセロハンで色の抽出を行った画像が図\ref{animal_red}から\ref{animal_blue}である．赤色ではクジラ，緑色ではカバ，そして青色ではペンギンが抽出できた．
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=7cm]{pics/animal_red}
+	\caption[クジラ]{クジラ}
+	\label{animal_red}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=7cm]{pics/animal_green}
+	\caption[カバ]{カバ}
+	\label{animal_green}
+\end{figure}
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=7cm]{pics/animal_blue}
+	\caption[ペンギン]{ペンギン}
+	\label{animal_blue}
+\end{figure}
+
+
+
+ここで，表示画像以外にもLEDが点灯する箇所が現れるノイズが確認された．このノイズはRaspberry Piでの別ソフト起動時や，マウス動作時に増加がみられた．
+ノイズの要因として，高周波によるプログラムの動作，ジャンパ線の配線密集，マトリクスLEDのシフトレジスタの誤作動などが考えられる．
+
+抽出画像から，光の色により抽出画像の鮮明さに違いが生じている事が分かった．ここで，赤色と緑色の抽出には12枚重ねたカラーセロハンを使用し，青色の抽出には18枚重ねたカラーセロハンを使用した．この原因として，各光が持つ波長の差が考えられる．
+
+光のエネルギーと波長の式は,光のエネルギーをE，波長をλとすると，以下の式で求められる．
+\begin{equation}
+	E = hν = hc/λ
+\end{equation}
+ただし，hはプランク定数，νは光の振動数，cは光の速度である．
+
+
+ここで，青色から赤色にかけて可視光の波長は長くなる(図\ref{light_lambda}).
+つまり，光が持つエネルギーは大きさ順に，青色光，緑色光，赤色光となる．
+ここで，エネルギーの大きい青色光の透過力が高かったため，今回の様な結果が得られたと考えられる．
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm]{pics/light_lambda}
+	\caption[可視光線の波長]{可視光線の波長\protect\footnotemark}
+	\label{light_lambda}
+\end{figure}
+\footnotetext{可視光線　（visible light）(https://www.toho-u.ac.jp/sci/biomol/glossary/chem/visible\_light.html\#:~:text=\%E5
+	\%8F\%AF\%E8\%A6\%96\%E5\%85\%89\%E7\%B7\%9A\%20\%EF\%BC\%88visible\%20light\%EF\%BC\%89,760\%2D830\%20nm\%E3\%81\%A7\%E
+	3\%81\%82\%E3\%82\%8B\%E3\%80\%82)より引用}
+
+
+
+また，青色光の抽出を行った際には，緑色光が同時に写っていた．これは，緑色光と青色光の波長の差が小さい事が原因であると考えられる．
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%/**********************************************************************/
+%		関連研究の章
+%/**********************************************************************/
+
+
+
+
+
+
+%/**********************************************************************/
+%		関連研究の章
+%/**********************************************************************/

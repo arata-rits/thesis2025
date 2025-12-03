@@ -1,0 +1,268 @@
+%/**********************************************************************/
+%		第2章：LED照明によるフリッカノイズ現象とその関連研究
+%/**********************************************************************/
+\chapter{ダイナミック点灯方式を用いたステゴパネルの開発}
+\label{lbl_chptr2}
+
+本章では, フリッカ現象を用いた肉眼では視認不可能な情報表示照明装置ステゴパネルとその機能拡張について述べる．
+
+
+%/**********************************************************************/
+%		イントロの章
+%/**********************************************************************/
+
+
+\section{フリッカ現象とダイナミック点灯について}
+フリッカ現象とは，照明装置やディスプレイのような発光装置で発生する「ちらつき」現象のことである\cite{flicker}．例として，カメラで蛍光灯やLED等を撮影したときに生じるちらつきが挙げられる(図\ref{keikoto_flicker})．この現象は高速で点滅している照明をシャッタースピードの速いカメラで撮影したときに発生する.高速で点滅している光源があり，これを肉眼で視認する場合を考える．この時，点滅周波数が約60 Hz，つまり約0.017秒に一度点灯していると，肉眼は残像現象により常時点灯しているように錯覚する．一方で,シャッタースピードの速いカメラで同じ光源をとらえると，一瞬の消灯状態を撮影するため黒い縞模様が映りこむ(図\ref{flicker_explain})．
+
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=13cm]{pics/keikoto_flicker}
+	\caption[フリッカが入った画像]{フリッカが入った画像\protect\footnotemark}
+	\label{keikoto_flicker}
+\end{figure}
+\footnotetext{https://www.i-sss.jp/led-column/column20/より引用}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=13cm]{pics/flicker_explain2}
+	\caption[フリッカ現象の発生原理]{フリッカ現象の発生原理\protect\footnotemark}
+	\label{flicker_explain}
+\end{figure}
+\footnotetext{https://support.d-imaging.sony.co.jp/support/ilc/flicker/01/ja/より引用}
+
+
+
+
+多くのLED照明やデジタルサイネージでは，マトリクス上に配置されたLED素子群を水平，もしくは垂直方向に一定間隔で高速に点滅させるダイナミック点灯と呼ばれる点灯方式が採用される\cite{dinamic}．ダイナミック点灯の利点は主に二つ知られている．一つ目は消費電力の削減となる．LEDの消灯している時間が存在することにより，常時点灯させた時と比べて消費電力を削減できる．これは主に熱で発光しており，応答速度が遅い白熱電球には実現が難しいLEDならではの利点と言える．二つ目は回路規模の縮小である．一部のLEDを制御するダイナミック点灯とは反対に，すべてのLEDを個別に制御するスタティック点灯と呼ばれる点灯方式では，全てのLED素子にそれぞれ制御用の半導体素子と配線が必要となるため，回路規模が大きくなる．
+
+
+
+
+
+
+\section{ステゴパネルについて}
+ステゴパネルとは，これまで我々が提案，開発してきたものであり，3.1節で述べたフリッカノイズを利用して，文字情報を高速で点滅するドットマトリクスLEDに隠蔽する情報表示照明装置である\cite{sutego2020_shimada}\cite{sutego2020_shimomura}\cite{sutego_shimomura_E}\cite{sutego_shimada_E}\cite{RKY}\cite{shimada_2020_E}．
+
+
+ステゴパネルという名称は，情報の隠蔽技術の一つであるステガノグラフィー（steganography）と照明パネル	を合わせた造語である．ステゴパネルは，肉眼で視認したときには全てのLEDが白色に点灯している照明であるが，カメラを介して，シャッタースピードを短くして観測した時には情報を読み取ることができる．肉眼で見た時のステゴパネルが図\ref{eye}であり，カメラで見た時のステゴパネルが図\ref{camera}である．
+
+\newpage
+
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=80mm]{pics/sutego_eye}
+		\caption{肉眼で見た時のステゴパネル}
+		\label{eye}
+	\end{center}
+\end{figure}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=80mm]{pics/sutego_camera}
+		\caption{カメラで見た時のステゴパネル}
+		\label{camera}
+	\end{center}
+\end{figure}
+
+
+
+これまで開発してきたステゴパネルは，LEDを個別に制御するスタティック点灯方式を採用していた．従って，表示面積に比例して回路規模が大きくなり，本体は小型ブラウン管テレビ程の大きさとなっていた．また，周波数発生用のマイクロコントローラー基板が2台，周波数設定用のパソコン，点灯制御用のRaspberry Piを動作に使用するなど，本体と同様に，制御部に関しても，規模が課題となっていた．このステゴパネルは，肉眼で視認できる約91 Hzの周波数発生装置とカメラでのみ視認できる約1,600 Hzの周波数を,各LED素子に入力してスイッチングする(図\ref{sutego_Hz})．これに対して本論文では，LED素子点灯のダイナミック制御により類似の機能を実現した．
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm]{pics/sutego_Hz}
+	\caption[スタティック方式ステゴパネルの点灯イメージ]{スタティック方式ステゴパネルの点灯イメージ\protect\footnotemark}
+	\label{sutego_Hz}
+\end{figure}
+
+
+\section{ドットマトリクスLEDを用いたダイナミック点灯方式ステゴパネル}
+
+
+
+
+
+
+
+\subsection{HUB75規格のドットマトリクスLEDについて}
+ダイナミック点灯方式によるステゴパネルを実装するにあたり，HUB75規格の$32\times64$ドットマトリクスLED\cite{LEDdotmatrix}を用いて点灯実験を行った．使用したドットマトリクスLED\cite{matrixLED}が図\ref{hub75_display}である．
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm]{pics/hub75_display}
+	\caption[使用したドットマトリクスLED]{使用したドットマトリクスLED\protect\footnotemark}
+	\label{hub75_display}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=8cm]{pics/hub75_pin}
+		\caption{HUB75のピン配置}
+		\label{hub75_pin}
+	\end{center}
+\end{figure}
+
+
+HUB75規格とは，シフトレジスタを用いたLEDドットマトリクスパネルの規格を指しており，ダイナミック点灯方式によりパネルの点灯制御を行うことができる．各入力データのピン配置が図\ref{hub75_pin}であり，ピンの制御対象をまとめたものが表\ref{table_pin}である\cite{HUB75_1}\cite{HUB75_2}\cite{HUB75_3}．
+
+
+
+
+\footnotetext{M5Stack で LEDマトリクスパネル (HUB-75) を光らせる(https://qiita.com/mml/items/c08946c91053ef23c441)より引用}
+
+
+
+\begin{table}[]
+	\caption{各ピンの制御対象}
+	\label{table_pin}
+	\centering
+	\begin{tabular}{|l|l|}
+		\hline
+		R1                        & 上段の赤色LEDを制御 \\ \hline
+		G1                        & 上段の緑色LEDを制御 \\ \hline
+		B1                        & 上段の青色LEDを制御 \\ \hline
+		R2                        & 下段の赤色LEDを制御 \\ \hline
+		G2                        & 下段の緑色LEDを制御 \\ \hline
+		B2                        & 下段の青色LEDを制御 \\ \hline
+		A,　B,　C,　D                & 行アドレスを指定    \\ \hline
+		LAT                       & 行の点灯制御      \\ \hline
+		CLK                       & クロック信号      \\ \hline
+		GND                       & グランド       \\ \hline
+	\end{tabular}
+\end{table}
+
+
+ここで，HUB75規格の特徴について二点述べる，一つ目が点灯させる行を上段と下段に分けて制御を行う点となる．上段と下段は連動しており，0行目と16行目，１行目と17行目・・・15行目と31行目と2行づつ点灯制御が行われる(図\ref{hub75_lighting})．ここで，点灯する色は上段はR1，G1，B1，下段はR2，G2，B2により制御される．二つ目はLATと呼ばれる信号を点灯のために使用する点である．前述した通り，上と下段にそれぞれあるR，G，Bの計6信号により点灯する色が決定される．この時，点灯させる値はシフトレジスタに格納されたままであり，LAT信号がONされるまではディスプレイ側には表示が行われない．この二点に注意して制御プログラムを作成した．
+
+
+\newpage
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=150mm]{pics/hub75_lighting}
+		\caption{HUB75の点灯イメージ}
+		\label{hub75_lighting}
+	\end{center}
+\end{figure}
+
+
+
+\subsection{情報・背景差分方式によるステゴパネルの実装}
+ダイナミック点灯方式を用いたステゴパネルを開発する事前準備として，情報・背景差分方式\cite{cross_flickering}によるデジタルサイネージを実装した．
+
+これは文字部分と背景部分の点灯の仕方に差異をつける事で情報を埋め込む．文字部分は黒・黒・白と3周期に1回白を点灯し，背景部分は周期ごとにシアン，マゼンタ，イエローの順で点灯させる．点灯のイメージが図\ref{hub75_lighting_clossflicker}である．この一連の点灯周期を，肉眼に残像現象が発生する約0.0167 sに設定することで，視認した際に白色となる．プログラム実行時の様子が図\ref{hub75_experiment}である．また，図\ref{clossflicker_flow}が制御プログラムのフローチャートである.
+制御にはRaspberry PiのGPIOピンを用いているため，最初にGPIOピンの定義とピンの初期化を行う．次に，表示する画像を行列として定義する．点灯制御では，行を制御するループ内に列を制御するループが入る二重ループの構造を用いた．
+プログラム内のdelayにより，点灯状態でプログラムを一時停止させることができる．従って，delayの数値を調整することで，肉眼で残像現象が発生する点灯周期を生み出すことができる．
+
+
+
+
+\par
+ここでマトリクスLEDには，プログラムで$16\times32$の行列を入力している．これにより上段と下段で周期的に色が変化する部分を変えている．すなわち，上段では，文字部分が周期ごとに白色で点灯，背景部分は周期ごとに色が変化する．反対に，下段では文字部分の色を周期的に変更し，背景部分は黒・黒・白に点灯させる．図\ref{hub75_experiment}では，カラー表示部分がシアンのタイミングで撮影されたため，上部では背景部分がシアン色，下部では文字部分がシアン色になっている．
+
+\newpage
+
+
+\begin{figure}[H]
+	\begin{center}
+		
+		\includegraphics[width=14cm]{pics/clossflicker_image}
+		\caption{点灯の順序}
+		\label{hub75_lighting_clossflicker}
+	\end{center}
+\end{figure}
+
+
+
+
+\begin{figure}[H]
+	\begin{center}
+		
+		\includegraphics[width=10cm]{pics/clossflicker}
+		\caption{プログラム実行時の様子}
+		\label{hub75_experiment}
+	\end{center}
+\end{figure}
+
+
+
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[height=20cm]{pics/clossflicker_flow}
+		\caption{情報・背景差分方式プログラムのフローチャート}
+		\label{clossflicker_flow}
+	\end{center}
+\end{figure}
+
+
+
+実験の結果として，delay = 350 msにおいて，肉眼でも僅かなちらつきが確認された．
+ちらつきが発生しないdelay = 300 msに設定して点灯を行うと，カメラ撮影時のフリッカの動きが速くなってしまうため，カメラで表示情報を読み取ることができなかった．また，文字部分と背景部分に僅かな色の差を確認した．
+
+
+
+\newpage
+
+\subsection{ダイナミック点灯方式によるステゴパネルの実装}
+
+ダイナミック点灯方式を利用するために，HUB75規格のマトリクスLEDを用いる事で，ステゴパネルの小型化，及び多機能化を目指す．
+この方式では，各行の内，一行が点灯している画像を高速に切り替えることでステゴパネルの仕様を実現する．更には，HUB75を利用することでプログラミングが柔軟になる事から，肉眼でも情報を視認できる様にし，カメラ情報と合わせて別々の表示を可能とする．点灯の順序を表したものが図\ref{2flicker_order}となる．
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=1\linewidth]{pics/2flicker_order}
+		\caption{点灯の順序}
+		\label{2flicker_order}
+	\end{center}
+\end{figure}
+
+このように上段から下段に向かって一段ずつ肉眼視認用の画像を表示し，他の行ではカメラ視認用の画像を表示させる．
+点灯する全ての画像を重ね合わせた時に肉眼で見える画像が表示される．また，図\ref{2flicker_flow}が制御プログラムのフローチャートである．
+制御プログラムにはRaspberry PiのGPIOを使用しており，最初にGPIOピンの定義と初期化を行う．次に表示する画像を行列として定義する．この方式では制御する行数の画像が必要とされるため，16個の行列を定義する．また3.3.2項で述べた情報・背景差分式のプログラムと同様に点灯制御に二重ループを用いている．
+
+
+\newpage
+
+\begin{figure}[H]
+	\begin{center}
+		
+		\includegraphics[height=20cm]{pics/2flicker_flow}
+		\caption{ダイナミック点灯方式プログラムのフローチャート}
+		\label{2flicker_flow}
+	\end{center}
+\end{figure}
+
+ダイナミック点灯方式によるステゴパネル実行時の様子が図\ref{2flicker_experiment}である．作成したプログラムは，肉眼ではアルファベットのR, カメラ撮影時には立命館大学のホームページへと飛ぶQRコードが表示される仕様となっている．
+
+
+
+\begin{figure}[h]
+	\begin{center}
+		
+		\includegraphics[width=10cm]{pics/2flicker_experiment}
+		\caption{プログラム実行時の様子}
+		\label{2flicker_experiment}
+	\end{center}
+\end{figure}
+
+
+スタティック点灯方式のステゴパネルでは，1周期におけるHighとLowの比を表すduty比\cite{duty}を，同じ周波数で点灯するLED素子毎に設定することで，点灯の明るさを表す輝度値を一定に保っていた．一方で，ダイナミック点灯方式のステゴパネルでは，肉眼で表示させたい部分と，カメラで表示させたい部分の点灯周期が異なる．ここでダイナミック点灯による行毎の点灯制御のタイミングが一定であることから，点灯箇所毎にduty比の差が生じてしまう．結果として，PWM制御のように色の濃淡が発生する．
+
+
+図\ref{2flicker_experiment}に示したように，今回作成したプログラムでは肉眼でもQRコードが透けて見える事となった．しかしながら，ダイナミック点灯方式によるステゴパネルを作成する上での基礎となる技術を確立することができた．また，改善すべき点として，行毎の点灯時間を一定にしていた点が挙げられる．QRコードを秘匿するための点灯パターンのみ点灯時間を長くすることで，duty比の差を軽減することができると考えられる．
+
+
+
+
+
+
+
+

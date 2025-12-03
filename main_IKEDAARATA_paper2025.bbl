@@ -1,0 +1,136 @@
+\begin{thebibliography}{10}
+
+\bibitem{digital_signage}
+``一般社団法人デジタルサイネージコンソーシアム,デジタルサイネージとは.''
+\newblock {\url{https://digital-signage.jp/about/}}.
+
+\bibitem{blue_led}
+{中村 修二}, ``In{G}a{N}高輝度青色{LED}に関する研究,'' 1994.
+
+\bibitem{DSJ}
+``{LED}デジタルサイネージジャパン2023.''
+\newblock {\url{https://www.dsignage-expo.jp/2023/about/}}.
+
+\bibitem{digital_signage2}
+``{RICOH}，デジタルサイネージとは？仕組みから活用までをご紹介.''
+\newblock {\url{https://www.ricoh.co.jp/signage/column/signage.html}}.
+
+\bibitem{sibuya_3d}
+``渋谷の大型ビジョンから巨大な秋田犬が飛び出す!？肉眼{3D}動画が公開に.''
+\newblock {\url{https://www.rbbtoday.com/article/2023/06/26/210153.html}}.
+
+\bibitem{paper_signage}
+{猪野志織, 小室孝, 小川賀代},
+  ``インタラクティブデジタルサイネージにおける映像エフェクトの違いによる広告効果の検証,''
+  映像メディア学会誌, vol.~Vol. 76, No.2, 2022.
+
+\bibitem{6228274}
+{Yin, Kuo-Cheng and Wang, Hsin-Chieh and Yang, Don-Lin and Wu, Jungpin}, ``A
+  study on the effectiveness of digital signage advertisement,'' 2012
+  International Symposium on Computer, Consumer and Control, pp.~169--172,
+  2012.
+
+\bibitem{4K_8K}
+総務省, ``{4K8K}とは {4K8K}の魅力.''
+\newblock
+  {\url{https://www.soumu.go.jp/menu_seisaku/ictseisaku/housou_suishin/4k8k_suishin/about.html}}.
+
+\bibitem{7272046}
+{Su, Chun-Wei and Liao, Chia-Cheng and Chen, Mei-Yung}, ``Color transparent
+  display using polymer-dispersed liquid crystal,'' Journal of Display
+  Technology, vol.~12, no.~1, pp.~31--34, 2016.
+
+\bibitem{sony_display}
+日本経済新聞,
+  ``ソニー「空間再現ディスプレイ」　裸眼で{OK}迫力{3D}.''
+\newblock https://www.nikkei.com/article/DGXMZO72038730Z10C21A5000000/.
+
+\bibitem{color_mixture}
+{S. Komuro, S. Kuriyama, and T. Jinno}, ``Mimetic code using successive
+  additive color mixture,'' IEIEC trans. inf. \& SYST., vol.~VOL.E98-D,
+  no.~NO.1, january 2015.
+
+\bibitem{flicker}
+``大塚商会，{LED}電球・{LED}照明のちらつき・フリッカーの原因.''
+\newblock
+  {\url{https://www.otsuka-shokai.co.jp/products/led/knowledge/flicker.html}}.
+
+\bibitem{dinamic}
+``{LED}のダイナミック点灯とは＿大塚商会.''
+\newblock
+  {\url{https://www.otsuka-shokai.co.jp/products/led/knowledge/dynamic-lighting.html}}.
+
+\bibitem{sutego2020_shimada}
+{嶋田拓也, 下村優太郎, 桐原瑠也, 熊木武志},
+  ``フリッカパターンを用いた動画向け情報埋め込み手法の実装と評価,''
+  信学技報, vol.~119, no.2, pp. 117–122, 2020.
+
+\bibitem{sutego2020_shimomura}
+{下村優太郎, 嶋田 拓也, 熊木武志},
+  ``{フリッカノイズによるドットマトリクス{LED}
+  への実装},'' {LSI} とシステムのワークショップ, no.~no.4.
+
+\bibitem{sutego_shimomura_E}
+{ Y.Shimomura, T.Shimada, R.Kirihara, and T.Kumaki}, ``Live demonstration:
+  Development of dot matrix {LED} using flicker noise as a base,'' IEEE
+  International Symposium on Circuits And Systems (ISCAS), May 2020.
+
+\bibitem{sutego_shimada_E}
+{T.Shimada, and T.Kumaki}, ``A study of led-based spy-photo prevention system
+  using flicker noise for actual environment,'' International Technical
+  Conference on Circuits/Systems, 2018.
+
+\bibitem{RKY}
+{ R.Kirihara, Y.Shimomura, T.Shimada and . T.Kumaki}, ``Live demonstration:
+  Development of {LED}-based stego-panel for new smartphone usage,'' IEEE
+  International Symposium on Circuits And Systems (ISCAS), 2020.
+
+\bibitem{shimada_2020_E}
+{ T.Shimada, and T.Kumaki}, ``Development of flicker-noise-based lighting
+  communication method,'' RISP International workshop on Nonlinear Circuit,
+  2020.
+
+\bibitem{LEDdotmatrix}
+``大塚商会，{LED}ドットマトリクスとは.''
+\newblock
+  {\url{https://www.otsuka-shokai.co.jp/products/led/knowledge/lighting/dot-matrix.html}}.
+
+\bibitem{matrixLED}
+``P4 {RGB LED}マトリックスパネル 64 x 32ピクセル 256mm x 128mm
+  室内用.''
+\newblock
+  \url{https://www.amazon.co.jp/dp/B07KW9152T?ref_=cm_sw_r_cp_ud_dp_CRZ3W3A9GSRXYX9QM07Q}.
+
+\bibitem{HUB75_1}
+``{LED}ドットマトリクスパネル
+  {HUB75}規格について調べてみた.''
+\newblock {\url{https://qiita.com/onokatio/items/1b99ae9475b6a9fc2f15}}.
+
+\bibitem{HUB75_2}
+``{HUB75}規格を深掘りしてみる.''
+\newblock {\url{https://ryosukeeeee.hatenablog.com/entry/2019/05/11/153910}}.
+
+\bibitem{HUB75_3}
+``{HUB75}【raspberry
+  pi】電光掲示板にも応用できるマトリックス{LED}を制御する方法.''
+\newblock {\url{https://hellobreak.net/raspberry-pi-matrix-led-64-32/}}.
+
+\bibitem{cross_flickering}
+``クロスフリッカー，caustics light.''
+\newblock
+  {\url{https://twitter.com/causticslight/status/1471471769693593607?s=53&t=FDHx_f06kKJUNJoq08hL4A}}.
+
+\bibitem{duty}
+``duty比について.''
+\newblock
+  {\url{https://www2.denshi.numazu-ct.ac.jp/mirsdoc/mirs97/01/shousai/elec/sp/duty.html}}.
+
+\bibitem{color}
+``{光はRGBでできている}.''
+\newblock {\url{https://global.canon/ja/technology/kids/mystery/m_04_02.html}}.
+
+\bibitem{3d}
+``3{D}の仕組み，{CyberLink}.''
+\newblock {\url{https://jp.cyberlink.com/stat/3d-support/jpn/3d-primer.jsp}}.
+
+\end{thebibliography}

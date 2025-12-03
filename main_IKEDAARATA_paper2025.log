@@ -1,0 +1,539 @@
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.11.13)  3 DEC 2025 12:55
+entering extended mode
+ restricted \write18 enabled.
+ Source specials enabled.
+ %&-line parsing enabled.
+**main_IKEDAARATA_paper2025.tex
+(./main_IKEDAARATA_paper2025.tex
+pLaTeX2e <2023-02-14>+1 (based on LaTeX2e <2022-11-01> patch level 1)
+L3 programming layer <2023-02-22>
+(c:/texlive/2023/texmf-dist/tex/platex/base/jreport.cls
+Document Class: jreport 2020/09/30 v1.8f Standard pLaTeX class
+\c@@paper=\count184
+(c:/texlive/2023/texmf-dist/tex/platex/base/jsize12.clo
+File: jsize12.clo 2020/09/30 v1.8f Standard pLaTeX file (size option)
+)
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 704.
+\toclineskip=\dimen156
+\@lnumwidth=\dimen157
+\bibindent=\dimen158
+\heisei=\count194
+)
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvipdfmx.def on input line 107.
+
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+File: dvipdfmx.def 2022/09/22 v5.0m Graphics/color driver for dvipdfmx
+))
+\Gin@req@height=\dimen159
+\Gin@req@width=\dimen160
+)
+(./tex_files/hangcaption.sty
+\captionwidth=\skip50
+)
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks18
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(./tex_files/fancyheadings.sty
+\fancy@headwidth=\skip51
+\f@ncyO@elh=\skip52
+\f@ncyO@erh=\skip53
+\f@ncyO@olh=\skip54
+\f@ncyO@orh=\skip55
+\f@ncyO@elf=\skip56
+\f@ncyO@erf=\skip57
+\f@ncyO@olf=\skip58
+\f@ncyO@orf=\skip59
+)
+(c:/texlive/2023/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
+
+(I search kanjifont definition file: . . ) (I search font definition file: . .
+. . . . . )
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+
+ (c:/texlive/2023/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+(I search kanjifont definition file: . . ) (I search font definition file: . .
+. . . . . )
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+
+ (c:/texlive/2023/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+(c:/texlive/2023/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (./tex_files/cite.sty
+
+LaTeX Warning: You have requested package `./tex_files/cite',
+               but the package provides `cite'.
+
+Package: cite 1999/04/23  v 3.8
+) (./tex_files/here.sty)
+(c:/texlive/2023/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/02/19 v1.6 Sub-captions (AR)
+
+(c:/texlive/2023/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/03/12 v3.6j Customizing captions (AR)
+
+(c:/texlive/2023/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
+\caption@tempdima=\dimen161
+\captionmargin=\dimen162
+\caption@leftmargin=\dimen163
+\caption@rightmargin=\dimen164
+\caption@width=\dimen165
+\caption@indent=\dimen166
+\caption@parindent=\dimen167
+\caption@hangindent=\dimen168
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\vskip \abovecaptionski
+p \iftdir \sbox \@tempboxa {#1\hskip 1zw#2}\else \sbox \@tempboxa {#1: #2}\fi \
+ifdim \wd \@tempboxa >\hsize \iftdir #1\hskip 1zw#2\relax \par \else #1: #2\rel
+ax \par \fi \else \global \@minipagefalse \hb@xt@ \hsize {\hfil \box \@tempboxa
+ \hfil }\fi \vskip \belowcaptionskip  on input line 1176.
+)
+
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count195
+\c@continuedfloat=\count196
+)
+Package caption Info: New subtype `subfigure' on input line 239.
+\c@subfigure=\count197
+Package caption Info: New subtype `subtable' on input line 239.
+\c@subtable=\count198
+) (c:/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count199
+\lst@gtempboxa=\box68
+\lst@token=\toks19
+\lst@length=\count266
+\lst@currlwidth=\dimen169
+\lst@column=\count267
+\lst@pos=\count268
+\lst@lostspace=\dimen170
+\lst@width=\dimen171
+\lst@newlines=\count269
+\lst@lineno=\count270
+\lst@maxwidth=\dimen172
+
+(c:/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count271
+\lst@skipnumbers=\count272
+\lst@framebox=\box69
+)
+(c:/texlive/2023/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+ (./jlisting.sty
+Package: jlisting 2006/02/20 0.2 (Thor)
+\lst@nextchar=\count273
+\lst@inputfile=\read2
+)
+(c:/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)
+
+Package Listings Warning: Unknown positioning for output boxes on input line 34
+.
+
+(c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2023-01-16 L3 backend support: dvips
+\l__pdf_internal_box=\box70
+\g__pdf_backend_object_int=\count274
+\l__pdf_backend_content_box=\box71
+\l__pdf_backend_model_box=\box72
+\g__pdf_backend_annotation_int=\count275
+\g__pdf_backend_link_int=\count276
+\g__pdf_backend_link_sf_int=\count277
+)
+
+LaTeX Warning: Unused global option(s):
+    [eclepsfｘ].
+
+(./main_IKEDAARATA_paper2025.aux
+
+LaTeX Warning: Label `lbl_chptr2' multiply defined.
+
+
+LaTeX Warning: Label `lbl_chptr2' multiply defined.
+
+
+LaTeX Warning: Label `lbl_chptr2' multiply defined.
+
+)
+\openout1 = `main_IKEDAARATA_paper2025.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count278
+LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
+
+ (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
+
+
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (12.02888pt too wide) detected at line 63
+[]
+ []
+
+[1
+
+
+] [2]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 92.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 92.
+ [1]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 113.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 113.
+ (./main_IKEDAARATA_paper2025.toc [3
+
+])
+\tf@toc=\write3
+\openout3 = `main_IKEDAARATA_paper2025.toc'.
+
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 115.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 115.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4] (./main_IKEDAARATA_paper2025.lof [5
+
+])
+\tf@lof=\write4
+\openout4 = `main_IKEDAARATA_paper2025.lof'.
+
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 117.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 117.
+ [6] (./main_IKEDAARATA_paper2025.lot)
+\tf@lot=\write5
+\openout5 = `main_IKEDAARATA_paper2025.lot'.
+
+[7
+
+] (./chptr1.tex
+第 1 章
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 12.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 12.
+File: pics/signage_orange.jpg Graphic file (type bmp)
+<pics/signage_orange.jpg>
+[1
+
+
+]
+File: pics/signage_white1.png Graphic file (type bmp)
+<pics/signage_white1.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+[][]\OT1/cmr/m/n/10 https://www.neyagawa-np.jp/uploads/livedoor-blog/neyagawa[]
+np/imgs/8/4/848dc93a.jpg
+ []
+
+File: pics/ikenbako.jpg Graphic file (type bmp)
+<pics/ikenbako.jpg>
+[2]
+File: pics/DSJ_graph.png Graphic file (type bmp)
+<pics/DSJ_graph.png>
+
+Overfull \hbox (8.79134pt too wide) in paragraph at lines 64--65
+ [][][] 
+ []
+
+[3]) (./chptr2.tex [4]
+第 2 章
+File: pics/sibuya_3Dvision.png Graphic file (type bmp)
+<pics/sibuya_3Dvision.png>
+[5
+
+]
+File: pics/paper1.png Graphic file (type bmp)
+<pics/paper1.png>
+File: pics/paper2.png Graphic file (type bmp)
+<pics/paper2.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+[][]\OT1/cmr/m/n/10 A Study on the Ef-fec-tive-ness of Dig-i-tal Sig-nage Ad-ve
+r-tise-
+ []
+
+[6]
+File: pics/4K_8K_pixel.jpg Graphic file (type bmp)
+<pics/4K_8K_pixel.jpg>
+
+Overfull \hbox (93.77638pt too wide) in paragraph at lines 77--77
+[][]\JY1/mc/m/n/10 総務省 ， \OT1/cmr/m/n/10 4K8K \JY1/mc/m/n/10 とは \OT1/cmr/
+m/n/10 (https://www.soumu.go.jp/menu[]seisaku/ictseisaku/housou[]suishin/4k8k[]
+suishin/about.html)
+ []
+
+[7]
+File: pics/sony.png Graphic file (type bmp)
+<pics/sony.png>
+ [8]
+File: pics/QR_hiding.png Graphic file (type bmp)
+<pics/QR_hiding.png>
+) (./chptr3.tex [9] [10
+
+]
+第 3 章
+File: pics/keikoto_flicker.jpg Graphic file (type bmp)
+<pics/keikoto_flicker.jpg>
+File: pics/flicker_explain2.png Graphic file (type bmp)
+<pics/flicker_explain2.png>
+[11] [12]
+File: pics/sutego_eye.jpg Graphic file (type bmp)
+<pics/sutego_eye.jpg>
+File: pics/sutego_camera.jpg Graphic file (type bmp)
+<pics/sutego_camera.jpg>
+File: pics/sutego_Hz.png Graphic file (type bmp)
+<pics/sutego_Hz.png>
+
+Overfull \hbox (8.79134pt too wide) in paragraph at lines 79--80
+ [][][] 
+ []
+
+[13]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 93.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 93.
+File: pics/hub75_display.jpg Graphic file (type bmp)
+<pics/hub75_display.jpg>
+ [14]
+File: pics/hub75_pin.png Graphic file (type bmp)
+<pics/hub75_pin.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
+[][]\OT1/cmr/m/n/10 M5Stack \JY1/mc/m/n/10 で \OT1/cmr/m/n/10 LED \JY1/mc/m/n/1
+0 マトリクスパネル \OT1/cmr/m/n/10 (HUB-75) \JY1/mc/m/n/10 を光らせる
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 122.
+
+[15] [16]
+File: pics/hub75_lighting.png Graphic file (type bmp)
+<pics/hub75_lighting.png>
+
+Overfull \hbox (8.79134pt too wide) in paragraph at lines 149--150
+ [][] 
+ []
+
+[17] [18]
+File: pics/clossflicker_image.png Graphic file (type bmp)
+<pics/clossflicker_image.png>
+File: pics/clossflicker.jpg Graphic file (type bmp)
+<pics/clossflicker.jpg>
+File: pics/clossflicker_flow.png Graphic file (type bmp)
+<pics/clossflicker_flow.png>
+
+Overfull \hbox (24.16522pt too wide) in paragraph at lines 199--200
+ [][] 
+ []
+
+[19] [20] [21]
+File: pics/2flicker_order.png Graphic file (type bmp)
+<pics/2flicker_order.png>
+ [22]
+File: pics/2flicker_flow.png Graphic file (type bmp)
+<pics/2flicker_flow.png>
+
+Overfull \hbox (33.92458pt too wide) in paragraph at lines 237--238
+ [][] 
+ []
+
+[23]
+File: pics/2flicker_experiment.jpg Graphic file (type bmp)
+<pics/2flicker_experiment.jpg>
+) (./chptr4.tex [24]
+第 4 章
+File: pics/three_primary_colors.png Graphic file (type bmp)
+<pics/three_primary_colors.png>
+[25
+
+]
+File: pics/3Dglass.jpg Graphic file (type bmp)
+<pics/3Dglass.jpg>
+File: pics/anaglyph.jpg Graphic file (type bmp)
+<pics/anaglyph.jpg>
+ [26]
+File: pics/mixedQR.jpg Graphic file (type bmp)
+<pics/mixedQR.jpg>
+File: pics/light_filter.png Graphic file (type bmp)
+<pics/light_filter.png>
+ [27] [28]
+File: pics/display_device.jpg Graphic file (type bmp)
+<pics/display_device.jpg>
+File: pics/tricolor_QR.png Graphic file (type bmp)
+<pics/tricolor_QR.png>
+ [29]
+File: pics/tricolor_flow.png Graphic file (type bmp)
+<pics/tricolor_flow.png>
+ [30] [31]
+File: pics/tricolorQR_R.png Graphic file (type bmp)
+<pics/tricolorQR_R.png>
+File: pics/tricolorQR_G.png Graphic file (type bmp)
+<pics/tricolorQR_G.png>
+File: pics/tricolorQR_B.png Graphic file (type bmp)
+<pics/tricolorQR_B.png>
+ [32]
+File: pics/tricolor_animal.jpg Graphic file (type bmp)
+<pics/tricolor_animal.jpg>
+File: pics/animal_red.jpg Graphic file (type bmp)
+<pics/animal_red.jpg>
+ [33]
+File: pics/animal_green.jpg Graphic file (type bmp)
+<pics/animal_green.jpg>
+File: pics/animal_blue.jpg Graphic file (type bmp)
+<pics/animal_blue.jpg>
+ [34]
+File: pics/light_lambda.jpg Graphic file (type bmp)
+<pics/light_lambda.jpg>
+
+Overfull \hbox (84.31862pt too wide) in paragraph at lines 242--242
+[][]\JY1/mc/m/n/10 可視光線　 （\OT1/cmr/m/n/10 vis-i-ble light\JY1/mc/m/n/10 
+） \OT1/cmr/m/n/10 (https://www.toho-u.ac.jp/sci/biomol/glossary/chem/visible[]
+light.html#: :text=%E5
+ []
+
+
+Overfull \hbox (171.36281pt too wide) in paragraph at lines 242--242
+\OT1/cmr/m/n/10 %8F%AF%E8%A6%96%E5%85%89%E7%B7%9A%20%EF%BC%88visible%20light%EF
+%BC%89,760%2D830%20nm%E3%81%A7%E
+ []
+
+) (./chptr5.tex [35] [36
+
+]
+第 5 章
+[37]) (./chptr6.tex) (./chptr7.tex) (./main_IKEDAARATA_paper2025.bbl [38]
+[39
+
+] [40]
+Underfull \hbox (badness 10000) in paragraph at lines 133--135
+[][]\OT1/cmr/m/n/12 ``3D \JY1/mc/m/n/12 の仕組み ， \OT1/cmr/m/n/12 Cy-ber-Link
+.''  $\OT1/cmtt/m/n/12 https : / / jp . cyberlink . com / stat /
+ []
+
+) (./huroku.tex [41] [42
+
+]
+(c:/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)
+(c:/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+)) [43] [44
+
+] [45]
+[46
+
+]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 168.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 168.
+
+Overfull \hbox (4.66269pt too wide) in paragraph at lines 192--194
+\OT1/cmr/m/n/10.95 and Takeshi Ku-maki, "De-vel-op-ment of in-vis-i-ble in-for-
+ma-tion light-ing dis-play "Stego-
+ []
+
+[47] (./main_IKEDAARATA_paper2025.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5766 strings out of 476693
+ 99999 string characters out of 5808556
+ 1854203 words of memory out of 5000000
+ 26082 multiletter control sequences out of 15000+600000
+ 534484 words of font info for 121 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 67i,12n,77p,761b,480s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on main_IKEDAARATA_paper2025.dvi (55 pages, 99160 bytes).
