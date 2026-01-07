@@ -5,6 +5,7 @@
 \label{lbl_chptr2}
 
 本章では，カラーQRコードの読み取りシステムの開発について述べる．
+はじめに，3.1節，3.2節で，エンコード方法とデコード方法を述べ．3.3節で読み取りアプリの開発概要について述べる．
 
 
 %/**********************************************************************/
@@ -14,7 +15,85 @@
 
 
 \section{エンコード方法}
+カラーQRコードの読み取りシステムに使用するエンコード方法を示す．はじめに，任意の文字列が一般のQRコード生成の仕様によりモノクロのQRコードが作成される．同様に，3つの文字列をもとに3種類のモノクロQRコードを用意する．この3種類のモノクロQRコードを単色のカラー画像に変換する．本システムでは，赤(R), 緑(G),　青(B)の三色に変換している．その後，3種類の単色カラー画像を加法混色(図\ref{fig:kahokonsyoku})により重ね合わせることで，カラーQRコードが作成される(図\ref{fig:colorQR_encode}).
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{pics/kahokonsyoku.png}
+	\caption{加法混色}
+	\label{fig:kahokonsyoku}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{pics/colorQR_encode.png}
+	\caption{カラーQRコードのエンコード方法}
+	\label{fig:colorQR_encode}
+\end{figure}
+
 
 \section{デコード方法}
+カラーQRコードの読み取りシステムにおけるデコード方法を示す．はじめに，カラーQRコードに対して，画像処理による色の抽出を行う．デコードのフローチャートが図\ref{fig:decode_flow}である．
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{pics/colorQR_decode.png}
+	\caption{カラーQRコードのデコード方法}
+	\label{fig:colorQR_decode}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{pics/decode_flow.png}
+	\caption{デコード時のフローチャート}
+	\label{fig:decode_flow}
+\end{figure}
+
+
+ここで，膨張(dilation)処理と収縮(erosion)処理について詳しく述べる．
+膨張処理とは，画像中の指定個所を太くするような処理のことである．例えば，白色の箇所に対して膨張処理を行う場合，対象とする構造要素(カーネル)に対して．周囲も白色に塗りつぶすような処理が行われる．膨張処理の処理イメージが図\ref{fig:dilation}である．
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{pics/dilation.png}
+	\caption{膨張処理のイメージ}
+	\label{fig:dilation}
+\end{figure}
+
+次に，収縮処理とは，画像中の指定個所を細くするような処理のことである．例えば，白色の箇所に対して収縮処理を行う場合，対象とする構造要素(カーネル)に対して．周囲の黒い画素に浸食されるような処理が行われる．収縮処理の処理イメージが図\ref{fig:dilation}である．
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{pics/erosion.png}
+	\caption{収縮処理のイメージ}
+	\label{fig:erosion}
+\end{figure}
+
+このように画像の形状を整えるような処理を総称してモルフォロジー処理と呼ばれる．
+また，収縮の後に膨張を行う処理をオープニング(opening)処理，膨張の後に収縮を行う処理をクロージング(closing)処理と呼ぶ．本システムでは，ノイズ除去を目的として，クロージング処理を適用している．
+
 
 \section{読み取りアプリの開発}
+前述のエンコード，デコード方法を使用して，読み取りアプリの開発を行った．開発にあたりPython製の軽量WebフレームワークであるFlaskを使用し，画像保存時のデータベースとしては，SQLiteを使用した．また，バックエンド側の画像処理には，OpenCVを使用した．さらに，QRコードの認識には，ZBarをPythonから利用するライブラリであるpyzbarを使用した．ここで，Zbarとは，バーコードやQRコードなどの2次元コードを読み取る為のフリーかつオープンソースで利用できるライブラリのことである．
+
+
+開発したアプリにスマートフォン端末からアクセスした際の表示画面が図\ref{fig:flask_toppage}である．本システムの実装はノートPCにローカルのサーバーを立てることで実装を行った．従って，スマートフォンをローカルサーバーと同一のWi-Fiに接続するなど，同一のネットワーク内のみで動作検証が可能である．ユーザーは"ファイルを選択"ボタンからカメラによる画像撮影が可能である．次に，画面中央の各色の抽出ボタンを選択可能である．各ボタンを押すことで，抽出する色の種類を選択することが可能であり，バックエンド側での画像処理が実行される．QRコードが検出された際には，検出先のURLへ遷移される．また，QRコード不検出の場合には，画面中央にポップアップが表示される(図\ref{fig:flask_no_detected})．
+
+\setlength{\fboxsep}{0pt}   % 画像と枠の隙間
+\setlength{\fboxrule}{1pt} % 枠線の太さ
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[width=0.5\linewidth]{pics/flask_toppage.png}}
+	\caption{読み取りアプリのweb画面表示}
+	\label{fig:flask_toppage}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[width=0.5\linewidth]{pics/flask_no_detected.png}}
+	\caption{QRコード不検出時のweb画面表示}
+	\label{fig:flask_no_detected}
+\end{figure}

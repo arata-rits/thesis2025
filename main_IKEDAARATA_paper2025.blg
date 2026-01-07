@@ -3,53 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main_IKEDAARATA_paper2025.aux
 The style file: ./tex_files/ieice_e.bst
 Database file #1: ./tex_files/e_fmcam_ref.bib
-Warning--string name "vol." is undefined
---line 419 of file ./tex_files/e_fmcam_ref.bib
-I was expecting a `,' or a `}'---line 419 of file ./tex_files/e_fmcam_ref.bib
- :   volume          = vol. 
- :                          2014-HCI-157 pp. 1–8,
-I'm skipping whatever remains of this entry
-Warning--empty journal in blue_led
-Warning--empty year in sutego2020_shimomura
-You've used 28 entries,
+You've used 1 entry,
             1906 wiz_defined-function locations,
-            606 strings with 8064 characters,
-and the built_in function-call counts, 3604 in all, are:
-= -- 369
-> -- 67
+            487 strings with 3776 characters,
+and the built_in function-call counts, 130 in all, are:
+= -- 12
+> -- 1
 < -- 0
-+ -- 41
-- -- 13
-* -- 128
-:= -- 456
-add.period$ -- 28
-call.type$ -- 28
-change.case$ -- 28
++ -- 1
+- -- 0
+* -- 4
+:= -- 20
+add.period$ -- 1
+call.type$ -- 1
+change.case$ -- 1
 chr.to.int$ -- 0
-cite$ -- 30
-duplicate$ -- 174
-empty$ -- 503
-format.name$ -- 13
-if$ -- 963
+cite$ -- 1
+duplicate$ -- 4
+empty$ -- 19
+format.name$ -- 0
+if$ -- 33
 int.to.chr$ -- 0
-int.to.str$ -- 28
-missing$ -- 11
-newline$ -- 104
-num.names$ -- 13
-pop$ -- 192
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 7
+num.names$ -- 0
+pop$ -- 9
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 85
+skip$ -- 3
 stack$ -- 0
-substring$ -- 48
-swap$ -- 14
+substring$ -- 0
+swap$ -- 0
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 17
-width$ -- 30
-write$ -- 218
-(There was 1 error message)
+warning$ -- 0
+while$ -- 0
+width$ -- 2
+write$ -- 9

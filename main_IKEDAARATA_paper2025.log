@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.11.13)  16 DEC 2025 18:10
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.11.13)  7 JAN 2026 16:31
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -244,7 +244,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
 (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (12.02888pt too wide) detected at line 63
+Overfull \hbox (30.01628pt too wide) detected at line 64
 []
  []
 
@@ -253,14 +253,14 @@ Overfull \hbox (12.02888pt too wide) detected at line 63
 
 ] [2]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 92.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 92.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 93.
  [1]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 113.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 114.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 113.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 114.
  (./main_IKEDAARATA_paper2025.toc)
 \tf@toc=\write3
 \openout3 = `main_IKEDAARATA_paper2025.toc'.
@@ -287,45 +287,88 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 12.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 12.
-) (./chptr2.tex [1
+File: pics/SmartPhone_popularization.png Graphic file (type bmp)
+<pics/SmartPhone_popularization.png>
+[1
 
 
-] [2
-
-]
-第 2 章
-) (./chptr3.tex [3] [4
-
-]
-第 3 章
-) (./chptr4.tex [5] [6
-
-]
-第 4 章
-) (./chptr5.tex [7] [8
-
-]
-第 5 章
-) (./conclusion.tex [9] [10
-
-]
-第 6 章
-) (./main_IKEDAARATA_paper2025.bbl [11] [12
-
-] [13]
+]) (./chptr2.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 133--135
-[][]\OT1/cmr/m/n/12 ``3D \JY1/mc/m/n/12 の仕組み ， \OT1/cmr/m/n/12 Cy-ber-Link
-.''  $\OT1/cmtt/m/n/12 https : / / jp . cyberlink . com / stat /
+[2]
+第 2 章
+File: pics/blasinski_colorQR.png Graphic file (type bmp)
+<pics/blasinski_colorQR.png>
+File: pics/mie_terada_colorQR.png Graphic file (type bmp)
+<pics/mie_terada_colorQR.png>
+) (./chptr3.tex [3
+
+] [4
+
+]
+第 3 章
+File: pics/kahokonsyoku.png Graphic file (type bmp)
+<pics/kahokonsyoku.png>
+[5]
+File: pics/colorQR_encode.png Graphic file (type bmp)
+<pics/colorQR_encode.png>
+ [6]
+File: pics/colorQR_decode.png Graphic file (type bmp)
+<pics/colorQR_decode.png>
+File: pics/decode_flow.png Graphic file (type bmp)
+<pics/decode_flow.png>
+ [7]
+File: pics/dilation.png Graphic file (type bmp)
+<pics/dilation.png>
+ [8]
+File: pics/erosion.png Graphic file (type bmp)
+<pics/erosion.png>
+ [9]
+File: pics/flask_toppage.png Graphic file (type bmp)
+<pics/flask_toppage.png>
+ [10]
+File: pics/flask_no_detected.png Graphic file (type bmp)
+<pics/flask_no_detected.png>
+) (./chptr4.tex [11] [12]
+第 4 章
+File: pics/CQR_sample0_9.png Graphic file (type bmp)
+<pics/CQR_sample0_9.png>
+File: pics/experiment_situation.png Graphic file (type bmp)
+<pics/experiment_situation.png>
+[13
+
+]
+File: pics/dist20.png Graphic file (type bmp)
+<pics/dist20.png>
+File: pics/dist40.png Graphic file (type bmp)
+<pics/dist40.png>
+ [14]
+File: pics/dist60.png Graphic file (type bmp)
+<pics/dist60.png>
+File: pics/dist80.png Graphic file (type bmp)
+<pics/dist80.png>
+ [15]) (./chptr5.tex [16]
+第 5 章
+) (./conclusion.tex [17
+
+] [18
+
+]
+第 6 章
+) (./main_IKEDAARATA_paper2025.bbl [19] [20
+
+]
+Underfull \hbox (badness 6792) in paragraph at lines 4--7
+[][]\OT1/cmr/m/n/12 ``\JY1/mc/m/n/12 総務省 令和 \OT1/cmr/m/n/12 4 \JY1/mc/m/n/
+12 年版 情報通信白書\OT1/cmr/m/n/12 .''  $\OT1/cmtt/m/n/12 https : / / www . so
+umu . go . jp /
  []
 
-) (./huroku.tex [15] [16
+) (./huroku.tex [21] [22
 
 ]
 (c:/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -338,34 +381,34 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 10.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 10.
-) [17] [18
+) [23] [24
 
-] [19]
-[20
+] [25]
+[26
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 169.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 170.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 169.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 170.
 
-Overfull \hbox (4.66269pt too wide) in paragraph at lines 193--195
+Overfull \hbox (4.66269pt too wide) in paragraph at lines 194--196
 \OT1/cmr/m/n/10.95 and Takeshi Ku-maki, "De-vel-op-ment of in-vis-i-ble in-for-
 ma-tion light-ing dis-play "Stego-
  []
 
-[21] (./main_IKEDAARATA_paper2025.aux)
+[27] (./main_IKEDAARATA_paper2025.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5016 strings out of 476693
- 81870 string characters out of 5808556
- 1853203 words of memory out of 5000000
- 25389 multiletter control sequences out of 15000+600000
+ 5101 strings out of 476693
+ 84194 string characters out of 5808556
+ 1851203 words of memory out of 5000000
+ 25453 multiletter control sequences out of 15000+600000
  532652 words of font info for 113 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 67i,11n,77p,761b,412s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 67i,11n,77p,761b,322s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main_IKEDAARATA_paper2025.dvi (29 pages, 29912 bytes).
+Output written on main_IKEDAARATA_paper2025.dvi (35 pages, 40340 bytes).
