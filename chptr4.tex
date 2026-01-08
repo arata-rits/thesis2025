@@ -69,10 +69,113 @@
 \end{figure}
 
 
+比較対象として，従来のモノクロQRコードの撮影を行った．撮影された画像をまとめたものが図\ref{fig:dist_mono}である．
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{pics/dist_mono.png}
+	\caption{比較対象とするモノクロQRコードの画像}
+	\label{fig:dist_mono}
+\end{figure}
+
+
+
 \section{実験結果}
+はじめに，カラーQRコードに対して，色抽出処理のみを行って，その検出率の比較を行った．
+結果を表形式でまとめたものが表\ref{tab:color-extraction}である．
 
 
+
+\begin{table}[H]　　　
+    \centering
+	\caption{色抽出処理のみを行った際の検出率の比較}
+	\label{tab:color-extraction}
+	\begin{tabular}{|l|l|l|l|l|}
+		\hline
+		& distance20cm & distance40cm & distance60cm & distance80cm \\ \hline
+		Blue  & 100\%        & 20\%         & 0\%          & 0\%          \\ \hline
+		Green & 100\%        & 0\%          & 0\%          & 0\%          \\ \hline
+		Red   & 100\%        & 40\%         & 0\%          & 0\%          \\ \hline
+	\end{tabular}
+\end{table}
+
+実験の結果を踏まえ，膨張処理を加えたうえで検出率の比較を行った．
+膨張処理に適用するカーネルサイズはそれぞれ，$5\times 5$，$4\times 4$, $3\times 3$, $2\times 2$ を使用した．
+各カーネルサイズでの検出率をまとめたものが表\ref{tab:kernel5}, 表\ref{tab:kernel4}, 表\ref{tab:kernel3}, 表\ref{tab:kernel2}である．
+
+
+\begin{table}[H]　　　
+	\centering
+	\caption{膨張処理時にカーネルサイズ$5\times 5$を適用した際の検出率}
+	\label{tab:kernel5}
+	\begin{tabular}{|l|l|l|l|l|}
+		\hline
+		& distance20cm & distance40cm & distance60cm & distance80cm \\ \hline
+		Blue  & 100\%        & 0\%         & 0\%          & 0\%          \\ \hline
+		Green & 100\%        & 0\%         & 0\%          & 0\%          \\ \hline
+		Red   & 100\%        & 0\%         & 0\%          & 0\%          \\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]　　　
+	\centering
+	\caption{膨張処理時にカーネルサイズ$4\times 4$を適用した際の検出率}
+	\label{tab:kernel4}
+	\begin{tabular}{|l|l|l|l|l|}
+		\hline
+		& distance20cm & distance40cm & distance60cm & distance80cm \\ \hline
+		Blue  & 100\%        & 0\%         & 0\%          & 0\%          \\ \hline
+		Green & 100\%        & 0\%         & 0\%          & 0\%          \\ \hline
+		Red   & 100\%        & 0\%         & 0\%          & 0\%          \\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]　　　
+	\centering
+	\caption{膨張処理時にカーネルサイズ$3\times3$を適用した際の検出率}
+	\label{tab:kernel3}
+	\begin{tabular}{|l|l|l|l|l|}
+		\hline
+		& distance20cm & distance40cm & distance60cm & distance80cm \\ \hline
+		Blue  & 100\%        & 20\%         & 0\%          & 0\%          \\ \hline
+		Green & 100\%        & 0\%          & 0\%          & 0\%          \\ \hline
+		Red   & 100\%        & 40\%         & 0\%          & 0\%          \\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]　　　
+	\centering
+	\caption{膨張処理時にカーネルサイズ$2\times 2$を適用した際の検出率}
+	\label{tab:kernel2}
+	\begin{tabular}{|l|l|l|l|l|}
+		\hline
+		& distance20cm & distance40cm & distance60cm & distance80cm \\ \hline
+		Blue  & 100\%        & 20\%         & 0\%          & 0\%          \\ \hline
+		Green & 100\%        & 0\%          & 0\%          & 0\%          \\ \hline
+		Red   & 100\%        & 40\%         & 0\%          & 0\%          \\ \hline
+	\end{tabular}
+\end{table}
 
 
 
 \section{考察}
+
+実験の結果として，膨張処理の追加による検出率の向上は見られなかった．
+これは，画像処理の対象となるQRコード部分の解像度の低さが問題であると考えられる．
+膨張処理前の画像と膨張処理後の画像は下図のとおりである(図\ref{before_dilation}), (図\ref{after_dilation})．
+	
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{pics/before_dilation.png}
+	\caption{膨張処理前の画像}
+	\label{fig:before_dilation}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{pics/after_dilation.png}
+	\caption{膨張処理後の画像}
+	\label{fig:after_dilation}
+\end{figure}
