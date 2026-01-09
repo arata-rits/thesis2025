@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.11.13)  8 JAN 2026 19:41
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.11.13)  9 JAN 2026 19:01
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -414,25 +414,34 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 117.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 117.
- (./main_IKEDAARATA_paper2025.toc)
+ (./main_IKEDAARATA_paper2025.toc [3
+
+])
 \tf@toc=\write4
 \openout4 = `main_IKEDAARATA_paper2025.toc'.
 
- [3
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 119.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 119.
 
-] [4
 
-]
-(./main_IKEDAARATA_paper2025.lof)
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4] (./main_IKEDAARATA_paper2025.lof)
 \tf@lof=\write5
 \openout5 = `main_IKEDAARATA_paper2025.lof'.
 
- [5] [6
+ [5
+
+] [6
 
 ] (./main_IKEDAARATA_paper2025.lot)
 \tf@lot=\write6
 \openout6 = `main_IKEDAARATA_paper2025.lot'.
-
 
 [7] (./chptr1.tex
 第 1 章
@@ -441,13 +450,10 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 12.
 
-Package hyperref Warning: Ignoring empty anchor on input line 21.
-
-
 Overfull \hbox (105.5945pt too wide) in paragraph at lines 21--21
-[][]\JY1/mc/m/n/10 総務省 令和 \OT1/cmr/m/n/10 4 \JY1/mc/m/n/10 年版 情報通信白
-書　 \OT1/cmr/m/n/10 https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/r04/
-html/nd238110.html
+[][][][][]\JY1/mc/m/n/10 総務省 令和 \OT1/cmr/m/n/10 4 \JY1/mc/m/n/10 年版 情報
+通信白書　 \OT1/cmr/m/n/10 https://www.soumu.go.jp/johotsusintokei/whitepaper/j
+a/r04/html/nd238110.html
  []
 
 File: pics/SmartPhone_popularization.png Graphic file (type bmp)
@@ -455,95 +461,111 @@ File: pics/SmartPhone_popularization.png Graphic file (type bmp)
 [1
 
 
-]) (./chptr2.tex
+]
+File: pics/KDDI_qr_structure.png Graphic file (type bmp)
+<pics/KDDI_qr_structure.png>
+ [2]
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+LaTeX Warning: Reference `' on page 3 undefined on input line 46.
 
-[2]
+File: pics/qr_version.png Graphic file (type bmp)
+<pics/qr_version.png>
+[3]
+File: pics/finder_pattern.png Graphic file (type bmp)
+<pics/finder_pattern.png>
+) (./chptr2.tex [4]
 第 2 章
 File: pics/blasinski_colorQR.png Graphic file (type bmp)
 <pics/blasinski_colorQR.png>
 File: pics/mie_terada_colorQR.png Graphic file (type bmp)
 <pics/mie_terada_colorQR.png>
-) (./chptr3.tex [3
+) (./chptr3.tex [5
 
-] [4
+] [6
 
 ]
 第 3 章
 File: pics/kahokonsyoku.png Graphic file (type bmp)
 <pics/kahokonsyoku.png>
-[5]
+[7]
 File: pics/colorQR_encode.png Graphic file (type bmp)
 <pics/colorQR_encode.png>
- [6]
+ [8]
+File: pics/rgb_example.png Graphic file (type bmp)
+<pics/rgb_example.png>
+File: pics/HSV_image.png Graphic file (type bmp)
+<pics/HSV_image.png>
+ [9]
 File: pics/colorQR_decode.png Graphic file (type bmp)
 <pics/colorQR_decode.png>
+ [10]
 File: pics/decode_flow.png Graphic file (type bmp)
 <pics/decode_flow.png>
- [7]
+ [11]
 File: pics/dilation.png Graphic file (type bmp)
 <pics/dilation.png>
- [8]
+ [12]
 File: pics/erosion.png Graphic file (type bmp)
 <pics/erosion.png>
- [9]
+ [13]
 File: pics/flask_toppage.png Graphic file (type bmp)
 <pics/flask_toppage.png>
- [10]
+ [14]
 File: pics/flask_no_detected.png Graphic file (type bmp)
 <pics/flask_no_detected.png>
-) (./chptr4.tex [11] [12]
+) (./chptr4.tex [15] [16]
 第 4 章
 File: pics/CQR_sample0_9.png Graphic file (type bmp)
 <pics/CQR_sample0_9.png>
 File: pics/experiment_situation.png Graphic file (type bmp)
 <pics/experiment_situation.png>
-[13
+[17
 
 ]
 File: pics/dist20.png Graphic file (type bmp)
 <pics/dist20.png>
 File: pics/dist40.png Graphic file (type bmp)
 <pics/dist40.png>
- [14]
+ [18]
 File: pics/dist60.png Graphic file (type bmp)
 <pics/dist60.png>
 File: pics/dist80.png Graphic file (type bmp)
 <pics/dist80.png>
- [15]
+ [19]
 File: pics/dist_mono.png Graphic file (type bmp)
 <pics/dist_mono.png>
- [16] [17]
+ [20] [21]
 
-LaTeX Warning: Reference `before_dilation' on page 18 undefined on input line 1
+LaTeX Warning: Reference `before_dilation' on page 22 undefined on input line 1
 65.
 
 
-LaTeX Warning: Reference `after_dilation' on page 18 undefined on input line 16
+LaTeX Warning: Reference `after_dilation' on page 22 undefined on input line 16
 5.
 
 File: pics/before_dilation.png Graphic file (type bmp)
 <pics/before_dilation.png>
 File: pics/after_dilation.png Graphic file (type bmp)
 <pics/after_dilation.png>
-) (./chptr5.tex [18] [19] [20
+) (./chptr5.tex [22] [23] [24
 
 ]
 第 5 章
-
-Package hyperref Warning: Ignoring empty anchor on input line 18.
-
 File: pics/Ai_market_size.png Graphic file (type bmp)
 <pics/Ai_market_size.png>
-) (./conclusion.tex [21] [22]
-第 6 章
-) (./main_IKEDAARATA_paper2025.bbl [23
+[25]
+File: pics/illust_QR_example1.png Graphic file (type bmp)
+<pics/illust_QR_example1.png>
+File: pics/illust_QR_example2.png Graphic file (type bmp)
+<pics/illust_QR_example2.png>
+ [26]
+File: pics/comfyUI.png Graphic file (type bmp)
+<pics/comfyUI.png>
+ [27] [28]) (./conclusion.tex [29] [30
 
-] [24
+]
+第 6 章
+) (./main_IKEDAARATA_paper2025.bbl [31] [32
 
 ]
 Overfull \hbox (250.45018pt too wide) in paragraph at lines 4--7
@@ -551,7 +573,7 @@ Overfull \hbox (250.45018pt too wide) in paragraph at lines 4--7
 12 年版 情報通信白書\OT1/cmr/m/n/12 .''  [][][][]. 
  []
 
-) (./huroku.tex [25] [26
+) (./huroku.tex [33] [34
 
 ]
 (c:/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -564,10 +586,10 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 10.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 10.
-) [27] [28
+) [35] [36
 
-] [29]
-[30
+] [37]
+[38
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
@@ -580,7 +602,7 @@ Overfull \hbox (4.66269pt too wide) in paragraph at lines 200--202
 ma-tion light-ing dis-play "Stego-
  []
 
-[31] (./main_IKEDAARATA_paper2025.aux)
+[39] (./main_IKEDAARATA_paper2025.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -589,15 +611,15 @@ LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main_IKEDAARATA_paper2025.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: 649AD253CBFF09F3760966467707EF38;1669.
+(rerunfilecheck)             Checksum: F21D08F7D0ED4C2E12A3E0FB6BC94D96;1931.
  ) 
 Here is how much of TeX's memory you used:
- 11886 strings out of 476693
- 191232 string characters out of 5808556
+ 11945 strings out of 476693
+ 192552 string characters out of 5808556
  1861203 words of memory out of 5000000
- 32127 multiletter control sequences out of 15000+600000
- 533943 words of font info for 119 fonts, out of 8000000 for 9000
+ 32176 multiletter control sequences out of 15000+600000
+ 534484 words of font info for 121 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 72i,11n,77p,962b,357s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,11n,77p,962b,422s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main_IKEDAARATA_paper2025.dvi (39 pages, 93124 bytes).
+Output written on main_IKEDAARATA_paper2025.dvi (47 pages, 122580 bytes).

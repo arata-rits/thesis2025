@@ -18,21 +18,87 @@
 \footnotetext{Fortune Business Insights | 生成AI市場規模、シェア＆業界分析、モデル別（生成官民ネットワークまたはGANSおよび変圧器ベースのモデル）、業界対アプリケーション、地域予測、2024-2032別 |SS より引用}
 
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{pics/Ai_market_size.png}
+	\caption{生成AIの市場規模の予測}
+	\label{fig:Ai_market_size}
+\end{figure}
+
+もちろん，このデータは生成AI全般を含めたものであり，イラスト生成AIに限ったものではない．しかし，生成AIの発展に伴い，イラスト生成AIの技術進歩，また，社会への普及や，その市場規模も高まっていくだろう．このようなイラスト生成AIの活用例としてQRコードを入力画像として取り込むことで，イラストのように見えるが，実際に機能する二次元コードの生成が行われている．このようなARコードはアートQRコードと呼ばれている．その例が，図\ref{fig:illust_QR_example1}や，図\ref{fig:illust_QR_example2}である．
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{pics/illust_QR_example1.png}
+	\caption{アートQRコードの例}
+	\label{fig:illust_QR_example1}
+\end{figure}
 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\linewidth]{pics/Ai_market_size.png}
-	\caption{膨張処理前の画像}
-	\label{fig:Ai_market_size}
+	\includegraphics[width=1.0\linewidth]{pics/illust_QR_example2.png}
+	\caption{アートQRコードの例}
+	\label{fig:illust_QR_example2}
 \end{figure}
-
 
 
 
 \section{イラスト生成AIの原理}
 
+
+
+
+
 \section{使用したソフトとモデル}
+カラーQRコードを使用mfyUIしたイラスト生成に伴い，comyUIを使用した．ここで，comfyUIとは，イラスト生成AIを独自にカスタマイズできるツールの一種である．本ツールでは，ノードと呼ばれる素子同士をつなぎ合わせることで，仕様モデルの選択や，モデルの強度の変更などの画像生成におけるカスタマイズをノーコードで行うことができる．本ツールの使用にあたって，一般的なQRコードをイラスト改変するワークフローが公開されていたwebサイトを参考にした．comfyUIの操作画面が図\ref{fig:comfyUI}である．
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{pics/comfyUI.png}
+	\caption{comfyUIの操作画面}
+	\label{fig:comfyUI}
+\end{figure}
+
+
+ここでcomfyUIで使用したノードについて述べる．
+
+・VAE　(variational auto encoder)
+VAEとは画像データの圧縮時の特徴を抽出する方法を決定しているモデルである．従って出力画像の品質に大きく影響を及ぼす．
+
+・チェックポイント(ckpt)
+チェックポイントは出力画像の画風に影響を与える．Stable diffusionの学習過程で作成された画像の特徴を保存したファイルである．そのため，他のモデルに対して数GBと大きな容量をもつファイルとなる．
+
+・controlnet
+画像生成の構図や形状を自在にコントロールできる拡張機能となる．画像生成の過程に割り込むことで，出力画像に大きく影響を与える．QRコードを用いたイラスト改変技術に大きく関わるノードである．
+
+・Kサンプラー
+出力画像の仕上がりに影響を与える．無数にあるノイズの中から少しずつ画像を作っていく工程を担当するノードである．シード値の変更や，ステップ数の変更ができる．
+
+
+・LoRA
+Low-Rank-Adaptationの頭文字であり，少ないリソースで効率的に学習ができる手法である．画風の調整や，人物やキャラクターの指定など，多岐にわたる調整を可能とするようなモデルが複数存在する．ただし，生成過程に割り込むcontrolnetに比べて，出力画像に与える影響和比較的少ないと考えられる．
+
+
+\section{実験内容}
+本実験の目的は，従来，モノクロのQRコードを入力画像として作成するアートQRの生成に対して，入力画像にカラーQRコードを使用し，QRコードの可読性がある生成AIイラストを得ることである．従って，従来のアートQRコードのワークフローをベースとして，使用するcontrolnetモデルを追加する改変を加えた．
+
+本実験で使用したcontrolnetモデルを以下に示す．
+
+・monster-labs/control\_v1p\_sd15\_qrcode\_monster
+
+・latentcat/control\_v1p\_sd15\_brightness
+
+・TencentARC/t2iadapter\_color\_sd14v1\\
+
+
+
+使用した各controlnetモデルについて詳しく述べる．
+
+monster-labs/control\_v1p\_sd15\_qrcode\_monster(以下，qrcode\_monster)は
+
+従来のワークフローではqrcode\_monsterとbrightnessの二つを使用していた．しかし，入力画像をカラーQRコードとする場合には，入力画像の色の位置を出力画像に反映する必要がある．従って，T2Idapter\_colorを新しく採用した．
 
 
 

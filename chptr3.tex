@@ -33,6 +33,31 @@
 \end{figure}
 
 
+\section{色空間について}
+コンピュータ上で画像は，色の数値の組み合わせによる色空間により表現されている．最も主要な色空間としてRB色区間が挙げられる．RGB色空間ではR(赤), G(緑), B(青)に0{\textasciitilde}255までの値が格納され，その値の組み合わせにより色が表現される．例として(R, G, B) = (255, 165, 0)のとき．橙色となり，(R, G, B) = (255, 165, 0)のとき，灰色が表現される(図\ref{fig:rgb_example})．
+また，別の色空間としてHSV色空間が挙げられる．HSV色空間とは，色を色相(H)，彩度(S)，明度(V)の3成分で表現する色空間のことである．HSVとは，Hue(色相)，Saturation(彩度)，Value(明度)の頭文字に由来している．HSV色空間を用いた色の表現例が図\ref{fig:HSV_image}である．
+RGＢ色空間がデバイス依存の色表現であるのに対して，ＨＳＶ色空間は人間の色近くに近い直感的な表現を目的として提案された．ＳＶ色空間を使用する利点として，より正確な色抽出が可能な点が挙げられる．HSV色空間において，色の種類はH成分によって決定される．これにより照明等による明るさの影響を抑えたロバスト性の高い色抽出が可能になる．
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{pics/rgb_example.png}
+	\caption{RGB色空間での色の表現例}
+	\label{fig:rgb_example}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{pics/HSV_image.png}
+	\caption[HSV色空間での色の表現方法]{HSV色空間での色の表現方法\protect\footnotemark}
+	\label{fig:HSV_image}
+\end{figure}
+
+
+\footnotetext{321web|色の三属性「色相」「明度」「彩度」とは？【HSB/HSV】(https://321web.link/color-attribute/)より引用}
+
+
+
 \section{デコード方法}
 カラーQRコードの読み取りシステムにおけるデコード方法を示す．はじめに，カラーQRコードに対して，画像処理による色の抽出を行う．デコードのフローチャートが図\ref{fig:decode_flow}である．
 
