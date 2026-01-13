@@ -14,7 +14,7 @@
 
 \section{ステゴパネル}
 本研究のアイデアの元となった，肉眼では視認不可能な情報表示LEDパネルであるステゴパネルについて述べる．
-ステゴパネル(Stego-panel)とは，画像や音声などのデータに秘密情報を埋め込む情報秘匿技術の一種であるステガノグラフィー(Steganography)と，照明パネル(Panel)を組み合わせた造語である．ステゴパネルは，カメラで撮影することで，肉眼では視認できない情報を取得することが可能となる(図\ref{fig:stego_eye}, 図\ref{fig:stego_camera})
+ステゴパネル(Stego-panel)とは，画像や音声などのデータに秘密情報を埋め込む情報秘匿技術の一種であるステガノグラフィー(Steganography)と，照明パネル(Panel)を組み合わせた造語である．ステゴパネルは，カメラで撮影することで，肉眼では視認できない情報を取得することが可能となる(図\ref{fig:stego_eye}及び， 図\ref{fig:stego_camera})
 
 \begin{figure}[H]
 	\centering
@@ -57,23 +57,22 @@
 
 %\section{Henryk Blasinskiの先行研究}
 
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=0.6\linewidth]{pics/blasinski_colorQR.png}
+%	\caption{BlasinskiによるカラーQRコード}
+%	\label{fig:blasinski_colorQR}
+%\end{figure}
 
+
+\section{三重大学　寺田らによる研究}
+論文\cite{mie_terada}では，実用化されているカラーコードをまとめたうえで，それらに使用されている色数の少なさを課題視している．そこで解決策として,
+正確な色認識技術を提案し，ニューラルネットワークを用いた色の補完技術を構築を行っている．更には，色補完技術の評価対象としてカラーQRコードを挙げ(図\ref{fig:mie_terada_colorQR})，色の認識技術に対する実験を行いその有効性を確認している．
 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.6\linewidth]{pics/blasinski_colorQR.png}
-	\caption{BlasinskiによるカラーQRコード}
-	\label{fig:blasinski_colorQR}
-\end{figure}
-
-
-\section{三重大の先行研究}
-
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.6\linewidth]{pics/mie_terada_colorQR.png}
-	\caption{三重大学のカラーQRコードに関する先行研究}
+	\includegraphics[width=0.8\linewidth]{pics/mie_terada_colorQR.png}
+	\caption{使用色64色のカラーQRコード}
 	\label{fig:mie_terada_colorQR}
 \end{figure}

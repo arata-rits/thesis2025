@@ -3,36 +3,37 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main_IKEDAARATA_paper2025.aux
 The style file: ./tex_files/ieice_e.bst
 Database file #1: ./tex_files/e_fmcam_ref.bib
-You've used 1 entry,
+Warning--empty journal in mie_terada
+You've used 2 entries,
             1906 wiz_defined-function locations,
-            487 strings with 3776 characters,
-and the built_in function-call counts, 130 in all, are:
-= -- 12
-> -- 1
+            492 strings with 3884 characters,
+and the built_in function-call counts, 259 in all, are:
+= -- 23
+> -- 5
 < -- 0
-+ -- 1
-- -- 0
-* -- 4
-:= -- 20
-add.period$ -- 1
-call.type$ -- 1
-change.case$ -- 1
++ -- 3
+- -- 1
+* -- 13
+:= -- 42
+add.period$ -- 2
+call.type$ -- 2
+change.case$ -- 2
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 4
-empty$ -- 19
-format.name$ -- 0
-if$ -- 33
+cite$ -- 3
+duplicate$ -- 12
+empty$ -- 34
+format.name$ -- 1
+if$ -- 62
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 0
-newline$ -- 7
-num.names$ -- 0
-pop$ -- 9
+int.to.str$ -- 2
+missing$ -- 1
+newline$ -- 10
+num.names$ -- 1
+pop$ -- 13
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 3
+skip$ -- 4
 stack$ -- 0
 substring$ -- 0
 swap$ -- 0
@@ -40,7 +41,8 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 2
-write$ -- 9
+warning$ -- 1
+while$ -- 1
+width$ -- 3
+write$ -- 17
+(There was 1 warning)
