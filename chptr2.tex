@@ -13,11 +13,51 @@
 
 
 \section{ステゴパネル}
+本研究のアイデアの元となった，肉眼では視認不可能な情報表示LEDパネルであるステゴパネルについて述べる．
+ステゴパネル(Stego-panel)とは，画像や音声などのデータに秘密情報を埋め込む情報秘匿技術の一種であるステガノグラフィー(Steganography)と，照明パネル(Panel)を組み合わせた造語である．ステゴパネルは，カメラで撮影することで，肉眼では視認できない情報を取得することが可能となる(図\ref{fig:stego_eye}, 図\ref{fig:stego_camera})
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{pics/stego_eye.png}
+	\caption{肉眼で観測したステゴパネル}
+	\label{fig:stego_eye}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{pics/stego_camera.png}
+	\caption{カメラで観測したステゴパネル}
+	\label{fig:stego_camera}
+\end{figure}
+
+
+ステゴパネルの原理は，2種類の点灯周波数を使用したLEDの点灯制御である．肉眼ではおよそ60Hz以下の点滅しか認識することはできない．反対に，60Hz以上の点滅は，肉眼には常時点灯していると視認される．このような現象は残像現象と呼ばれる．一方で，カメラによる撮影では，露光時間を制御することにより，肉眼に比べて瞬間の光を観測することができる．従って，カメラで高速点滅している照明やデジタルサイネージを撮影したときに，画像中に縞模様のノイズが表示される(図\ref{fig:flicker_img})．このような，ちらつき(flicker)に由来するノイズはフリッカーノイズと呼ばれる．
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{pics/flicker_img.jpg}
+	\caption{フリッカーノイズが入ったカメラ画像}
+	\label{fig:flicker_img}
+\end{figure}
+
+図\ref{fig:stego_principle}は，ステゴパネルの点滅周波数と文字表現の仕組みを簡易的に表したものである．ここでは，LEDの点滅周波数を20 Hzと100 Hzと仮定している．ステゴパネルでは，文字情報部分と背景部分で違う点滅周波数を使用することで情報の秘匿を実現している．
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{pics/stego_principle.png}
+	\caption{ステゴパネルの点滅周波数と文字表現の仕組み}
+	\label{fig:stego_principle}
+\end{figure}
+
+このように，ステゴパネルとは，周波数の違いを利用して異なる情報を表示する技術であった．これに対し，パネルに表示する色に応じて，異なる情報を表示できるのではないかというアイデアが生じた．この発案をもとにして，本研究内容であるカラーQRコードのシステムが想起された．
 
 
 \section{Henryk Blasinskiの先行研究}
 
-x
+
 
 
 \begin{figure}[H]

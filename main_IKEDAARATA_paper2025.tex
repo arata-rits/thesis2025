@@ -12,29 +12,22 @@
 \renewcommand\citeform[1]{[#1]}
 \usepackage{./tex_files/here}
 \usepackage[subrefformat=parens]{subcaption}
-\usepackage{listings, jlisting}
+%\usepackage{listings, jlisting}
 
 \usepackage{hyperref}
+\usepackage{listings}
+
 
 \lstset{
-	language={Python},
-	basicstyle={\small},
-	identifierstyle={\small},
-	commentstyle={\small\ttfamily},
-	keywordstyle={\small\bfseries},
-	ndkeywordstyle={\small},
-	stringstyle={\small\ttfamily},
-	frame={tb},
-	breaklines=true,
-	columns=[1]{fullflexible},
+	basicstyle=\ttfamily\small,
 	numbers=left,
-	xrightmargin=0zw,
-	xleftmargin=0zw,
-	numberstyle={\scriptsize},
-	stepnumber=1,
-	numbersep=1zw,
-	morecomment=[l]{//}
+	numberstyle=\tiny,
+	frame=single,
+	breaklines=true,
+	tabsize=2,
+	captionpos=b
 }
+
 
 \begin{document}
 \clearpage
@@ -157,11 +150,11 @@
 \lhead{謝辞} \rhead{}
 \addcontentsline{toc}{chapter}{謝辞}
 %------------------------------------------------------------------
-本論文の作成にあたり, 貴重な助言, ご指導をして頂いた立命館大学理工学部電子情報工学科 熊木 武志教授に深く感謝の意を表します. また, 本研究に関わりご助言をして頂いた立命博士氏，琵琶太郎氏, 草津悟志氏に深く感謝致します. そして, 実験を行うにあたってご協力をして頂いた衣笠智樹氏, 茨木慎太郎氏に感謝致します. 最後に, 日頃から様々な事においてお世話になりましたX期生を始めとするマルチメディア集積回路システム研究室の皆様に最大の感謝をお贈り致します.
+本論文の作成にあたり, 貴重な助言, ご指導をして頂いた立命館大学理工学部電子情報工学科 熊木 武志教授に深く感謝の意を表します. また, 本研究に関わりご助言をして頂いた石田勝之介氏に深く感謝致します. 最後に, 日頃から様々な事においてお世話になりました7期生を始めとするマルチメディア集積回路システム研究室の皆様に最大の感謝をお贈り致します.
 
 \vspace{15mm}
 \begin{flushright}
-2023年3月　立命　太郎
+2026年3月 池田　新
 \end{flushright}
 %------------------------------------------------------------------
 %------------------------------------------------------------------
@@ -175,31 +168,40 @@
 \noindent
 {\bf 【国内研究会等発表】}		%ここに展示会参加等を書きましょう
 \begin{itemize}
+
 	\item
-	\underline{立命太郎}, 逢坂京太郎, 安藤義男，竹　信孝, 熊木武志, "2nmプロセスルールのSoCの製造技術可能性, "
-	ET\&IoT West 2021, Jul., 2021.
+	\underline{池田新}, 熊木武志, "RGBカラーQRコードの読み取り実験とその評価について,"\\
+	ソサイエティ大会　2024, Sep., 2024.
+	
+	
 \end{itemize}
 {\bf 【国外研究会等発表】}
 \begin{itemize}
 	\item
-	\underline{Taro Ritsumei} and Takeshi Kumaki, "Possibility of 2nm process rule SoC manufacturing technology,"
-	International Computers and communications (ICC), 2021.
+	\underline{Arata Ikeda}, Takumi Hayashi, and Takeshi Kumaki, "Development of secure QR code by using invisible information display lighting device,"
+	ITC-CSCC 2024, Jul., 2024
+	
+	\item
+	\underline{Arata Ikeda}, Tomoki Yamashita, and Takeshi Kumaki, "Development of RGB micro QR code system using invisible information lighting device 'Stego-panel V',"
+	NOLTA 2025, Oct., 2025
 
 \end{itemize}
 {\bf 【その他研究活動】}		%ここに展示会参加等を書きましょう
 \begin{itemize}
 	\item 
-	ET\&IoT West 2021, Jul., 2021.
+	EdgeTech+ West 2024, Jul., 2024
 	\item 
-	ET\&IoT 2021, Nov., 2021.
+	EdgeTech+ 2024, Nov., 2024
+	\item 
+	EdgeTech+ West 2025, Jul., 2025
+	\item 
+	EdgeTech+ 2025, Nov., 2025
+	
+	
 
 \end{itemize}
 {\bf 【受賞】}		%ここに展示会参加等を書きましょう
-\begin{itemize}
-	\item
-	\underline{Yuta Moritake}, Yutaro Shimomura, Ryuya Kirihara, Yuki Hirota, Xiangbo Kong and Takeshi Kumaki, "Development of invisible information lighting display "Stego-panel IV","
-	IEEE Grobal Conference on Consumer Electronics (GCCE), Excellent Demo! award, Gold prize, Oct., 2021.
-\end{itemize}
+
 \clearpage
 
 \end{document}
