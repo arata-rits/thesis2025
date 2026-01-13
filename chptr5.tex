@@ -30,7 +30,7 @@
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\linewidth]{pics/illust_QR_example1.png}
-	\caption{アートQRコードの例}
+	\caption{アートQRコードの例1}
 	\label{fig:illust_QR_example1}
 \end{figure}
 
@@ -38,7 +38,7 @@
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\linewidth]{pics/illust_QR_example2.png}
-	\caption{アートQRコードの例}
+	\caption{アートQRコードの例2}
 	\label{fig:illust_QR_example2}
 \end{figure}
 
@@ -48,28 +48,60 @@
 
 カラーQRコードに対応したアートQRコード生成について2種類の例が挙げられる．それは以下の2種類の方法である．
 
-A: 3種類の重ね合わせを行ったカラーQRコードを入力画像に使用する方法．\\
+
 
 B: 単色カラーのQRコードを入力画像として使用し，読み取りにカラーQRコード検出のシステムを使用する方法．\\
+
+
+
+\begin{itemize}
+	\item A: 3種類の重ね合わせを行ったカラーQRコードを入力画像に使用する方法．
+	\item B: 単色カラーのQRコードを入力画像として使用し，読み取りにカラーQRコード検出のシステムを使用する方法．
+\end{itemize}
 
 
 Aの方法による利点として，先述のとおり，情報量の増加が挙げられる．また，従来のアートQRコードと比較して，よりカラフルな画像の生成が行われると考えられる．
 
 Bの方法による利点として，よりイラストに近い形での画像生成が可能になることが挙げられる．
+例として，緑色単色QＲコードを使用して，カラーアートＱＲを生成する事を考える．この時．デコード時に緑色が抽出されることから，画素値でいうところの赤(R)と青(B)の値は任意の値をとれる．また閾値を使用して色の抽出を行うとすると，ＱＲコードの背景となる部分(情報のないところ)では，赤(R)と青(B)の値は任意の値，緑(G)は128以下の値で任意の値をとることができる(図\ref{fig:illust_qr_merit})．
 
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{pics/illust_qr_merit.png}
+	\caption{カラーアートQRコードの仕様の例}
+	\label{{fig:illust_qr_merit}}
+\end{figure}
 
 
 
 
 
 \section{イラスト生成AIの原理}
+代表的な生成モデルであるGAN(敵対的生成ネットワーク)とDiffusion model(潜在拡散モデル)について述べる．
 
+
+\subsection{GAN}
+
+GANとは，Generative Adversarial Networkの頭文字である．GANでは，生成モデル(Generator)と識別モデル(Discriminator)という2つのニューラルネットワークが互いに競い合いながら学習を行う構造をとる．生成モデルが実在する画像データに近い偽画像を生成し，一方で識別モデルは入力された画像が実が増加生成が増加を判別する役割を担う．
+
+学習過程では，生成モデルは識別モデルを欺くような画像を生成しようとし，識別モデルはその判別精度を高めようとする．このような敵対的学習を繰り返すことで，より高品質な画像を生成することを目指すモデルである．
+
+
+\subsection{潜在拡散モデル}
+Diffusion（拡散モデル）は、近年の画像生成AIにおいて主流となっている生成モデルである。拡散モデルは、画像に徐々にノイズを加えていく順拡散過程と、そのノイズを段階的に除去する逆拡散過程を学習することで、画像生成を実現する仕組みを特徴とする。学習段階では、実画像に対してランダムノイズを加え、そのノイズ成分を推定・除去する方法をモデルが学習する。
+
+生成段階では、完全なノイズ画像を初期状態とし、学習済みモデルによってノイズを少しずつ取り除くことで、最終的に意味のある鮮明な画像を生成する。この過程は、ぼやけた画像に段階的に情報を付加し、徐々に明瞭な画像を完成させる作業に例えられる。こうした逐次的かつ確率的な生成プロセスにより、拡散モデルは高い表現力と安定した学習特性を実現している。
+
+また、GANと比較して学習が安定しやすく、モード崩壊が起こりにくい点も拡散モデルの大きな利点である。この特性から、Stable DiffusionやDALL·Eといった多くの先進的な画像生成AIに採用されており、高品質かつ多様性のある画像生成が可能となっている。
 
 
 
 
 \section{使用したソフトとモデル}
-カラーQRコードを使用mfyUIしたイラスト生成に伴い，comyUIを使用した．ここで，comfyUIとは，イラスト生成AIを独自にカスタマイズできるツールの一種である．本ツールでは，ノードと呼ばれる素子同士をつなぎ合わせることで，仕様モデルの選択や，モデルの強度の変更などの画像生成におけるカスタマイズをノーコードで行うことができる．本ツールの使用にあたって，一般的なQRコードをイラスト改変するワークフローが公開されていたwebサイトを参考にした．comfyUIの操作画面が図\ref{fig:comfyUI}である．
+カラーQRコードを使用したイラスト生成に伴い，comyUIを使用した．ここで，comfyUIとは，イラスト生成AIを独自にカスタマイズできるツールの一種である．本ツールでは，ノードと呼ばれる素子同士をつなぎ合わせることで，仕様モデルの選択や，モデルの強度の変更などの画像生成におけるカスタマイズをノーコードで行うことができる．本ツールの使用にあたって，一般的なQRコードをイラスト改変するワークフローが公開されていたwebサイトを参考にした．comfyUIの操作画面が図\ref{fig:comfyUI}である．
 
 
 \begin{figure}[H]
@@ -82,45 +114,257 @@ Bの方法による利点として，よりイラストに近い形での画像�
 
 ここでcomfyUIで使用したノードについて述べる．
 
-・VAE　(variational auto encoder)
-VAEとは画像データの圧縮時の特徴を抽出する方法を決定しているモデルである．従って出力画像の品質に大きく影響を及ぼす．
+\subsection{VAE　(variational auto encoder)}
+VAEとは画像データの圧縮時の特徴を抽出する方法を決定しているモデルである．従って出力画像の品質に大きく影響を及ぼす．本実験では参考サイトのワークフローに習い，NoCrypt/blessed\_vaeを使用した．
 
-・チェックポイント(ckpt)
-チェックポイントは出力画像の画風に影響を与える．Stable diffusionの学習過程で作成された画像の特徴を保存したファイルである．そのため，他のモデルに対して数GBと大きな容量をもつファイルとなる．
+\url{(https://huggingface.co/NoCrypt/blessed_vae/blob/main/blessed2.vae.pt)}
 
-・controlnet
-画像生成の構図や形状を自在にコントロールできる拡張機能となる．画像生成の過程に割り込むことで，出力画像に大きく影響を与える．QRコードを用いたイラスト改変技術に大きく関わるノードである．
 
-・Kサンプラー
+\subsection{チェックポイント(ckpt)}
+チェックポイントは出力画像の画風に影響を与える．Stable diffusionの学習過程で作成された画像の特徴を保存したファイルである．そのため，他のモデルに対して数GBと大きな容量をもつファイルとなる．本実験では参考サイトのワークフローに習い，primemix\_v21を使用した．
+\url{(https://civitai.com/models/28779/primemix)}
+
+
+\subsection{controlnet}
+画像生成の構図や形状を自在にコントロールできる拡張機能となる．画像生成の過程に割り込むことで，出力画像に大きく影響を与える．QRコードを用いたイラスト改変技術に大きく関わるノードである．本実験で使用したcontrolnetモデルについては後述のとおりである．
+
+\subsection{Kサンプラー}
 出力画像の仕上がりに影響を与える．無数にあるノイズの中から少しずつ画像を作っていく工程を担当するノードである．シード値の変更や，ステップ数の変更ができる．
 
 
-・LoRA
+\subsection{LoRA}
 Low-Rank-Adaptationの頭文字であり，少ないリソースで効率的に学習ができる手法である．画風の調整や，人物やキャラクターの指定など，多岐にわたる調整を可能とするようなモデルが複数存在する．ただし，生成過程に割り込むcontrolnetに比べて，出力画像に与える影響和比較的少ないと考えられる．
 
 
 \section{実験内容}
 本実験の目的は，従来，モノクロのQRコードを入力画像として作成するアートQRの生成に対して，入力画像にカラーQRコードを使用し，QRコードの可読性がある生成AIイラストを得ることである．従って，従来のアートQRコードのワークフローをベースとして，使用するcontrolnetモデルを追加する改変を加えた．
 
-本実験で使用したcontrolnetモデルを以下に示す．
+本実験で使用したcontrolnetモデルを以下に示す．\\
 
 ・monster-labs/control\_v1p\_sd15\_qrcode\_monster
 
 ・latentcat/control\_v1p\_sd15\_brightness
 
-・TencentARC/t2iadapter\_color\_sd14v1\\
+・TencentARC/T2Iadapter\_color\_sd14v1\\
 
-
-
-使用した各controlnetモデルについて詳しく述べる．
-
-monster-labs/control\_v1p\_sd15\_qrcode\_monster(以下，qrcode\_monster)は
 
 従来のワークフローではqrcode\_monsterとbrightnessの二つを使用していた．しかし，入力画像をカラーQRコードとする場合には，入力画像の色の位置を出力画像に反映する必要がある．従って，T2Idapter\_colorを新しく採用した．
 
+生成には，各controlnetの強度を変更するパラメータとした．実験の内容が以下の2つである．
 
+・各controlnetを単体で使用し，強度を変えて生成を行う
+
+・3つのcontrolnetを併用し，強度を変えて生成を行う
+
+1つ目の実験では，強度を，0.5, 1.0, 1.5と変更して生成を行った．
+
+２つ目の実験では，controlnetの強度に対して，(brightness, T2Iadapter\_color, qr\_monster) = (0.3, 0.9, 0.3)を基準として，それぞれパラメータを変えて生成を行った．このパラメータを基準として設定した理由は2つある．1つ目は，入力画像が持つ色の情報を強く出力に反映させたいからである．従って，T2Iadapter\_colorの強度を高く設定している．2つ目は，controlnetどうしの干渉を防ぐためである．controlnetの強度を極端に高い値に設定すると，モデル同士の干渉が発生してしまい，狙った生成結果が得られないケースが存在する．従って，使用するcontrolnetの強度の合計が1.5となるように基準を設定した．
 
 
 \section{実験結果}
 
+
+\subsection{各controlnetによる出力画像への影響}
+はじめに，各cotrolnetを単体で使用したときの出力結果の影響を比較した．ポジティブプロンプト，ネガティブプロンプトへの入力を共に空白(" ")として生成を行った．入力画像として使用した画像が図\ref{fig:input_image}である．
+
+latentcat/control\_v1p\_sd15\_brightnessを使用して画像生成を行った結果が図\ref{fig:str_bightness}である．
+次に，monster-labs/control\_v1p\_sd15\_qrcode\_monsterを使用した画像生成を行った．本モデルには，新旧2つのバージョンが存在したため，それぞれのバージョンを用いた生成を行った.　生成の結果が図\ref{fig:str_qr_monster_v1}と図\ref{fig:str_qr_monster_v2}である．さらに，TencentARC/t2iadapter\_color\_sd14v1を使用した画像生成を行った．生成の結果が図\ref{fig:str_T2Iadapter_color}である．
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{pics/input_image.png}
+	\caption{画像生成に使用した入力画像}
+	\label{fig:input_image}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/st05.png}
+		\caption{強度0.5}
+	\end{subfigure}
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/st1_0.png}
+		\caption{強度1.0}
+	\end{subfigure}
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/st1_5.png}
+		\caption{強度1.5}
+	\end{subfigure}
+	\caption{brightnessの強度による比較}
+	\label{fig:str_bightness}
+\end{figure}
+\vspace{1\baselineskip}
+
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/qr_v1_0_5.png}
+		\caption{強度0.5}
+	\end{subfigure}
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/qr_v1_1_0.png}
+		\caption{強度1.0}
+	\end{subfigure}
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/qr_v1_1_5.png}
+		\caption{強度1.5}
+	\end{subfigure}
+	\caption{qrcode\_monster\_v1の強度による比較}
+	\label{fig:str_qr_monster_v1}
+\end{figure}
+\vspace{1\baselineskip}
+
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/qr_v2_0_5.png}
+		\caption{強度0.5}
+	\end{subfigure}
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/qr_v2_1_0.png}
+		\caption{強度1.0}
+	\end{subfigure}
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/qr_v2_1_5.png}
+		\caption{強度1.5}
+	\end{subfigure}
+	\caption{qrcode\_monster\_v2の強度による比較}
+	\label{fig:str_qr_monster_v2}
+\end{figure}
+\vspace{1\baselineskip}
+
+
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/T2Icolor_0_5.png}
+		\caption{強度0.5}
+	\end{subfigure}
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/T2Icolor_1_0.png}
+		\caption{強度1.0}
+	\end{subfigure}
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/T2Icolor_1_5.png}
+		\caption{強度1.5}
+	\end{subfigure}
+	\caption{T2Iadapter\_colorの強度による比較}
+	\label{fig:str_T2Iadapter_color}
+\end{figure}
+\vspace{1\baselineskip}
+
+
+\subsection{3種類のcontrolnetを使用した画像生成}
+
+画像生成の結果が図\ref{fig:result_1}及び，図\ref{fig:result_1}である．
+出力結果として，入力画像に対する色の再現度が低く，今回実験したパラメータでは可読性のあるカラーアートQRコードを生成することはできなかった．
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.3\linewidth}
+	\centering
+	\includegraphics[width=\linewidth]{pics/temp_03_09_03.png}
+	\caption{(0.3, 0.9, 0.3)}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.3\linewidth}
+	\centering
+	\includegraphics[width=\linewidth]{pics/temp_03_07_03.png}
+	\caption{(0.3, 0.7, 0.3)}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.3\linewidth}
+	\centering
+	\includegraphics[width=\linewidth]{pics/temp_03_11_03.png}
+	\caption{(0.3, 1.1, 0.3)}
+	\end{subfigure}
+	\vspace{5mm}
+	\begin{subfigure}{0.3\linewidth}
+	\centering
+	\includegraphics[width=\linewidth]{pics/temp_05_09_05.png}
+	\caption{(0.5, 0.9, 0.5)}
+	\end{subfigure}
+	\hfill	
+	\begin{subfigure}{0.3\linewidth}
+	\centering
+	\includegraphics[width=\linewidth]{pics/temp_07_09_07.png}
+	\caption{(0.7, 0.9, 0.7)}
+	\end{subfigure}
+	\hfill	
+	\begin{subfigure}{0.3\linewidth}
+	\centering
+	\includegraphics[width=\linewidth]{pics/temp_01_09_03.png}
+	\caption{(0.1, 0.9, 0.3)}
+	\end{subfigure}
+	\caption{3種類のcontrolnetを使用した生成結果(1)}
+	\label{fig:result_1}
+\end{figure}
+	
+	
+\begin{figure}[H]
+	\ContinuedFloat
+	\centering
+	\begin{subfigure}{0.3\linewidth}
+	\centering
+	\includegraphics[width=\linewidth]{pics/temp_03_09_01.png}
+	\caption{(0.3, 0.9, 0.1)}
+	\end{subfigure}
+	\hfill	
+	\begin{subfigure}{0.3\linewidth}
+	\centering
+	\includegraphics[width=\linewidth]{pics/temp_06_06_03.png}
+	\caption{(0.6, 0.6, 0.3)}
+	\end{subfigure}	
+	\hfill
+	\begin{subfigure}{0.3\linewidth}
+	\centering
+	\includegraphics[width=\linewidth]{pics/temp_03_06_06.png}
+	\caption{(0.3, 0.6, 0.6)}
+	\end{subfigure}
+	
+	\vspace{5mm}
+	
+	\begin{subfigure}{0.3\linewidth}
+	\centering
+	\includegraphics[width=\linewidth]{pics/temp_00_09_03.png}
+	\caption{(0.0, 0.9, 0.3)}
+	\end{subfigure}	
+	\hspace{5mm}
+	\begin{subfigure}{0.3\linewidth}
+	\centering
+	\includegraphics[width=\linewidth]{pics/temp_03_09_00.png}
+	\caption{(0.3, 0.9, 0.0)}
+	\end{subfigure}
+	\caption{3種類のcontrolnetを使用した生成結果(2)}
+	\label{fig:result_2}
+\end{figure}
+\vspace{1\baselineskip}
+
+
+
+
+
 \section{考察}
+
+本実験では．プロンプトを空白として画像生成を行ったが，アニメ風のキャラクターのような出力画像が得られた．これは，生成に使用したチェックポイントの影響によるものと考えられる．生成に使用したチェックポイントであるprimemix\_v21は，人物表現に優れたモデルであり，学習に使用されたアニメイラストの影響により実験のような結果が得られたと考えられる．また，brightnessは入力画像の構造を色濃く出力に影響させるモデルであることが分かった．さらに．TencentARC/t2iadapter\_color\_sd14v1は入力画像に対する出力への影響が比較的少なく，生成画像からQRコードが取得できるほどに色の再現度が高くなかった．
+
+
+3種類のcontrolnetを使用した実験に関して，図\ref{fig:result_1}及び，図\ref{fig:result_1}の(f), (j)にみられるように，brightnessの値が低いと，入力画像の構造が反映されず，ファインダパターン領域が消失される事が確認できた．また，(a), (b), (c)では，比較的同様の画像が得られた．
