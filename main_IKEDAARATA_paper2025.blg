@@ -3,37 +3,49 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main_IKEDAARATA_paper2025.aux
 The style file: ./tex_files/ieice_e.bst
 Database file #1: ./tex_files/e_fmcam_ref.bib
+I was expecting a `,' or a `}'---line 53 of file ./tex_files/e_fmcam_ref.bib
+ :  
+ :  title = {コードドットコム | QRコードの情報量とバージョン},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 65 of file ./tex_files/e_fmcam_ref.bib
+ :  
+ :  title = {KEYENCE | QRコードのしくみ},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "QR_dev"
+Warning--all relevant fields are empty in QR_version
 Warning--empty journal in mie_terada
-You've used 2 entries,
+You've used 3 entries,
             1906 wiz_defined-function locations,
-            492 strings with 3884 characters,
-and the built_in function-call counts, 259 in all, are:
-= -- 23
-> -- 5
+            496 strings with 3920 characters,
+and the built_in function-call counts, 330 in all, are:
+= -- 25
+> -- 6
 < -- 0
-+ -- 3
++ -- 4
 - -- 1
-* -- 13
-:= -- 42
-add.period$ -- 2
-call.type$ -- 2
+* -- 14
+:= -- 45
+add.period$ -- 3
+call.type$ -- 3
 change.case$ -- 2
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 12
-empty$ -- 34
+cite$ -- 5
+duplicate$ -- 16
+empty$ -- 49
 format.name$ -- 1
-if$ -- 62
+if$ -- 80
 int.to.chr$ -- 0
-int.to.str$ -- 2
+int.to.str$ -- 3
 missing$ -- 1
-newline$ -- 10
+newline$ -- 13
 num.names$ -- 1
-pop$ -- 13
+pop$ -- 17
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 4
+skip$ -- 12
 stack$ -- 0
 substring$ -- 0
 swap$ -- 0
@@ -41,8 +53,8 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
+warning$ -- 2
 while$ -- 1
-width$ -- 3
-write$ -- 17
-(There was 1 warning)
+width$ -- 4
+write$ -- 21
+(There were 2 error messages)

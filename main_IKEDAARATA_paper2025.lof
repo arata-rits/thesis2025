@@ -1,47 +1,47 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces 電子機器の普及率の推移\relax }}{2}{figure.caption.4}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces QRコードの構造\relax }}{3}{figure.caption.5}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces QRコードのバージョン\relax }}{4}{figure.caption.6}%
-\contentsline {figure}{\numberline {1.4}{\ignorespaces ファインダパターンの原理\relax }}{4}{figure.caption.7}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces QRコードの構造}}{3}{figure.caption.5}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces QRコードのバージョン}}{4}{figure.caption.10}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces ファインダパターンの原理}}{5}{figure.caption.11}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces 肉眼で観測したステゴパネル\relax }}{5}{figure.caption.8}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces カメラで観測したステゴパネル\relax }}{6}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces フリッカーノイズが入ったカメラ画像\relax }}{6}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces ステゴパネルの点滅周波数と文字表現の仕組み\relax }}{7}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces 使用色64色のカラーQRコード\relax }}{7}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces 肉眼で観測したステゴパネル\relax }}{7}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces カメラで観測したステゴパネル\relax }}{8}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces フリッカーノイズが入ったカメラ画像\relax }}{8}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces ステゴパネルの点滅周波数と文字表現の仕組み\relax }}{9}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces 使用色64色のカラーQRコード\relax }}{9}{figure.caption.16}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces 加法混色\relax }}{10}{figure.caption.13}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces カラーQRコードのエンコード方法\relax }}{10}{figure.caption.14}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces RGB色空間での色の表現例\relax }}{11}{figure.caption.15}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces HSV色空間での色の表現方法}}{12}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces カラーQRコードのデコード方法\relax }}{13}{figure.caption.17}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces デコード時のフローチャート\relax }}{14}{figure.caption.18}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces 膨張処理のイメージ\relax }}{15}{figure.caption.19}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces 収縮処理のイメージ\relax }}{15}{figure.caption.20}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces 読み取りアプリのweb画面表示\relax }}{17}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces QRコード不検出時のweb画面表示\relax }}{18}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces 加法混色\relax }}{12}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces カラーQRコードのエンコード方法\relax }}{12}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces RGB色空間での色の表現例\relax }}{13}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces HSV色空間での色の表現方法}}{14}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces カラーQRコードのデコード方法\relax }}{15}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces デコード時のフローチャート\relax }}{16}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces 膨張処理のイメージ\relax }}{17}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces 収縮処理のイメージ\relax }}{17}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces 読み取りアプリのweb画面表示\relax }}{19}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces QRコード不検出時のweb画面表示\relax }}{20}{figure.caption.26}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces 実験に使用したカラーQRコード画像\relax }}{19}{figure.caption.23}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces 実験時の画像の撮影環境\relax }}{20}{figure.caption.24}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces 距離20cmから撮影したときの画像\relax }}{20}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces 距離40cmから撮影したときの画像\relax }}{21}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces 距離60cmから撮影したときの画像\relax }}{21}{figure.caption.27}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces 距離80cmから撮影したときの画像\relax }}{22}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces 比較対象とするモノクロQRコードの画像\relax }}{22}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces 膨張処理前の画像\relax }}{24}{figure.caption.35}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces 膨張処理後の画像\relax }}{25}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces 実験に使用したカラーQRコード画像\relax }}{21}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces 実験時の画像の撮影環境\relax }}{22}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces 距離20cmから撮影したときの画像\relax }}{22}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces 距離40cmから撮影したときの画像\relax }}{23}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces 距離60cmから撮影したときの画像\relax }}{23}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces 距離80cmから撮影したときの画像\relax }}{24}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces 比較対象とするモノクロQRコードの画像\relax }}{24}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces 膨張処理前の画像\relax }}{26}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces 膨張処理後の画像\relax }}{27}{figure.caption.40}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces 生成AIの市場規模の予測\relax }}{27}{figure.caption.37}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces アートQRコードの例1\relax }}{28}{figure.caption.38}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces アートQRコードの例2\relax }}{29}{figure.caption.39}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces カラーアートQRコードの仕様の例\relax }}{30}{figure.caption.40}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces comfyUIの操作画面\relax }}{31}{figure.caption.41}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces 画像生成に使用した入力画像\relax }}{34}{figure.caption.42}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces brightnessの強度による比較\relax }}{34}{figure.caption.43}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces qrcode\_monster\_v1の強度による比較\relax }}{35}{figure.caption.44}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces qrcode\_monster\_v2の強度による比較\relax }}{35}{figure.caption.45}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces T2Iadapter\_colorの強度による比較\relax }}{35}{figure.caption.46}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces 3種類のcontrolnetを使用した生成結果(1)\relax }}{36}{figure.caption.47}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces 3種類のcontrolnetを使用した生成結果(2)\relax }}{37}{figure.caption.48}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces 生成AIの市場規模の予測\relax }}{29}{figure.caption.41}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces アートQRコードの例1\relax }}{30}{figure.caption.42}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces アートQRコードの例2\relax }}{31}{figure.caption.43}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces カラーアートQRコードの仕様の例\relax }}{32}{figure.caption.44}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces comfyUIの操作画面\relax }}{33}{figure.caption.45}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces 画像生成に使用した入力画像\relax }}{36}{figure.caption.46}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces brightnessの強度による比較\relax }}{36}{figure.caption.47}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces qrcode\_monster\_v1の強度による比較\relax }}{37}{figure.caption.48}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces qrcode\_monster\_v2の強度による比較\relax }}{37}{figure.caption.49}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces T2Iadapter\_colorの強度による比較\relax }}{37}{figure.caption.50}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces 3種類のcontrolnetを使用した生成結果(1)\relax }}{38}{figure.caption.51}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces 3種類のcontrolnetを使用した生成結果(2)\relax }}{39}{figure.caption.52}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces カラーQRコードの検出率を向上させる改善案\relax }}{40}{figure.caption.49}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces カラーQRコードの検出率を向上させる改善案\relax }}{42}{figure.caption.53}%

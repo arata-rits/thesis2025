@@ -1,12 +1,15 @@
 \begin{thebibliography}{1}
 
 \bibitem{spread-smartphones}
-``総務省 令和4年版 情報通信白書.''
+``{総務省 令和4年版 情報通信白書}.''
 \newblock
   {\url{https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/r04/html/nd238110.html}}.
 
+\bibitem{QR_version}
+
+
 \bibitem{mie_terada}
 {}, ``2 次元カラーコード実現を目指した画像中の色認識,''
-  vol.~三重大学修士論文, 2011.
+  vol.~{三重大学修士論文}, 2011.
 
 \end{thebibliography}

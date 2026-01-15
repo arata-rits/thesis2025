@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.11.13)  13 JAN 2026 21:11
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.11.13)  15 JAN 2026 18:20
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -415,7 +415,7 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
  (./main_IKEDAARATA_paper2025.toc [3
 
 ]
-Overfull \hbox (4.77351pt too wide) in paragraph at lines 38--38
+Overfull \hbox (4.77351pt too wide) in paragraph at lines 42--42
  [][][] [] []  
  []
 
@@ -457,6 +457,9 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 12.
 
+LaTeX Warning: Citation `QR_dev' on page 1 undefined on input line 19.
+
+
 Overfull \hbox (105.5945pt too wide) in paragraph at lines 21--21
 [][][][][]\JY1/mc/m/n/10 総務省 令和 \OT1/cmr/m/n/10 4 \JY1/mc/m/n/10 年版 情報
 通信白書　 \OT1/cmr/m/n/10 https://www.soumu.go.jp/johotsusintokei/whitepaper/j
@@ -471,98 +474,97 @@ File: pics/SmartPhone_popularization.png Graphic file (type bmp)
 ]
 File: pics/KDDI_qr_structure.png Graphic file (type bmp)
 <pics/KDDI_qr_structure.png>
- [2]
+ [2] [3]
 File: pics/qr_version.png Graphic file (type bmp)
 <pics/qr_version.png>
- [3]
 File: pics/finder_pattern.png Graphic file (type bmp)
 <pics/finder_pattern.png>
-) (./chptr2.tex [4]
+ [4]) (./chptr2.tex [5] [6
+
+]
 第 2 章
 File: pics/stego_eye.png Graphic file (type bmp)
 <pics/stego_eye.png>
 File: pics/stego_camera.png Graphic file (type bmp)
 <pics/stego_camera.png>
-[5
-
-]
+[7]
 File: pics/flicker_img.jpg Graphic file (type bmp)
 <pics/flicker_img.jpg>
 File: pics/stego_principle.png Graphic file (type bmp)
 <pics/stego_principle.png>
- [6]
+ [8]
 File: pics/mie_terada_colorQR.png Graphic file (type bmp)
 <pics/mie_terada_colorQR.png>
-) (./chptr3.tex [7] [8
+) (./chptr3.tex [9] [10
 
 ]
 第 3 章
 File: pics/kahokonsyoku.png Graphic file (type bmp)
 <pics/kahokonsyoku.png>
-[9]
+[11]
 File: pics/colorQR_encode.png Graphic file (type bmp)
 <pics/colorQR_encode.png>
- [10]
+ [12]
 File: pics/rgb_example.png Graphic file (type bmp)
 <pics/rgb_example.png>
 File: pics/HSV_image.png Graphic file (type bmp)
 <pics/HSV_image.png>
- [11]
+ [13]
 File: pics/colorQR_decode.png Graphic file (type bmp)
 <pics/colorQR_decode.png>
- [12]
+ [14]
 File: pics/decode_flow.png Graphic file (type bmp)
 <pics/decode_flow.png>
- [13]
+ [15]
 File: pics/dilation.png Graphic file (type bmp)
 <pics/dilation.png>
- [14]
+ [16]
 File: pics/erosion.png Graphic file (type bmp)
 <pics/erosion.png>
- [15]
+ [17]
 File: pics/flask_toppage.png Graphic file (type bmp)
 <pics/flask_toppage.png>
- [16]
+ [18]
 File: pics/flask_no_detected.png Graphic file (type bmp)
 <pics/flask_no_detected.png>
-) (./chptr4.tex [17] [18]
+) (./chptr4.tex [19] [20]
 第 4 章
 File: pics/CQR_sample0_9.png Graphic file (type bmp)
 <pics/CQR_sample0_9.png>
 File: pics/experiment_situation.png Graphic file (type bmp)
 <pics/experiment_situation.png>
-[19
+[21
 
 ]
 File: pics/dist20.png Graphic file (type bmp)
 <pics/dist20.png>
 File: pics/dist40.png Graphic file (type bmp)
 <pics/dist40.png>
- [20]
+ [22]
 File: pics/dist60.png Graphic file (type bmp)
 <pics/dist60.png>
 File: pics/dist80.png Graphic file (type bmp)
 <pics/dist80.png>
- [21]
+ [23]
 File: pics/dist_mono.png Graphic file (type bmp)
 <pics/dist_mono.png>
- [22] [23]
+ [24] [25]
 File: pics/before_dilation.png Graphic file (type bmp)
 <pics/before_dilation.png>
 File: pics/after_dilation.png Graphic file (type bmp)
 <pics/after_dilation.png>
- [24]) (./chptr5.tex [25] [26
+ [26]) (./chptr5.tex [27] [28
 
 ]
 第 5 章
 File: pics/Ai_market_size.png Graphic file (type bmp)
 <pics/Ai_market_size.png>
-[27]
+[29]
 File: pics/illust_QR_example1.png Graphic file (type bmp)
 <pics/illust_QR_example1.png>
 File: pics/illust_QR_example2.png Graphic file (type bmp)
 <pics/illust_QR_example2.png>
- [28]
+ [30]
 File: pics/illust_qr_merit.png Graphic file (type bmp)
 <pics/illust_qr_merit.png>
 
@@ -570,15 +572,15 @@ Overfull \hbox (83.59872pt too wide) in paragraph at lines 68--69
  [][][] 
  []
 
-[29]
+[31]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 81.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 81.
- [30]
+ [32]
 File: pics/comfyUI.png Graphic file (type bmp)
 <pics/comfyUI.png>
- [31]
+ [33]
 Overfull \hbox (25.7968pt too wide) in paragraph at lines 115--116
 [][][][][][] 
  []
@@ -589,13 +591,13 @@ Overfull \hbox (3.61752pt too wide) in paragraph at lines 119--121
  [][][][] 
  []
 
-[32]
+[34]
 Overfull \hbox (2.683pt too wide) in paragraph at lines 165--167
 [][]\OT1/cmr/m/n/12 latentcat/control[]v1p[]sd15[]brightness \JY1/mc/m/n/12 を
 使用して画像生成を行 っ た結果が図[] [][][]で
  []
 
-[33]
+[35]
 File: pics/input_image.png Graphic file (type bmp)
 <pics/input_image.png>
 File: pics/st05.png Graphic file (type bmp)
@@ -610,7 +612,7 @@ File: pics/qr_v1_1_0.png Graphic file (type bmp)
 <pics/qr_v1_1_0.png>
 File: pics/qr_v1_1_5.png Graphic file (type bmp)
 <pics/qr_v1_1_5.png>
- [34]
+ [36]
 File: pics/qr_v2_0_5.png Graphic file (type bmp)
 <pics/qr_v2_0_5.png>
 File: pics/qr_v2_1_0.png Graphic file (type bmp)
@@ -623,7 +625,7 @@ File: pics/T2Icolor_1_0.png Graphic file (type bmp)
 <pics/T2Icolor_1_0.png>
 File: pics/T2Icolor_1_5.png Graphic file (type bmp)
 <pics/T2Icolor_1_5.png>
- [35]
+ [37]
 File: pics/temp_03_09_03.png Graphic file (type bmp)
 <pics/temp_03_09_03.png>
 File: pics/temp_03_07_03.png Graphic file (type bmp)
@@ -646,21 +648,21 @@ File: pics/temp_00_09_03.png Graphic file (type bmp)
 <pics/temp_00_09_03.png>
 File: pics/temp_03_09_00.png Graphic file (type bmp)
 <pics/temp_03_09_00.png>
- [36]) (./conclusion.tex [37] [38
+ [38]) (./conclusion.tex [39] [40
 
 ]
 第 6 章
 File: pics/matome_1.png Graphic file (type bmp)
 <pics/matome_1.png>
-[39]) (./main_IKEDAARATA_paper2025.bbl [40]
+[41]) (./main_IKEDAARATA_paper2025.bbl [42]
 Overfull \hbox (250.45018pt too wide) in paragraph at lines 4--7
 [][]\OT1/cmr/m/n/12 ``\JY1/mc/m/n/12 総務省 令和 \OT1/cmr/m/n/12 4 \JY1/mc/m/n/
 12 年版 情報通信白書\OT1/cmr/m/n/12 .''  [][][][]. 
  []
 
-) (./huroku.tex [41
+) (./huroku.tex [43
 
-] [42
+] [44
 
 ]
 (c:/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -832,7 +834,7 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 65.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 65.
- [43]
+ [45]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 73.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
@@ -1069,7 +1071,7 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 34.
 
-[44]
+[46]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 35.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
@@ -1508,7 +1510,7 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 122.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 122.
- [45]
+ [47]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 128.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
@@ -1713,7 +1715,7 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 212.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 212.
- [46]
+ [48]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 214.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
@@ -1864,30 +1866,33 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 271.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 271.
-)) [47] [48
+)) [49] [50
 
-] [49] [50
+] [51] [52
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 170.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 170.
- [51] (./main_IKEDAARATA_paper2025.aux)
+ [53] (./main_IKEDAARATA_paper2025.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main_IKEDAARATA_paper2025.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: A093532A5F9CC3F5A70645B4D582EA5D;2932.
+(rerunfilecheck)             Checksum: F5D92A4D9DBDEF5E5ED8867A46AF8EA9;2932.
  ) 
 Here is how much of TeX's memory you used:
- 13253 strings out of 476693
- 210768 string characters out of 5808556
+ 13256 strings out of 476693
+ 210803 string characters out of 5808556
  2420203 words of memory out of 5000000
- 33432 multiletter control sequences out of 15000+600000
+ 33435 multiletter control sequences out of 15000+600000
  536474 words of font info for 128 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 72i,12n,77p,962b,2013s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,12n,77p,1129b,2013s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main_IKEDAARATA_paper2025.dvi (59 pages, 296588 bytes).
+Output written on main_IKEDAARATA_paper2025.dvi (61 pages, 302688 bytes).
