@@ -12,7 +12,7 @@
 
 \section{イラストに見えるQRコード}
 
-近年，イラスト生成AI技術が急速に発展している．FORTUNE BUSINESS INSIGHTSの生成AI市場分析によると，世界の生成AI市場規模は2023年に438億7,000万米ドルと評価されていると述べている．また，この市場規模は年々増加し，年平均成長率は39.6\%にまでのぼると推定している(図\ref{fig:Ai_market_size}). 
+近年，イラスト生成AI技術が急速に発展している．FORTUNE BUSINESS INSIGHTSの生成AI市場分析\cite{AI_market}によると，世界の生成AI市場規模は2023年に438億7,000万米ドルと評価されていると述べている．また，この市場規模は年々増加し，年平均成長率は39.6\%にまでのぼると推定している(図\ref{fig:Ai_market_size}). 
 
 
 \footnotetext{Fortune Business Insights | 生成AI市場規模、シェア＆業界分析、モデル別（生成官民ネットワークまたはGANSおよび変圧器ベースのモデル）、業界対アプリケーション、地域予測、2024-2032別 |SS より引用}
@@ -21,11 +21,11 @@
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\linewidth]{pics/Ai_market_size.png}
-	\caption{生成AIの市場規模の予測}
+	\caption{生成AIの市場規模予測}
 	\label{fig:Ai_market_size}
 \end{figure}
 
-もちろん，このデータは生成AI全般を含めたものであり，イラスト生成AIに限ったものではない．しかし，生成AIの発展に伴い，イラスト生成AIの技術進歩，また，社会への普及や，その市場規模も高まっていくだろう．このようなイラスト生成AIの活用例としてQRコードを入力画像として取り込むことで，イラストのように見えるが，実際に機能する二次元コードの生成が行われている．このようなQRコードはアートQRコードと呼ばれている．その例が，図\ref{fig:illust_QR_example1}や，図\ref{fig:illust_QR_example2}である．実際にQRコードリーダーで図\ref{fig:illust_QR_example1}や，図\ref{fig:illust_QR_example2}の読み取りを行うと，それぞれ，\url{(https://qrbtf.com)}と，\url{(https://note.com/st_ai)}が得られる．
+一方，このデータは生成AI全般を含めたものであり，イラスト生成AIに限ったものではない．しかしながら，生成AIの発展に伴い，イラスト生成AIの技術進歩，また，社会への普及や，その市場規模も高まっていくと予測される．特にイラスト生成AIの活用例としてQRコードを入力画像として取り込むことで，イラストのように見えるが，実際に機能する二次元コードの生成が行われている．このようなQRコードはアートQRコードと呼ばれている．その例が，図\ref{fig:illust_QR_example1}，及び\ref{fig:illust_QR_example2}である．実際にQRコードリーダーでこれらの読み取りを行うと，それぞれ，\url{(https://qrbtf.com)}と，\url{(https://note.com/st_ai)}が得られる．
 
 \begin{figure}[H]
 	\centering
@@ -44,21 +44,34 @@
 
 
 \section{カラーQRコード入力によるアートQRコード生成の利点}
-現在のアートQRコードの生成は，入力画像をモノクロのQRコードとするものにとどまっている．本節では，入力画像をカラーQRコードに拡張することで得られる利点について述べる．
+現在のアートQRコード生成は，入力画像をモノクロのQRコードとするものにとどまっている．本節では，入力画像をカラーQRコードに拡張することを目標として得られる利点について述べる．
 
-カラーQRコードに対応したアートQRコード生成について2種類の例が挙げられる．それは以下の2種類の方法である．
+カラーQRコードに対応したカラーアートQRコード生成について2種類の方法が挙げられる．
 
 
-\begin{itemize}
-	\item A: 3種類の重ね合わせを行ったカラーQRコードを入力画像に使用する方法．
-	\item B: 単色カラーのQRコードを入力画像として使用し，読み取りにカラーQRコード検出のシステムを使用する方法．
-\end{itemize}
+\begin{enumerate}[label=\Alph*.]
+	\item 3種類の重ね合わせを行ったカラーQRコードを入力画像に使用する方法(図\ref{fig:color_art_qr_A})
+	\item 単色カラーのQRコードを入力画像として使用し，読み取りにカラーQRコード検出のシステムを使用する方法(図\ref{fig:color_art_qr_B})
+\end{enumerate}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{pics/color_art_qr_A.png}
+	\caption{アートQRコード生成手法A}
+	\label{fig:color_art_qr_A}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{pics/color_art_qr_B.png}
+	\caption{アートQRコード生成手法B}
+	\label{fig:color_art_qr_B}
+\end{figure}
 
 Aの方法による利点として，情報量の増加が挙げられる．また，従来のアートQRコードと比較して，よりカラフルな画像の生成が行われると考えられる．
 
 Bの方法による利点として，よりイラストに近い形での画像生成が可能になることが挙げられる．
-例として，緑色単色QＲコードを使用して，カラーアートQRコードを生成する事を考える．この時．デコード時に緑色が抽出されることから，画素値でいうところの赤(R)と青(B)の値は任意の値をとれる．また閾値を使用して色の抽出を行うとするとQRコードの背景となる部分(情報のないところ)では，赤(R)と青(B)の値は任意の値，緑(G)は128以下の値で任意の値をとることができる(図\ref{fig:illust_qr_merit})．
+例として，緑色単色QＲコードを使用して，カラーアートQRコードを生成する事を考える．この時．デコード時に緑色が抽出されることから，画素値でいう赤(R)と青(B)の値は任意の値をとれる．また閾値を使用して色の抽出を行う場合，QRコードの背景となる部分(情報のないところ)では，赤(R)と青(B)の値は任意の値，緑(G)は128以下の値で任意の値をとることができる(図\ref{fig:illust_qr_merit})．
 
 
 
@@ -75,18 +88,18 @@ Bの方法による利点として，よりイラストに近い形での画像�
 
 
 \section{イラスト生成AIの原理}
-代表的な生成モデルであるGAN(敵対的生成ネットワーク)とDiffusion model(潜在拡散モデル)について述べる．
+代表的な生成モデルであるGAN (敵対的生成ネットワーク)とDiffusion model (潜在拡散モデル)について述べる．
 
 
 \subsection{GAN}
 
-GANとは，Generative Adversarial Networkの頭文字である．GANでは，生成モデル(Generator)と識別モデル(Discriminator)という2つのニューラルネットワークが互いに競い合いながら学習を行う構造をとる．生成モデルが実在する画像データに近い偽画像を生成し，一方で識別モデルは入力された画像が実が増加生成が増加を判別する役割を担う．
+GANとは，Generative Adversarial Networkの頭文字である\cite{GAN}．GANでは，生成モデル(Generator)と識別モデル(Discriminator)という2つのニューラルネットワークが互いに競い合いながら学習を行う構造をとる．生成モデルが実在する画像データに近い偽画像を生成し，一方で識別モデルは入力された画像が実が増加生成が増加を判別する役割を担う．
 
 学習過程では，生成モデルは識別モデルを欺くような画像を生成しようとし，識別モデルはその判別精度を高めようとする．このような敵対的学習を繰り返すことで，より高品質な画像を生成することを目指すモデルである．
 
 
 \subsection{潜在拡散モデル}
-Diffusion（拡散モデル）は、近年の画像生成AIにおいて主流となっている生成モデルである。拡散モデルは、画像に徐々にノイズを加えていく順拡散過程と、そのノイズを段階的に除去する逆拡散過程を学習することで、画像生成を実現する仕組みを特徴とする。学習段階では、実画像に対してランダムノイズを加え、そのノイズ成分を推定・除去する方法をモデルが学習する。
+Diffusion（拡散モデル）は、近年の画像生成AIにおいて主流となっている生成モデルである\cite{diffusion_model}。拡散モデルは、画像に徐々にノイズを加えていく順拡散過程と、そのノイズを段階的に除去する逆拡散過程を学習することで、画像生成を実現する仕組みを特徴とする。学習段階では、実画像に対してランダムノイズを加え、そのノイズ成分を推定・除去する方法をモデルが学習する。
 
 生成段階では、完全なノイズ画像を初期状態とし、学習済みモデルによってノイズを少しずつ取り除くことで、最終的に意味のある鮮明な画像を生成する。この過程は、ぼやけた画像に段階的に情報を付加し、徐々に明瞭な画像を完成させる作業に例えられる。こうした逐次的かつ確率的な生成プロセスにより、拡散モデルは高い表現力と安定した学習特性を実現している。
 
@@ -96,15 +109,23 @@ Diffusion（拡散モデル）は、近年の画像生成AIにおいて主流と
 
 
 \section{使用したソフトとモデル}
-カラーQRコードを使用したイラスト生成に伴い，comyUIを使用した．ここで，comfyUIとは，イラスト生成AIを独自にカスタマイズできるツールの一種である．本ツールでは，ノードと呼ばれる素子同士をつなぎ合わせることで，仕様モデルの選択や，モデルの強度の変更などの画像生成におけるカスタマイズをノーコードで行うことができる．本ツールの使用にあたって，一般的なQRコードをイラスト改変するワークフローが公開されていたwebサイトを参考にした．comfyUIの操作画面が図\ref{fig:comfyUI}である．
+カラーQRコードを使用したイラスト生成を行うため，comyUI\footnote{https://www.comfy.org/}を使用した．ここで，comfyUIとは，イラスト生成AIを独自にカスタマイズできるツールの一種である．本ツールでは，ノードと呼ばれる素子同士をつなぎ合わせることで，仕様モデルの選択や，モデルの強度の変更などの画像生成におけるカスタマイズをノーコードで行うことができる．本ツールの使用にあたって，一般的なQRコードをイラスト改変するワークフローが公開されていたwebサイト\cite{artQR_1}\cite{artQR_2}を参考にした．comfyUIの操作画面が図\ref{fig:comfyUI}である．
 
 
-\begin{figure}[H]
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=1.0\linewidth]{pics/comfyUI.png}
+%	\caption{comfyUIの操作画面}
+%	\label{fig:comfyUI}
+%\end{figure}
+
+\begin{sidewaysfigure}
 	\centering
-	\includegraphics[width=1.0\linewidth]{pics/comfyUI.png}
+	\includegraphics[width=\textheight]{pics/comfyUI.png}
 	\caption{comfyUIの操作画面}
 	\label{fig:comfyUI}
-\end{figure}
+\end{sidewaysfigure}
+
 
 
 ここでcomfyUIで使用したノードについて述べる．
@@ -112,23 +133,23 @@ Diffusion（拡散モデル）は、近年の画像生成AIにおいて主流と
 \subsection{VAE　(variational auto encoder)}
 VAEとは画像データの圧縮時の特徴を抽出する方法を決定しているモデルである．従って出力画像の品質に大きく影響を及ぼす．本実験では参考サイトのワークフローに習い，NoCrypt/blessed\_vaeを使用した．
 
-\url{(https://huggingface.co/NoCrypt/blessed_vae/blob/main/blessed2.vae.pt)}
+
 
 
 \subsection{チェックポイント(ckpt)}
 チェックポイントは出力画像の画風に影響を与える．Stable diffusionの学習過程で作成された画像の特徴を保存したファイルである．そのため，他のモデルに対して数GBと大きな容量をもつファイルとなる．本実験では参考サイトのワークフローに習い，primemix\_v21を使用した．
-\url{(https://civitai.com/models/28779/primemix)}
+
 
 
 \subsection{controlnet}
-画像生成の構図や形状を自在にコントロールできる拡張機能となる．画像生成の過程に割り込むことで，出力画像に大きく影響を与える．QRコードを用いたイラスト改変技術に大きく関わるノードである．本実験で使用したcontrolnetモデルについては後述のとおりである．
+画像生成の構図や形状を自在にコントロールできる拡張機能となる．画像生成の過程に割り込むことで，出力画像に大きく影響を与える．QRコードを用いたイラスト改変技術に大きく関わるノードである．本実験で使用したcontrolnetモデルについては5.5節のとおりである．
 
 \subsection{Kサンプラー}
 出力画像の仕上がりに影響を与える．無数にあるノイズの中から少しずつ画像を作っていく工程を担当するノードである．シード値の変更や，ステップ数の変更が可能である．
 
 
 \subsection{LoRA}
-Low-Rank-Adaptationの頭文字であり，少ないリソースで効率的に学習ができる手法である．画風の調整や，人物やキャラクターの指定など，多岐にわたる調整を可能とするようなモデルが複数存在する．ただし，生成過程に割り込むcontrolnetに比べて，出力画像に与える影響和比較的少ないとされる．
+Low-Rank-Adaptationの頭文字であり，少ないリソースで効率的に学習ができる手法である．画風の調整や，人物やキャラクターの指定など，多岐にわたる調整を可能とするようなモデルが複数存在する．ただし，生成過程に割り込むcontrolnetに比べて，出力画像に与える影響は比較的少ないとされる．
 
 
 \section{実験内容}
@@ -136,11 +157,11 @@ Low-Rank-Adaptationの頭文字であり，少ないリソースで効率的に�
 
 本実験で使用したcontrolnetモデルを以下に示す．\\
 
-・monster-labs/control\_v1p\_sd15\_qrcode\_monster
+・monster-labs/control\_v1p\_sd15\_qrcode\_monster (以下，qrcode\_monster)
 
-・latentcat/control\_v1p\_sd15\_brightness
+・latentcat/control\_v1p\_sd15\_brightness (以下，brightness)
 
-・TencentARC/T2Iadapter\_color\_sd14v1\\
+・TencentARC/T2Iadapter\_color\_sd14v1 (以下，T2Iadapter\_color)
 
 
 従来のワークフローではqrcode\_monsterとbrightnessの二つを使用していた．しかし，入力画像をカラーQRコードとする場合には，入力画像の色の位置を出力画像に反映する必要がある．従って，T2Idapter\_colorを新しく採用した．
@@ -160,10 +181,10 @@ Low-Rank-Adaptationの頭文字であり，少ないリソースで効率的に�
 
 
 \subsection{各controlnetによる出力画像への影響}
-はじめに，各cotrolnetを単体で使用したときの出力結果の影響を比較した．ポジティブプロンプト，ネガティブプロンプトへの入力を共に空白(" ")として生成を行った．入力画像として使用した画像が図\ref{fig:input_image}である．
+はじめに，cotrolnetを単体で使用したときの出力結果に与える影響を比較した．ポジティブプロンプト，ネガティブプロンプトへの入力を共に空白(" ")として生成を行った．入力画像として使用した画像が図\ref{fig:input_image}である．
 
 latentcat/control\_v1p\_sd15\_brightnessを使用して画像生成を行った結果が図\ref{fig:str_bightness}である．
-次に，monster-labs/control\_v1p\_sd15\_qrcode\_monsterを使用した画像生成を行った．本モデルには，新旧2つのバージョンが存在したため，それぞれのバージョンを用いた生成を行った.　生成の結果が図\ref{fig:str_qr_monster_v1}と図\ref{fig:str_qr_monster_v2}である．さらに，TencentARC/t2iadapter\_color\_sd14v1を使用した画像生成を行った．生成の結果が図\ref{fig:str_T2Iadapter_color}である．
+次に，monster-labs/control\_v1p\_sd15\_qrcode\_monsterを使用した画像生成を行った．本モデルには，新旧2つのバージョンが存在したため，それぞれのバージョンを用いた生成を行った.　生成の結果が図\ref{fig:str_qr_monster_v1}，及び\ref{fig:str_qr_monster_v2}である．さらに，TencentARC/t2iadapter\_color\_sd14v1を使用した画像生成を行った．生成の結果が図\ref{fig:str_T2Iadapter_color}である．
 
 
 \begin{figure}[H]
@@ -269,7 +290,7 @@ latentcat/control\_v1p\_sd15\_brightnessを使用して画像生成を行った�
 
 \subsection{3種類のcontrolnetを使用した画像生成}
 
-画像生成の結果が図\ref{fig:result_1}及び，図\ref{fig:result_1}である．
+画像生成の結果が図\ref{fig:result_1}，及び\ref{fig:result_1}である．
 出力結果として，入力画像に対する色の再現度が低く，今回実験したパラメータでは可読性のあるカラーアートQRコードを生成することはできなかった．
 
 \begin{figure}[H]
@@ -359,7 +380,7 @@ latentcat/control\_v1p\_sd15\_brightnessを使用して画像生成を行った�
 
 \section{考察}
 
-本実験では．プロンプトを空白として画像生成を行ったが，アニメ風のキャラクターのような出力画像が得られた．これは，生成に使用したチェックポイントの影響によるものと考えられる．生成に使用したチェックポイントであるprimemix\_v21は，人物表現に優れたモデルであり，学習に使用されたアニメイラストの影響により実験のような結果が得られたと考えられる．また，図\ref{fig:str_bightness}の結果から，brightnessは入力画像の構造を色濃く出力に影響させるモデルであることが分かった．さらに．TencentARC/t2iadapter\_color\_sd14v1は入力画像に対する出力への影響が比較的少なく，生成画像からQRコードが取得できるほどの色の再現は見られなかった．
+本実験では．プロンプトを空白として画像生成を行ったが，アニメ風のキャラクターのような出力画像が得られた．これは，生成に使用したチェックポイントの影響によるものと考えられる．生成に使用したチェックポイントであるprimemix\_v21は，人物表現に優れたモデルであり，学習に使用されたアニメイラストの影響により実験のような結果が得られたと考えられる．また，図\ref{fig:str_bightness}の結果から，brightnessは入力画像の構造を色濃く出力に影響させるモデルであることが分かった．更に．TencentARC/t2iadapter\_color\_sd14v1は入力画像に対する出力への影響が比較的少なく，生成画像からQRコードが取得できる色の再現は見られなかった．
 
 
-3種類のcontrolnetを使用した実験に関して，図\ref{fig:result_1}及び，図\ref{fig:result_1}の(f), (j)にみられるように，brightnessの値が低いと，入力画像の構造が反映されず，ファインダパターン領域が消失される事が確認できた．また，(a), (b), (c)では，比較的同様の生成結果が得られた．
+3種類のcontrolnetを使用した実験に関して，図\ref{fig:result_1}，及び\ref{fig:result_1}の(f), (j)にみられるように，brightnessの値が低いと，入力画像の構造が反映されず，ファインダパターン領域が消失される事が確認できた．また，(a), (b), (c)では，比較的同様の生成結果が得られた．

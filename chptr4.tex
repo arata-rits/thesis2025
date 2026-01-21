@@ -4,7 +4,7 @@
 \chapter{検出性能の比較実験}
 \label{lbl_chptr2}
 
-本章では，従来のモノクロQRコードとカラーQRコードの検出率の比較実験について述べる．はじめに，4.1節で実験手法について述べ，4.2節で実験結果について述べる．また，4.3節では実験に対する考察を述べる．
+本章では，従来のモノクロQRコードとカラーQRコードの検出率による比較実験について述べる．はじめに，4.1節で実験手法について述べ，4.2節で実験結果について述べる．また，4.3節では実験に対する考察を述べる．
 
 
 %/**********************************************************************/
@@ -16,7 +16,7 @@
 \section{実験手法}
 実験に際して．10種類のカラーQRコード画像を用意した．これは．カラーQRコードの種類による検出への影響を調べる為である．用意した10種類のカラーQRコードが図\ref{fig:CQR_sample0_9}である．
 
-撮影距離について，20cm, 40cm, 60cm, 80cmの4種類の距離から撮影を行った．撮影時の実験環境を図\ref{fig:experiment_situation}に示す．
+撮影距離について，20 cm, 40 cm, 60 cm, 80 cmの4種類から撮影を行った．撮影時の実験環境を図\ref{fig:experiment_situation}に示す．
 
 
 
@@ -32,38 +32,38 @@
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\linewidth]{pics/experiment_situation.png}
-	\caption{実験時の画像の撮影環境}
+	\caption{実験時の画像撮影環境}
 	\label{fig:experiment_situation}
 \end{figure}
 
 
-撮影した画像を以下に示す.画像はそれぞれ，撮影距離20cm, 撮影距離40cm, 撮影距離60cm, 撮影距離80cmを表している．
+撮影した画像を以下に示す.画像はそれぞれ，撮影距離　20cm, 撮影距離　40cm, 撮影距離　60cm, 撮影距離　80cmを表している．
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\linewidth]{pics/dist20.png}
-	\caption{距離20cmから撮影したときの画像}
+	\caption{距離20　cmから撮影したときの画像}
 	\label{fig:dist20}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\linewidth]{pics/dist40.png}
-	\caption{距離40cmから撮影したときの画像}
+	\caption{距離40　cmから撮影したときの画像}
 	\label{fig:dist40}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\linewidth]{pics/dist60.png}
-	\caption{距離60cmから撮影したときの画像}
+	\caption{距離60 cmから撮影したときの画像}
 	\label{fig:dist60}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\linewidth]{pics/dist80.png}
-	\caption{距離80cmから撮影したときの画像}
+	\caption{距離80 cmから撮影したときの画像}
 	\label{fig:dist80}
 \end{figure}
 
@@ -87,7 +87,7 @@
 
 \begin{table}[H]　　　
     \centering
-	\caption{色抽出処理のみを行った際の検出率の比較}
+	\caption{色抽出処理のみを行った際の検出率の比較[\%]}
 	\label{tab:color-extraction}
 	\begin{tabular}{|l|l|l|l|l|}
 		\hline
@@ -100,58 +100,58 @@
 
 実験の結果を踏まえ，膨張処理を加えたうえで検出率の比較を行った．
 膨張処理に適用するカーネルサイズはそれぞれ，$5\times 5$，$4\times 4$, $3\times 3$, $2\times 2$ を使用した．
-各カーネルサイズでの検出率をまとめたものが表\ref{tab:kernel5}, 表\ref{tab:kernel4}, 表\ref{tab:kernel3}, 表\ref{tab:kernel2}である．
+各カーネルサイズでの検出率をまとめたものが表\ref{tab:kernel5}, \ref{tab:kernel4}, \ref{tab:kernel3}, 及び\ref{tab:kernel2}である．
 
 
 \begin{table}[H]　　　
 	\centering
-	\caption{膨張処理時にカーネルサイズ$5\times 5$を適用した際の検出率}
+	\caption{膨張処理時にカーネルサイズ$5\times 5$を適用した際の検出率[\%]}
 	\label{tab:kernel5}
 	\begin{tabular}{|l|l|l|l|l|}
 		\hline
 		& distance20cm & distance40cm & distance60cm & distance80cm \\ \hline
-		Blue  & 100\%        & 0\%         & 0\%          & 0\%          \\ \hline
-		Green & 100\%        & 0\%         & 0\%          & 0\%          \\ \hline
-		Red   & 100\%        & 0\%         & 0\%          & 0\%          \\ \hline
+		Blue  & 100        & 0         & 0          & 0          \\ \hline
+		Green & 100        & 0         & 0          & 0          \\ \hline
+		Red   & 100        & 0         & 0          & 0          \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]　　　
 	\centering
-	\caption{膨張処理時にカーネルサイズ$4\times 4$を適用した際の検出率}
+	\caption{膨張処理時にカーネルサイズ$4\times 4$を適用した際の検出率[\%]}
 	\label{tab:kernel4}
 	\begin{tabular}{|l|l|l|l|l|}
 		\hline
 		& distance20cm & distance40cm & distance60cm & distance80cm \\ \hline
-		Blue  & 100\%        & 0\%         & 0\%          & 0\%          \\ \hline
-		Green & 100\%        & 0\%         & 0\%          & 0\%          \\ \hline
-		Red   & 100\%        & 0\%         & 0\%          & 0\%          \\ \hline
+		Blue  & 100        & 0         & 0          & 0          \\ \hline
+		Green & 100        & 0         & 0          & 0          \\ \hline
+		Red   & 100        & 0         & 0          & 0          \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]　　　
 	\centering
-	\caption{膨張処理時にカーネルサイズ$3\times3$を適用した際の検出率}
+	\caption{膨張処理時にカーネルサイズ$3\times3$を適用した際の検出率[\%]}
 	\label{tab:kernel3}
 	\begin{tabular}{|l|l|l|l|l|}
 		\hline
 		& distance20cm & distance40cm & distance60cm & distance80cm \\ \hline
-		Blue  & 100\%        & 20\%         & 0\%          & 0\%          \\ \hline
-		Green & 100\%        & 0\%          & 0\%          & 0\%          \\ \hline
-		Red   & 100\%        & 40\%         & 0\%          & 0\%          \\ \hline
+		Blue  & 100        & 20       & 0          & 0          \\ \hline
+		Green & 100        & 0        & 0          & 0          \\ \hline
+		Red   & 100        & 40       & 0          & 0          \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]　　　
 	\centering
-	\caption{膨張処理時にカーネルサイズ$2\times 2$を適用した際の検出率}
+	\caption{膨張処理時にカーネルサイズ$2\times 2$を適用した際の検出率[\%]}
 	\label{tab:kernel2}
 	\begin{tabular}{|l|l|l|l|l|}
 		\hline
 		& distance20cm & distance40cm & distance60cm & distance80cm \\ \hline
-		Blue  & 100\%        & 20\%         & 0\%          & 0\%          \\ \hline
-		Green & 100\%        & 0\%          & 0\%          & 0\%          \\ \hline
-		Red   & 100\%        & 40\%         & 0\%          & 0\%          \\ \hline
+		Blue  & 100        & 20         & 0          & 0          \\ \hline
+		Green & 100        & 0          & 0          & 0          \\ \hline
+		Red   & 100        & 40         & 0          & 0          \\ \hline
 	\end{tabular}
 \end{table}
 
@@ -163,7 +163,7 @@
 
 実験の結果として，膨張処理の追加による検出率の向上は見られなかった．
 これは，画像処理の対象となるQRコード部分の解像度の低さが問題であると考えられる．
-膨張処理前の画像と膨張処理後の画像は下図のとおりである(図\ref{fig:before_dilation}), (図\ref{fig:after_dilation})．
+膨張処理前の画像と膨張処理後の画像は図\ref{fig:before_dilation}, 及び図\ref{fig:after_dilation}のとおりである．
 モルフォロジー処理に使用したカーネルサイズが対象とするQRコード領域に対して大きかったことで，想定したような色抽出後の画像補正がなされなかったと考えられる．
 
 \begin{figure}[H]

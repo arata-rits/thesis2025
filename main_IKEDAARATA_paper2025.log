@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.11.13)  15 JAN 2026 18:20
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.11.13)  21 JAN 2026 16:36
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -321,15 +321,27 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@count@id=\count285
 \enitdp@description=\count286
 )
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+
+(c:/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count287
+\rotFPtop=\skip62
+\rotFPbot=\skip63
+\rot@float@box=\box72
+\rot@mess@toks=\toks24
+)
 (c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
 File: l3backend-dvips.def 2023-01-16 L3 backend support: dvips
-\l__pdf_internal_box=\box72
-\g__pdf_backend_object_int=\count287
-\l__pdf_backend_content_box=\box73
-\l__pdf_backend_model_box=\box74
-\g__pdf_backend_annotation_int=\count288
-\g__pdf_backend_link_int=\count289
-\g__pdf_backend_link_sf_int=\count290
+\l__pdf_internal_box=\box73
+\g__pdf_backend_object_int=\count288
+\l__pdf_backend_content_box=\box74
+\l__pdf_backend_model_box=\box75
+\g__pdf_backend_annotation_int=\count289
+\g__pdf_backend_link_int=\count290
+\g__pdf_backend_link_sf_int=\count291
 )
 
 LaTeX Warning: Unused global option(s):
@@ -351,51 +363,52 @@ LaTeX Warning: Label `lbl_chptr2' multiply defined.
 )
 \openout1 = `main_IKEDAARATA_paper2025.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
+Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 34.
+Package hyperref Info: Link coloring OFF on input line 35.
  (./main_IKEDAARATA_paper2025.out) (./main_IKEDAARATA_paper2025.out)
 \@outlinefile=\write3
 \openout3 = `main_IKEDAARATA_paper2025.out'.
 
-\c@lstlisting=\count291
-LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
+\c@lstlisting=\count292
+LaTeX Font Info:    Trying to load font information for U+msa on input line 61.
 
 
 (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
 
 
 (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (30.01628pt too wide) detected at line 62
+Overfull \hbox (30.01628pt too wide) detected at line 63
 []
  []
 
@@ -404,14 +417,14 @@ Overfull \hbox (30.01628pt too wide) detected at line 62
 
 ] [2]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 91.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 92.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 91.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 92.
  [1]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 111.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 112.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 111.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 112.
  (./main_IKEDAARATA_paper2025.toc [3
 
 ]
@@ -424,9 +437,9 @@ Overfull \hbox (4.77351pt too wide) in paragraph at lines 42--42
 \openout4 = `main_IKEDAARATA_paper2025.toc'.
 
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 113.
+(Font)              No change on input line 114.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 113.
+(Font)              No change on input line 114.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -441,9 +454,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 \openout5 = `main_IKEDAARATA_paper2025.lof'.
 
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 115.
+(Font)              No change on input line 116.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 115.
+(Font)              No change on input line 116.
  [6] (./main_IKEDAARATA_paper2025.lot)
 \tf@lot=\write6
 \openout6 = `main_IKEDAARATA_paper2025.lot'.
@@ -565,39 +578,33 @@ File: pics/illust_QR_example1.png Graphic file (type bmp)
 File: pics/illust_QR_example2.png Graphic file (type bmp)
 <pics/illust_QR_example2.png>
  [30]
+File: pics/color_art_qr_A.png Graphic file (type bmp)
+<pics/color_art_qr_A.png>
+ [31]
+File: pics/color_art_qr_B.png Graphic file (type bmp)
+<pics/color_art_qr_B.png>
 File: pics/illust_qr_merit.png Graphic file (type bmp)
 <pics/illust_qr_merit.png>
 
-Overfull \hbox (83.59872pt too wide) in paragraph at lines 68--69
+Overfull \hbox (83.59872pt too wide) in paragraph at lines 81--82
  [][][] 
  []
 
-[31]
+[32]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 81.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 94.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 81.
- [32]
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 94.
+ [33]
 File: pics/comfyUI.png Graphic file (type bmp)
 <pics/comfyUI.png>
- [33]
-Overfull \hbox (25.7968pt too wide) in paragraph at lines 115--116
-[][][][][][] 
- []
-
-
-Overfull \hbox (3.61752pt too wide) in paragraph at lines 119--121
-\JY1/mc/m/n/12 い ， \OT1/cmr/m/n/12 primemix[]v21 \JY1/mc/m/n/12 を使用した ．
- [][][][] 
- []
-
-[34]
-Overfull \hbox (2.683pt too wide) in paragraph at lines 165--167
+ [34] [35]
+Overfull \hbox (2.683pt too wide) in paragraph at lines 186--188
 [][]\OT1/cmr/m/n/12 latentcat/control[]v1p[]sd15[]brightness \JY1/mc/m/n/12 を
 使用して画像生成を行 っ た結果が図[] [][][]で
  []
 
-[35]
+[36]
 File: pics/input_image.png Graphic file (type bmp)
 <pics/input_image.png>
 File: pics/st05.png Graphic file (type bmp)
@@ -612,7 +619,7 @@ File: pics/qr_v1_1_0.png Graphic file (type bmp)
 <pics/qr_v1_1_0.png>
 File: pics/qr_v1_1_5.png Graphic file (type bmp)
 <pics/qr_v1_1_5.png>
- [36]
+ [37]
 File: pics/qr_v2_0_5.png Graphic file (type bmp)
 <pics/qr_v2_0_5.png>
 File: pics/qr_v2_1_0.png Graphic file (type bmp)
@@ -625,7 +632,7 @@ File: pics/T2Icolor_1_0.png Graphic file (type bmp)
 <pics/T2Icolor_1_0.png>
 File: pics/T2Icolor_1_5.png Graphic file (type bmp)
 <pics/T2Icolor_1_5.png>
- [37]
+ [38]
 File: pics/temp_03_09_03.png Graphic file (type bmp)
 <pics/temp_03_09_03.png>
 File: pics/temp_03_07_03.png Graphic file (type bmp)
@@ -648,16 +655,62 @@ File: pics/temp_00_09_03.png Graphic file (type bmp)
 <pics/temp_00_09_03.png>
 File: pics/temp_03_09_00.png Graphic file (type bmp)
 <pics/temp_03_09_00.png>
- [38]) (./conclusion.tex [39] [40
-
-]
+ [39]) (./conclusion.tex [40]
 第 6 章
 File: pics/matome_1.png Graphic file (type bmp)
 <pics/matome_1.png>
-[41]) (./main_IKEDAARATA_paper2025.bbl [42]
+[41
+
+]) (./main_IKEDAARATA_paper2025.bbl [42]
 Overfull \hbox (250.45018pt too wide) in paragraph at lines 4--7
 [][]\OT1/cmr/m/n/12 ``\JY1/mc/m/n/12 総務省 令和 \OT1/cmr/m/n/12 4 \JY1/mc/m/n/
 12 年版 情報通信白書\OT1/cmr/m/n/12 .''  [][][][]. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--15
+[][]\OT1/cmr/m/n/12 ``RGB \JY1/mc/m/n/12 と \OT1/cmr/m/n/12 CMYK \JY1/mc/m/n/12
+ っ てなに ？ 意味や変換方法など基本を徹底解説 ！ \OT1/cmr/m/n/12 .''
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
+[][]\OT1/cmr/m/n/12 ``\JY1/mc/m/n/12 色の三属性 「 色相 」 「 明度 」 「 彩度 
+」 とは ？ 【\OT1/cmr/m/n/12 HS-B/HSV\JY1/mc/m/n/12 】 \OT1/cmr/m/n/12 .''
+ []
+
+
+Underfull \hbox (badness 4765) in paragraph at lines 26--29
+[][]\OT1/cmr/m/n/12 ``Rakuten mo-bile | \JY1/mc/m/n/12 画像生成 \OT1/cmr/m/n/12
+ ai \JY1/mc/m/n/12 の仕組みとは ？ 初心者向けに解説\OT1/cmr/m/n/12 .''
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--34
+[][]\OT1/cmr/m/n/12 ``@ps010(cyumizou) in su-per-ship \JY1/mc/m/n/12 株式会社 \
+OT1/cmr/m/n/12 | \JY1/mc/m/n/12 図で
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--34
+\JY1/mc/m/n/12 見てわかる ！ 画像生成 \OT1/cmr/m/n/12 ai \JY1/mc/m/n/12 「\OT1/
+cmr/m/n/12 sta-ble dif-fu-sion\JY1/mc/m/n/12 」 の仕組み\OT1/cmr/m/n/12 .''
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--38
+[][]\OT1/cmr/m/n/12 ``\JY1/mc/m/n/12 イラストにしかみえない \OT1/cmr/m/n/12 qr 
+\JY1/mc/m/n/12 コ ードを作 っ てみる\OT1/cmr/m/n/12 .''
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--43
+[][]\OT1/cmr/m/n/12 ``Qr code | comfy ui work-flow | ope-nart.''
+ []
+
+
+Overfull \hbox (67.16667pt too wide) in paragraph at lines 40--43
+[][][][]\OT1/cmr/m/n/12 . 
  []
 
 ) (./huroku.tex [43
@@ -1872,9 +1925,9 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 170.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 171.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 170.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 171.
  [53] (./main_IKEDAARATA_paper2025.aux)
 
 LaTeX Warning: There were undefined references.
@@ -1884,15 +1937,15 @@ LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main_IKEDAARATA_paper2025.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: F5D92A4D9DBDEF5E5ED8867A46AF8EA9;2932.
+(rerunfilecheck)             Checksum: 9D7A5EA0261B69053E6E3BA85B15E55C;2954.
  ) 
 Here is how much of TeX's memory you used:
- 13256 strings out of 476693
- 210803 string characters out of 5808556
+ 13416 strings out of 476693
+ 213555 string characters out of 5808556
  2420203 words of memory out of 5000000
- 33435 multiletter control sequences out of 15000+600000
+ 33587 multiletter control sequences out of 15000+600000
  536474 words of font info for 128 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  72i,12n,77p,1129b,2013s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main_IKEDAARATA_paper2025.dvi (61 pages, 302688 bytes).
+Output written on main_IKEDAARATA_paper2025.dvi (61 pages, 308948 bytes).

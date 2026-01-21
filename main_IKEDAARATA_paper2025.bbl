@@ -5,11 +5,40 @@
 \newblock
   {\url{https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/r04/html/nd238110.html}}.
 
-\bibitem{QR_version}
-
-
 \bibitem{mie_terada}
 {}, ``2 次元カラーコード実現を目指した画像中の色認識,''
   vol.~{三重大学修士論文}, 2011.
+
+\bibitem{RGB}
+``{RGBとCMYKってなに？意味や変換方法など基本を徹底解説！}.''
+\newblock https://www.profuture.co.jp/mk/column/what-is-rgb.
+
+\bibitem{HSV}
+``{色の三属性「色相」「明度」「彩度」とは？【HSB/HSV】}.''
+\newblock https://321web.link/color-attribute/.
+
+\bibitem{AI_market}
+``Fortune business insights.''
+\newblock
+  https://www.fortunebusinessinsights.com/jp/%E7%94%9F%E6%88%90ai%E5%B8%82%E5%A0%B4-107837#:~:text=%E4%B8%96%E7%95%8C%E3%81%AE%E7%94%9F%E6%88%90AI%E5%B8%82%E5%A0%B4,%E3%81%A8%E4%BA%88%E6%B8%AC%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E3%80%82.
+
+\bibitem{GAN}
+``Rakuten mobile |
+  画像生成aiの仕組みとは？初心者向けに解説.''
+\newblock https://business.mobile.rakuten.co.jp/column/2025/0701-01/.
+
+\bibitem{diffusion_model}
+``@ps010(cyumizou) in supership株式会社 |
+  図で見てわかる！画像生成ai「stable diffusion」の仕組み.''
+\newblock https://qiita.com/ps010/items/ea4e8ddeff4de62d1ab1.
+
+\bibitem{artQR_1}
+``イラストにしかみえないqrコードを作ってみる.''
+\newblock \url{https://note.com/st_ai/n/ne8908b9f8901}.
+
+\bibitem{artQR_2}
+``Qr code | comfy ui workflow | openart.''
+\newblock
+  \url{https://openart.ai/workflows/jackal_thirsty_43/qr-code/uy1ivgblxOv7Cc2TN3lP}.
 
 \end{thebibliography}
