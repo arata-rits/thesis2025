@@ -14,7 +14,7 @@
 
 
 \section{実験手法}
-実験に際して．10種類のカラーQRコード画像を用意した．これは．カラーQRコードの種類による検出への影響を調べる為である．用意した10種類のカラーQRコードが図\ref{fig:CQR_sample0_9}である．
+実験に際して．10種類のカラーQRコード画像を用意した．これは．カラーQRコードの種類による検出への影響を調べる為である．用意した10種類のカラーQRコードが図\ref{fig:CQR_sample0_9}である．これらのカラーQRコードは，ランダムに生成した10文字の半角英数字を3種類用意し，先頭にサンプル番号を追加した計11文字の半角英数字をエンコードすることで作成している(表\ref{tab:sample_string})ここで，サンプル番号とはsample2であれば，数字の2を表す．また，画像の撮影には，apple社製のスマートフォン端末であるiPhone XRを使用した．搭載されている背面カメラの画素数は1200万画素である\footnote{iPhone XR - 技術仕様|\url{https://support.apple.com/ja-jp/111868}より引用}．
 
 撮影距離について，20 cm, 40 cm, 60 cm, 80 cmの4種類から撮影を行った．撮影時の実験環境を図\ref{fig:experiment_situation}に示す．
 
@@ -27,6 +27,31 @@
 	\label{fig:CQR_sample0_9}
 \end{figure}
 
+
+
+
+
+\begin{table}[]
+	\centering
+	\setlength{\tabcolsep}{10pt}
+	\renewcommand{\arraystretch}{1.4}
+	\caption{カラーQRコードサンプルに使用した文字列}
+	\label{tab:sample_string}
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		& 赤           & 緑           & 青           \\ \hline
+		sample0 & 0bu2rh5g1aa & 0xox7ljdot4 & 0warg1fs2qj \\ \hline
+		sample1 & 1ajauukb8mj & 1sjw40ypu0l & 1klos4n5aq6 \\ \hline
+		sample2 & 2arwtbe1h2x & 2tndp3aqedx & 2ptohyekclg \\ \hline
+		sample3 & 3apa5k0sxwa & 3viyx8b2ndm & 3nmrc7u0tb4 \\ \hline
+		sample4 & 4deeqtvrucr & 4wf5i1dsksi & 4usyhe4fa31 \\ \hline
+		sample5 & 5hjfteyeqim & 5sfi1bex4a3 & 5juyka6nm5g \\ \hline
+		sample6 & 6aekcjml32b & 6i4d2i0q5le & 6b3e3up784p \\ \hline
+		sample7 & 7cnk4rjdsuy & 7frelcmy6lh & 7e3qbglmuru \\ \hline
+		sample8 & 8anykgc3hhr & 8y3mt7irhcr & 8mia1e7bbxr \\ \hline
+		sample9 & 9sa1vx44ni4 & 9xiicrmnow8 & 9vjkso2sccd \\ \hline
+	\end{tabular}
+\end{table}
 
 
 \begin{figure}[H]

@@ -16,8 +16,8 @@
 \contentsline {section}{\numberline {3.4}読み取りアプリの開発}{18}{section.3.4}%
 \contentsline {chapter}{\numberline {第4章}検出性能の比較実験}{21}{chapter.4}%
 \contentsline {section}{\numberline {4.1}実験手法}{21}{section.4.1}%
-\contentsline {section}{\numberline {4.2}実験結果}{25}{section.4.2}%
-\contentsline {section}{\numberline {4.3}考察}{26}{section.4.3}%
+\contentsline {section}{\numberline {4.2}実験結果}{26}{section.4.2}%
+\contentsline {section}{\numberline {4.3}考察}{27}{section.4.3}%
 \contentsline {chapter}{\numberline {第5章}カラーQRコードを用いたAIイラストの生成}{29}{chapter.5}%
 \contentsline {section}{\numberline {5.1}イラストに見えるQRコード}{29}{section.5.1}%
 \contentsline {section}{\numberline {5.2}カラーQRコード入力によるアートQRコード生成の利点}{31}{section.5.2}%
@@ -41,5 +41,5 @@
 \contentsline {subsection}{\numberline {6.2.1}カラーQRコードの読み取りシステムについて}{41}{subsection.6.2.1}%
 \contentsline {subsection}{\numberline {6.2.2}カラーQRコード入力によるアートQRコードの生成について}{42}{subsection.6.2.2}%
 \contentsline {chapter}{参考文献}{42}{subsection.6.2.2}%
-\contentsline {chapter}{謝辞}{51}{appendix*.62}%
-\contentsline {chapter}{発表論文リスト}{53}{appendix*.63}%
+\contentsline {chapter}{謝辞}{51}{appendix*.63}%
+\contentsline {chapter}{発表論文リスト}{53}{appendix*.64}%

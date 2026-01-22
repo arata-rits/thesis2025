@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.11.13)  21 JAN 2026 16:36
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.11.13)  22 JAN 2026 20:57
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -544,35 +544,40 @@ File: pics/flask_no_detected.png Graphic file (type bmp)
 第 4 章
 File: pics/CQR_sample0_9.png Graphic file (type bmp)
 <pics/CQR_sample0_9.png>
-File: pics/experiment_situation.png Graphic file (type bmp)
-<pics/experiment_situation.png>
 [21
 
 ]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 34.
+
+File: pics/experiment_situation.png Graphic file (type bmp)
+<pics/experiment_situation.png>
+[22]
 File: pics/dist20.png Graphic file (type bmp)
 <pics/dist20.png>
 File: pics/dist40.png Graphic file (type bmp)
 <pics/dist40.png>
- [22]
+ [23]
 File: pics/dist60.png Graphic file (type bmp)
 <pics/dist60.png>
 File: pics/dist80.png Graphic file (type bmp)
 <pics/dist80.png>
- [23]
+ [24]
 File: pics/dist_mono.png Graphic file (type bmp)
 <pics/dist_mono.png>
- [24] [25]
+ [25] [26]
 File: pics/before_dilation.png Graphic file (type bmp)
 <pics/before_dilation.png>
 File: pics/after_dilation.png Graphic file (type bmp)
 <pics/after_dilation.png>
- [26]) (./chptr5.tex [27] [28
-
-]
+ [27]) (./chptr5.tex [28]
 第 5 章
 File: pics/Ai_market_size.png Graphic file (type bmp)
 <pics/Ai_market_size.png>
-[29]
+[29
+
+]
 File: pics/illust_QR_example1.png Graphic file (type bmp)
 <pics/illust_QR_example1.png>
 File: pics/illust_QR_example2.png Graphic file (type bmp)
@@ -662,62 +667,60 @@ File: pics/matome_1.png Graphic file (type bmp)
 [41
 
 ]) (./main_IKEDAARATA_paper2025.bbl [42]
-Overfull \hbox (250.45018pt too wide) in paragraph at lines 4--7
+Overfull \hbox (256.32512pt too wide) in paragraph at lines 4--7
 [][]\OT1/cmr/m/n/12 ``\JY1/mc/m/n/12 総務省 令和 \OT1/cmr/m/n/12 4 \JY1/mc/m/n/
 12 年版 情報通信白書\OT1/cmr/m/n/12 .''  [][][][]. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--15
+Underfull \hbox (badness 10000) in paragraph at lines 43--45
 [][]\OT1/cmr/m/n/12 ``RGB \JY1/mc/m/n/12 と \OT1/cmr/m/n/12 CMYK \JY1/mc/m/n/12
  っ てなに ？ 意味や変換方法など基本を徹底解説 ！ \OT1/cmr/m/n/12 .''
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--19
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
 [][]\OT1/cmr/m/n/12 ``\JY1/mc/m/n/12 色の三属性 「 色相 」 「 明度 」 「 彩度 
 」 とは ？ 【\OT1/cmr/m/n/12 HS-B/HSV\JY1/mc/m/n/12 】 \OT1/cmr/m/n/12 .''
  []
 
 
-Underfull \hbox (badness 4765) in paragraph at lines 26--29
+Underfull \hbox (badness 3291) in paragraph at lines 56--59
 [][]\OT1/cmr/m/n/12 ``Rakuten mo-bile | \JY1/mc/m/n/12 画像生成 \OT1/cmr/m/n/12
  ai \JY1/mc/m/n/12 の仕組みとは ？ 初心者向けに解説\OT1/cmr/m/n/12 .''
  []
 
+[43
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--34
+]
+Underfull \hbox (badness 10000) in paragraph at lines 61--64
 [][]\OT1/cmr/m/n/12 ``@ps010(cyumizou) in su-per-ship \JY1/mc/m/n/12 株式会社 \
 OT1/cmr/m/n/12 | \JY1/mc/m/n/12 図で
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--34
+Underfull \hbox (badness 10000) in paragraph at lines 61--64
 \JY1/mc/m/n/12 見てわかる ！ 画像生成 \OT1/cmr/m/n/12 ai \JY1/mc/m/n/12 「\OT1/
 cmr/m/n/12 sta-ble dif-fu-sion\JY1/mc/m/n/12 」 の仕組み\OT1/cmr/m/n/12 .''
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--38
+Underfull \hbox (badness 10000) in paragraph at lines 66--68
 [][]\OT1/cmr/m/n/12 ``\JY1/mc/m/n/12 イラストにしかみえない \OT1/cmr/m/n/12 qr 
 \JY1/mc/m/n/12 コ ードを作 っ てみる\OT1/cmr/m/n/12 .''
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--43
+Underfull \hbox (badness 10000) in paragraph at lines 70--73
 [][]\OT1/cmr/m/n/12 ``Qr code | comfy ui work-flow | ope-nart.''
  []
 
 
-Overfull \hbox (67.16667pt too wide) in paragraph at lines 40--43
+Overfull \hbox (73.04161pt too wide) in paragraph at lines 70--73
 [][][][]\OT1/cmr/m/n/12 . 
  []
 
-) (./huroku.tex [43
-
-] [44
-
-]
+) (./huroku.tex [44]
 (c:/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
@@ -887,7 +890,9 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 65.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 65.
- [45]
+ [45
+
+]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 73.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
@@ -1937,15 +1942,15 @@ LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main_IKEDAARATA_paper2025.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: 9D7A5EA0261B69053E6E3BA85B15E55C;2954.
+(rerunfilecheck)             Checksum: A6032DE2E598283FA3D79CD679500A66;2954.
  ) 
 Here is how much of TeX's memory you used:
- 13416 strings out of 476693
- 213555 string characters out of 5808556
+ 13425 strings out of 476693
+ 213696 string characters out of 5808556
  2420203 words of memory out of 5000000
- 33587 multiletter control sequences out of 15000+600000
- 536474 words of font info for 128 fonts, out of 8000000 for 9000
+ 33595 multiletter control sequences out of 15000+600000
+ 536642 words of font info for 129 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  72i,12n,77p,1129b,2013s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main_IKEDAARATA_paper2025.dvi (61 pages, 308948 bytes).
+Output written on main_IKEDAARATA_paper2025.dvi (61 pages, 317372 bytes).

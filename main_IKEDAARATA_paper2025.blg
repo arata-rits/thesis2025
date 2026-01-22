@@ -13,38 +13,45 @@ I was expecting a `,' or a `}'---line 61 of file ./tex_files/e_fmcam_ref.bib
  :  title = {KEYENCE | QRコードのしくみ},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--string name "vol." is undefined
+--line 285 of file ./tex_files/e_fmcam_ref.bib
+I was expecting a `,' or a `}'---line 285 of file ./tex_files/e_fmcam_ref.bib
+ :   volume          = vol. 
+ :                          2014-HCI-157 pp. 1–8,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "QR_dev"
+Warning--empty year in sutego2020_shimomura
 Warning--empty journal in mie_terada
-You've used 9 entries,
+You've used 15 entries,
             1906 wiz_defined-function locations,
-            521 strings with 5010 characters,
-and the built_in function-call counts, 1015 in all, are:
-= -- 107
-> -- 12
+            553 strings with 6155 characters,
+and the built_in function-call counts, 1766 in all, are:
+= -- 174
+> -- 36
 < -- 0
-+ -- 10
-- -- 1
-* -- 27
-:= -- 105
-add.period$ -- 9
-call.type$ -- 9
-change.case$ -- 9
++ -- 22
+- -- 7
+* -- 63
+:= -- 240
+add.period$ -- 15
+call.type$ -- 15
+change.case$ -- 15
 chr.to.int$ -- 0
-cite$ -- 10
-duplicate$ -- 40
-empty$ -- 160
-format.name$ -- 1
-if$ -- 286
+cite$ -- 17
+duplicate$ -- 88
+empty$ -- 250
+format.name$ -- 7
+if$ -- 461
 int.to.chr$ -- 0
-int.to.str$ -- 9
-missing$ -- 1
-newline$ -- 38
-num.names$ -- 1
-pop$ -- 76
+int.to.str$ -- 15
+missing$ -- 7
+newline$ -- 56
+num.names$ -- 7
+pop$ -- 99
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 25
+skip$ -- 30
 stack$ -- 0
 substring$ -- 0
 swap$ -- 0
@@ -52,8 +59,8 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 1
-width$ -- 10
-write$ -- 66
-(There were 2 error messages)
+warning$ -- 2
+while$ -- 7
+width$ -- 17
+write$ -- 115
+(There were 3 error messages)

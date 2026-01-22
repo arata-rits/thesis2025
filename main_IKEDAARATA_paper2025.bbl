@@ -1,9 +1,39 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{spread-smartphones}
 ``{総務省 令和4年版 情報通信白書}.''
 \newblock
   {\url{https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/r04/html/nd238110.html}}.
+
+\bibitem{sutego2020_shimada}
+{嶋田拓也, 下村優太郎, 桐原瑠也, 熊木武志},
+  ``フリッカパターンを用いた動画向け情報埋め込み手法の実装と評価,''
+  信学技報, vol.~119, no.2, pp. 117–122, 2020.
+
+\bibitem{sutego_Shimomura_E}
+{ Y.Shimomura, T.Shimada, R.Kirihara, and T.Kumaki}, ``Live demonstration:
+  Development of dot matrix {LED} using flicker noise as a base,'' IEEE
+  International Symposium on Circuits And Systems (ISCAS), May 2020.
+
+\bibitem{RKY}
+{ R.Kirihara, Y.Shimomura, T.Shimada and . T.Kumaki}, ``Live demonstration:
+  Development of {LED}-based stego-panel for new smartphone usage,'' IEEE
+  International Symposium on Circuits And Systems (ISCAS), 2020.
+
+\bibitem{shimada_2020_E}
+{ T.Shimada, and T.Kumaki}, ``Development of flicker-noise-based lighting
+  communication method,'' RISP International workshop on Nonlinear Circuit,
+  2020.
+
+\bibitem{sutego_shimada_E}
+{T.Shimada, and T.Kumaki}, ``A study of led-based spy-photo prevention system
+  using flicker noise for actual environment,'' International Technical
+  Conference on Circuits/Systems, 2018.
+
+\bibitem{sutego2020_shimomura}
+{下村優太郎, 嶋田 拓也, 熊木武志},
+  ``{フリッカノイズによるドットマトリクス{LED}
+  への実装},'' {LSI} とシステムのワークショップ, no.~no.4.
 
 \bibitem{mie_terada}
 {}, ``2 次元カラーコード実現を目指した画像中の色認識,''
