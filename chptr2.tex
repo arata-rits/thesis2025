@@ -52,7 +52,10 @@
 	\label{fig:stego_principle}
 \end{figure}
 
-このように，ステゴパネルとは，周波数の違いを利用して異なる情報を表示する技術である．これに対し，パネルに表示する色に応じて，異なる情報を表示できるのではないかというアイデアが生じた．この発案をもとにして，本研究内容であるカラーQRコードのシステムが想起された．
+このように，ステゴパネルとは，周波数の違いを利用して異なる情報を表示する技術である．
+
+
+%これに対し，パネルに表示する色に応じて，異なる情報を表示できるのではないかというアイデアが生じた．この発案をもとにして，本研究内容であるカラーQRコードのシステムが想起された．
 
 
 %\section{Henryk Blasinskiの先行研究}
@@ -67,12 +70,60 @@
 
 \section{三重大学　寺田らによる研究}
 論文\cite{mie_terada}では，実用化されているカラーコードをまとめたうえで，それらに使用されている色数の少なさを課題としている．その解決策として,
-正確な色認識技術を提案し，ニューラルネットワークを用いた色の補完技術を構築している．更には，色補完技術の評価対象としてカラーQRコードを挙げ(図\ref{fig:mie_terada_colorQR})，色の認識技術に対する実験を行いその有効性を確認している．
+正確な色認識技術を提案し，ニューラルネットワークを用いた色の補完技術を構築している．更には，色補完技術の評価対象としてカラーQRコードを挙げ，色の認識技術に対する実験を行いその有効性を確認している．
 
+当論文では，カラーQRコードを用いた認識実験として，2種類の実験を行っている．
+
+\begin{enumerate}[label=\Alph*.]
+	\item ニューラルネットワークに対する入力画像として，カラーサンプル画像(図\ref{fig:color_sample_image})を使用した実験
+	\item ニューラルネットワークに対する入力画像として，学習用からーQRコード(図\ref{fig:color_qr_sample_image},及び\ref{fig:color_qr_sample_image_B})を使用した実験
+\end{enumerate}
+
+各実験では，日付を変えて元データを撮影した画像をニューラルネットワークに学習させている．これにより作成した色認識技術と従来手法である閾値による色認識術との比較評価を行っている．比較対象には，使用色8色のカラーQRコード(図\ref{fig:mie_terada_colorQR_8})と，使用色64色のカラーQRコードを使用している(図\ref{fig:mie_terada_colorQR})．
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.3\linewidth]{pics/color_sample_image.png}
+	\caption{カラーサンプル画像の元データ}
+	\label{fig:color_sample_image}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.3\linewidth]{pics/color_qr_sample_image.png}
+	\caption{学習用カラーQRコードの元データ(パターンA)}
+	\label{fig:color_qr_sample_image}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.3\linewidth]{pics/color_qr_sample_image_B.png}
+	\caption{学習用カラーQRコードの元データ(パターンB)}
+	\label{fig:color_qr_sample_image_B}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{pics/mie_terada_colorQR_8.png}
+	\caption{使用色8色のカラーQRコード}
+	\label{fig:mie_terada_colorQR_8}
+\end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{pics/mie_terada_colorQR.png}
 	\caption{使用色64色のカラーQRコード}
 	\label{fig:mie_terada_colorQR}
+\end{figure}
+
+
+\section{Henryk Blasinskiによる研究}
+QRコードのカラー化に関する研究は，日本のみならず，海外でも行われてきた．論文\cite{6378458}では，カラーQRコード実装において．大きな課題となる色干渉(color interference)について述べている．また，この課題に対し，印刷色材チャネルと撮影時の色チャネル間のチャネル間干渉の影響を軽減する事を目的として，印刷過程と撮影過程の物理的に動機付けられた数学モデルに基づいて，干渉除去アルゴリズムの開発を行っている(図\ref{fig:blasinski_colorQR})．性能を評価した実験の結果として，提案フレームワークは色干渉の影響をうまく克服し、対応する誤り訂正方式と併用することで、各色チャネルに対して低いビットエラー率と高いデコード率を実現することが示されたとしている．
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{pics/blasinski_colorQR.png}
+	\caption{Blasinskiによる色干渉除去アルゴリズムの開発}
+	\label{fig:blasinski_colorQR}
 \end{figure}

@@ -5,6 +5,15 @@
 \newblock
   {\url{https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/r04/html/nd238110.html}}.
 
+\bibitem{QR_version}
+``コードドットコム | qrコードの情報量とバージョン.''
+\newblock {\url{https://www.qrcode.com/about/version.html}}.
+
+\bibitem{QR_finder_pattern}
+``Keyence | qrコードのしくみ.''
+\newblock
+  {\url{https://www.keyence.co.jp/ss/products/autoid/codereader/basic2d_qr.jsp}}.
+
 \bibitem{sutego2020_shimada}
 {嶋田拓也, 下村優太郎, 桐原瑠也, 熊木武志},
   ``フリッカパターンを用いた動画向け情報埋め込み手法の実装と評価,''
@@ -39,6 +48,11 @@
 {}, ``2 次元カラーコード実現を目指した画像中の色認識,''
   vol.~{三重大学修士論文}, 2011.
 
+\bibitem{6378458}
+H.~Blasinski, O.~Bulan, and G.~Sharma, ``Per-colorant-channel color barcodes
+  for mobile applications: An interference cancellation framework,'' IEEE
+  Transactions on Image Processing, vol.~22, no.~4, pp.~1498--1511, 2013.
+
 \bibitem{RGB}
 ``{RGBとCMYKってなに？意味や変換方法など基本を徹底解説！}.''
 \newblock https://www.profuture.co.jp/mk/column/what-is-rgb.
@@ -52,6 +66,10 @@
 \newblock
   https://www.fortunebusinessinsights.com/jp/%E7%94%9F%E6%88%90ai%E5%B8%82%E5%A0%B4-107837#:~:text=%E4%B8%96%E7%95%8C%E3%81%AE%E7%94%9F%E6%88%90AI%E5%B8%82%E5%A0%B4,%E3%81%A8%E4%BA%88%E6%B8%AC%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E3%80%82.
 
+\bibitem{artQR_1}
+``イラストにしかみえないqrコードを作ってみる.''
+\newblock \url{https://note.com/st_ai/n/ne8908b9f8901}.
+
 \bibitem{GAN}
 ``Rakuten mobile |
   画像生成aiの仕組みとは？初心者向けに解説.''
@@ -59,16 +77,12 @@
 
 \bibitem{diffusion_model}
 ``@ps010(cyumizou) in supership株式会社 |
-  図で見てわかる！画像生成ai「stable diffusion」の仕組み.''
+  図で見てわかる！画像生成ai\\「stable diffusion」の仕組み.''
 \newblock https://qiita.com/ps010/items/ea4e8ddeff4de62d1ab1.
-
-\bibitem{artQR_1}
-``イラストにしかみえないqrコードを作ってみる.''
-\newblock \url{https://note.com/st_ai/n/ne8908b9f8901}.
 
 \bibitem{artQR_2}
 ``Qr code | comfy ui workflow | openart.''
 \newblock
-  \url{https://openart.ai/workflows/jackal_thirsty_43/qr-code/uy1ivgblxOv7Cc2TN3lP}.
+  \\\url{https://openart.ai/workflows/jackal_thirsty_43/qr-code/uy1ivgblxOv7Cc2TN3lP}.
 
 \end{thebibliography}

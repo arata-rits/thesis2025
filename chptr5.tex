@@ -42,6 +42,39 @@
 	\label{fig:illust_QR_example2}
 \end{figure}
 
+ここで，comfyUIを使用してアートQRコードを生成するための流れについて述べる．
+始めに，アートQRコードにするための元画像となるQRコードを用意する．次にQRコードのセルに対して調整を行い，QRコードセルの結びつきを弱める．最後に，イラスト生成AIに対して入力画像として与える(図\ref{fig:artQR_flow})．\cite{artQR_1}によると，特に，QRコードの調整処理が重要であるとしている．図\ref{fig:artQR_flow}に記載のアートＱＲコードは，Anthony Fu's QR Toolkit\footnote{https://qrcode.antfu.me/\#verify}を使用して，QRコードの調整を行った．Anthony Fu's QR Toolkitはweb上で公開されているQRコード生成サイトであり，通常のQRコード生成に加え，誤り訂正レベルの指定や，ピクセルスタイルの変更，色の指定等を行うことができる(図\ref{fig:QR_fix})．また，アートQRコード生成時に使用したプロンプトを\ref{tab:prompt}に示す．
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{pics/artQR_flow.png}
+	\caption{アートQRコード生成の流れ}
+	\label{fig:artQR_flow}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{pics/QR_fix.png}
+	\caption{QRrコードの調整に使用したQRコード生成サイト}
+	\label{fig:QR_fix}
+\end{figure}
+
+
+\begin{table}[]
+	\centering
+	\setlength{\tabcolsep}{10pt}
+	\renewcommand{\arraystretch}{1.4}
+	\caption{使用したプロンプト}
+	\label{tab:prompt}
+	\begin{tabular}{|l|l|}
+	\hline
+	positive prompt                                                                                                                                                                                                                                                                                                                                                                                 & negative prompt                                                                                                                                                          \\ \hline
+	\begin{tabular}[c]{@{}l@{}}(1girl:1.3), solo, long\_hair, breasts, looking\_at\_viewer,\\  blush, black\_hair, dress, bow, ribbon, closed\_mouth, \\ cleavage, bare\_shoulders, medium\_breasts, standing, \\ purple\_eyes, hair\_ribbon, short\_sleeves, frills, hairband, \\ black\_dress, wrist\_cuffs, feet\_out\_of\_frame, white\_bow, \\ white\_ribbon, (black\_ribbon:1.3)\end{tabular} & \begin{tabular}[c]{@{}l@{}}embedding:EasyNegative, \\ embedding:bad\_prompt\_version2-neg, \\ embedding:verybadimagenegative\_v1.3, \\ (Multiple girls:1.3)\end{tabular} \\ \hline
+    \end{tabular}
+\end{table}
+
+
 
 \section{カラーQRコード入力によるアートQRコード生成の利点}
 現在のアートQRコード生成は，入力画像をモノクロのQRコードとするものにとどまっている．本節では，入力画像をカラーQRコードに拡張することを目標として得られる利点について述べる．
@@ -95,18 +128,33 @@ Bの方法による利点として，よりイラストに近い形での画像�
 
 GANとは，Generative Adversarial Networkの頭文字である\cite{GAN}．GANでは，生成モデル(Generator)と識別モデル(Discriminator)という2つのニューラルネットワークが互いに競い合いながら学習を行う構造をとる．生成モデルが実在する画像データに近い偽画像を生成し，一方で識別モデルは入力された画像が実が増加生成が増加を判別する役割を担う．
 
-学習過程では，生成モデルは識別モデルを欺くような画像を生成しようとし，識別モデルはその判別精度を高めようとする．このような敵対的学習を繰り返すことで，より高品質な画像を生成することを目指すモデルである．
+学習過程では，生成モデルは識別モデルを欺くような画像を生成しようとし，識別モデルはその判別精度を高めようとする．このような敵対的学習を繰り返すことで，より高品質な画像を生成することを目指すモデルである．GANによるイラスト生成の仕組みを表したものが図\ref{fig:GAN_image}である．
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{pics/GAN_image.png}
+	\caption[GANによる生成のイメージ]{GANによる生成のイメージ\protect\footnotemark}
+	\label{fig:GAN_image}
+\end{figure}
+
+\footnotetext{Financial Engineering Group|敵対的生成ネットワーク\\|\url{https://www.feg.co.jp/analysis_tech/gan/}より引用}
 
 \subsection{潜在拡散モデル}
 Diffusion（拡散モデル）は、近年の画像生成AIにおいて主流となっている生成モデルである\cite{diffusion_model}。拡散モデルは、画像に徐々にノイズを加えていく順拡散過程と、そのノイズを段階的に除去する逆拡散過程を学習することで、画像生成を実現する仕組みを特徴とする。学習段階では、実画像に対してランダムノイズを加え、そのノイズ成分を推定・除去する方法をモデルが学習する。
 
 生成段階では、完全なノイズ画像を初期状態とし、学習済みモデルによってノイズを少しずつ取り除くことで、最終的に意味のある鮮明な画像を生成する。この過程は、ぼやけた画像に段階的に情報を付加し、徐々に明瞭な画像を完成させる作業に例えられる。こうした逐次的かつ確率的な生成プロセスにより、拡散モデルは高い表現力と安定した学習特性を実現している。
 
-また、GANと比較して学習が安定しやすく、モード崩壊が起こりにくい点も拡散モデルの大きな利点である。この特性から、Stable DiffusionやDALL·Eといった多くの先進的な画像生成AIに採用されており、高品質かつ多様性のある画像生成が可能となっている。
+また、GANと比較して学習が安定しやすく、モード崩壊が起こりにくい点も拡散モデルの大きな利点である。この特性から、Stable DiffusionやDALL·Eといった多くの先進的な画像生成AIに採用されており、高品質かつ多様性のある画像生成が可能となっている。本研究で使用しているイラスト生成ツールであるComfyUIは，Stable Diffusionを基盤とした画像生成ツールである。ここで，Stable Diffusionは，潜在拡散モデルに基づく生成手法である.潜在拡散モデルによるイラスト生成の仕組みを表したものが図\ref{fig:diffusion_model_image}である．
 
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{pics/diffusion_model_image.png}
+	\caption[GANによる生成のイメージ]{潜在拡散モデルによる生成のイメージ\protect\footnotemark}
+	\label{fig:diffusion_model_image}
+\end{figure}
 
+\footnotetext{@ps010　(cyumizou)　in　Supership株式会社|図で見てわかる！画像生成AI「Stable\\ Diffusion」の仕組み\url{https://qiita.com/ps010/items/ea4e8ddeff4de62d1ab1}より引用}
 
 \section{使用したソフトとモデル}
 カラーQRコードを使用したイラスト生成を行うため，comyUI\footnote{https://www.comfy.org/}を使用した．ここで，comfyUIとは，イラスト生成AIを独自にカスタマイズできるツールの一種である．本ツールでは，ノードと呼ばれる素子同士をつなぎ合わせることで，仕様モデルの選択や，モデルの強度の変更などの画像生成におけるカスタマイズをノーコードで行うことができる．本ツールの使用にあたって，一般的なQRコードをイラスト改変するワークフローが公開されていたwebサイト\cite{artQR_1}\cite{artQR_2}を参考にした．comfyUIの操作画面が図\ref{fig:comfyUI}である．
