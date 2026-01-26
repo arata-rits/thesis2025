@@ -4,44 +4,45 @@ The top-level auxiliary file: main_IKEDAARATA_paper2025.aux
 The style file: ./tex_files/ieice_e.bst
 Database file #1: ./tex_files/e_fmcam_ref.bib
 Warning--string name "vol." is undefined
---line 285 of file ./tex_files/e_fmcam_ref.bib
-I was expecting a `,' or a `}'---line 285 of file ./tex_files/e_fmcam_ref.bib
+--line 299 of file ./tex_files/e_fmcam_ref.bib
+I was expecting a `,' or a `}'---line 299 of file ./tex_files/e_fmcam_ref.bib
  :   volume          = vol. 
  :                          2014-HCI-157 pp. 1–8,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "QR_dev"
 Warning--empty year in sutego2020_shimomura
+Warning--empty journal in rits_yamashita
 Warning--empty journal in mie_terada
-You've used 18 entries,
+You've used 19 entries,
             1906 wiz_defined-function locations,
-            568 strings with 6652 characters,
-and the built_in function-call counts, 2347 in all, are:
-= -- 238
-> -- 49
+            573 strings with 6830 characters,
+and the built_in function-call counts, 2476 in all, are:
+= -- 249
+> -- 53
 < -- 0
-+ -- 28
-- -- 10
-* -- 92
-:= -- 306
-add.period$ -- 18
-call.type$ -- 18
-change.case$ -- 18
++ -- 30
+- -- 11
+* -- 101
+:= -- 328
+add.period$ -- 19
+call.type$ -- 19
+change.case$ -- 19
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 114
-empty$ -- 317
-format.name$ -- 10
-if$ -- 618
+cite$ -- 22
+duplicate$ -- 122
+empty$ -- 332
+format.name$ -- 11
+if$ -- 647
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 8
-newline$ -- 67
-num.names$ -- 8
-pop$ -- 118
+int.to.str$ -- 19
+missing$ -- 9
+newline$ -- 70
+num.names$ -- 9
+pop$ -- 122
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 53
+skip$ -- 54
 stack$ -- 0
 substring$ -- 36
 swap$ -- 10
@@ -49,8 +50,8 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 10
-width$ -- 20
-write$ -- 140
+warning$ -- 3
+while$ -- 11
+width$ -- 21
+write$ -- 148
 (There was 1 error message)

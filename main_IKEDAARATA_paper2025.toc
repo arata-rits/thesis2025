@@ -8,39 +8,44 @@
 \contentsline {section}{\numberline {1.3}本研究の目的}{5}{section.1.3}%
 \contentsline {chapter}{\numberline {第2章}カラーQRコードに関する先行研究}{7}{chapter.2}%
 \contentsline {section}{\numberline {2.1}ステゴパネル}{7}{section.2.1}%
-\contentsline {section}{\numberline {2.2}三重大学　寺田らによる研究}{9}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Henryk Blasinskiによる研究}{11}{section.2.3}%
-\contentsline {chapter}{\numberline {第3章}カラーQRコードエンコード/デコードシステムの開発}{13}{chapter.3}%
-\contentsline {section}{\numberline {3.1}エンコード方法}{13}{section.3.1}%
-\contentsline {section}{\numberline {3.2}色空間について}{15}{section.3.2}%
-\contentsline {section}{\numberline {3.3}デコード方法}{16}{section.3.3}%
-\contentsline {section}{\numberline {3.4}読み取りアプリの開発}{21}{section.3.4}%
-\contentsline {chapter}{\numberline {第4章}検出性能の比較実験}{25}{chapter.4}%
-\contentsline {section}{\numberline {4.1}実験手法}{25}{section.4.1}%
-\contentsline {section}{\numberline {4.2}実験結果}{30}{section.4.2}%
-\contentsline {section}{\numberline {4.3}考察}{31}{section.4.3}%
-\contentsline {chapter}{\numberline {第5章}カラーQRコードを用いたAIイラストの生成}{33}{chapter.5}%
-\contentsline {section}{\numberline {5.1}イラストに見えるQRコード}{33}{section.5.1}%
-\contentsline {section}{\numberline {5.2}カラーQRコード入力によるアートQRコード生成の利点}{37}{section.5.2}%
-\contentsline {section}{\numberline {5.3}イラスト生成AIの原理}{38}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}GAN}{39}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}潜在拡散モデル}{39}{subsection.5.3.2}%
-\contentsline {section}{\numberline {5.4}使用したソフトとモデル}{40}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}VAE　(variational auto encoder)}{42}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}チェックポイント(ckpt)}{42}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}controlnet}{42}{subsection.5.4.3}%
-\contentsline {subsection}{\numberline {5.4.4}Kサンプラー}{42}{subsection.5.4.4}%
-\contentsline {subsection}{\numberline {5.4.5}LoRA}{42}{subsection.5.4.5}%
-\contentsline {section}{\numberline {5.5}実験内容}{43}{section.5.5}%
-\contentsline {section}{\numberline {5.6}実験結果}{43}{section.5.6}%
-\contentsline {subsection}{\numberline {5.6.1}各controlnetによる出力画像への影響}{43}{subsection.5.6.1}%
-\contentsline {subsection}{\numberline {5.6.2}3種類のcontrolnetを使用した画像生成}{46}{subsection.5.6.2}%
-\contentsline {section}{\numberline {5.7}考察}{47}{section.5.7}%
-\contentsline {chapter}{\numberline {第6章}結論}{49}{chapter.6}%
-\contentsline {section}{\numberline {6.1}まとめ}{49}{section.6.1}%
-\contentsline {section}{\numberline {6.2}今後の展望}{49}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}カラーQRコードの読み取りシステムについて}{49}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}カラーQRコード入力によるアートQRコードの生成について}{50}{subsection.6.2.2}%
-\contentsline {chapter}{参考文献}{50}{subsection.6.2.2}%
-\contentsline {chapter}{謝辞}{59}{appendix*.74}%
-\contentsline {chapter}{発表論文リスト}{61}{appendix*.75}%
+\contentsline {section}{\numberline {2.2}三重大学　寺田らによる研究}{10}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Henryk Blasinskiらによる研究}{12}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Nutchanad Taveeradらによる研究}{13}{section.2.4}%
+\contentsline {chapter}{\numberline {第3章}カラーQRコードエンコード/デコードシステムの開発}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}研究目的}{15}{section.3.1}%
+\contentsline {section}{\numberline {3.2}エンコード方法}{16}{section.3.2}%
+\contentsline {section}{\numberline {3.3}色空間について}{18}{section.3.3}%
+\contentsline {section}{\numberline {3.4}デコード方法}{19}{section.3.4}%
+\contentsline {section}{\numberline {3.5}読み取りアプリの開発}{24}{section.3.5}%
+\contentsline {chapter}{\numberline {第4章}検出性能の比較実験}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}評価実験1}{27}{section.4.1}%
+\contentsline {section}{\numberline {4.2}実験結果1}{32}{section.4.2}%
+\contentsline {section}{\numberline {4.3}考察1}{33}{section.4.3}%
+\contentsline {section}{\numberline {4.4}評価実験2}{35}{section.4.4}%
+\contentsline {section}{\numberline {4.5}実験結果2}{40}{section.4.5}%
+\contentsline {section}{\numberline {4.6}考察2}{41}{section.4.6}%
+\contentsline {chapter}{\numberline {第5章}カラーQRコードを用いたAIイラストの生成}{43}{chapter.5}%
+\contentsline {section}{\numberline {5.1}イラストに見えるQRコード}{43}{section.5.1}%
+\contentsline {section}{\numberline {5.2}カラーQRコード入力によるアートQRコード生成の利点}{47}{section.5.2}%
+\contentsline {section}{\numberline {5.3}イラスト生成AIの原理}{48}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}GAN}{49}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}潜在拡散モデル}{49}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}使用したソフトとモデル}{50}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}VAE　(variational auto encoder)}{52}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}チェックポイント(ckpt)}{52}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}controlnet}{52}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Kサンプラー}{52}{subsection.5.4.4}%
+\contentsline {subsection}{\numberline {5.4.5}LoRA}{52}{subsection.5.4.5}%
+\contentsline {section}{\numberline {5.5}実験内容}{53}{section.5.5}%
+\contentsline {section}{\numberline {5.6}実験結果}{53}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}各controlnetによる出力画像への影響}{53}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}3種類のcontrolnetを使用した画像生成}{56}{subsection.5.6.2}%
+\contentsline {section}{\numberline {5.7}考察}{57}{section.5.7}%
+\contentsline {chapter}{\numberline {第6章}結論}{59}{chapter.6}%
+\contentsline {section}{\numberline {6.1}まとめ}{59}{section.6.1}%
+\contentsline {section}{\numberline {6.2}今後の展望}{59}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}カラーQRコードの読み取りシステムについて}{59}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}カラーQRコード入力によるアートQRコードの生成について}{60}{subsection.6.2.2}%
+\contentsline {chapter}{参考文献}{60}{subsection.6.2.2}%
+\contentsline {chapter}{謝辞}{69}{appendix*.88}%
+\contentsline {chapter}{発表論文リスト}{71}{appendix*.89}%

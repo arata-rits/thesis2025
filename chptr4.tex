@@ -13,10 +13,10 @@
 
 
 
-\section{実験手法}
-実験に際して．10種類のカラーQRコード画像を用意した．これは．カラーQRコードの種類による検出への影響を調べる為である．用意した10種類のカラーQRコードが図\ref{fig:CQR_sample0_9}である．これらのカラーQRコードは，ランダムに生成した10文字の半角英数字を3種類用意し，先頭にサンプル番号を追加した計11文字の半角英数字をエンコードすることで作成している(表\ref{tab:sample_string})ここで，サンプル番号とはsample2であれば，数字の2を表す．また，画像の撮影には，apple社製のスマートフォン端末であるiPhone XRを使用した．搭載されている背面カメラの画素数は1200万画素である\footnote{iPhone XR - 技術仕様|\url{https://support.apple.com/ja-jp/111868}より引用}．
+\section{評価実験1}
+実験に際して．10種類のカラーQRコード画像を用意した．これは．カラーQRコードの種類による検出への影響を調べる為である．用意した10種類のカラーQRコードが図\ref{fig:CQR_sample0_9}である．これらのカラーQRコードは，ランダムに生成した10文字の半角英数字を3種類用意し，先頭にサンプル番号を追加した計11文字の半角英数字をエンコードすることで作成している(表\ref{tab:sample_string})ここで，サンプル番号とはsample2であれば，数字の2を表す．また，画像の撮影には，apple社製のスマートフォン端末であるiPhone XRを使用した．搭載されている背面カメラの画素数は1200万画素である\footnote{iPhone XR - 技術仕様|\url{https://support.apple.com/ja-jp/111868}より引用}．画像撮影に使用したアプリケーションは，iPhone XR標準搭載のカメラアプリである．作成したカラーQRコードサンプル画像の表示には同社製のスマートフォン端末iPhone 12 miniを使用した．iPhone 12 miniの解像度は，$2,340 \times 1,080$ピクセルである\footnote{iPhone 12 mini - 技術仕様|\url{https://support.apple.com/ja-jp/111877}より引用}．
 
-撮影距離について，20 cm, 40 cm, 60 cm, 80 cmの4種類から撮影を行った．撮影時の実験環境を図\ref{fig:experiment_situation}に示す．
+撮影距離について，20 cm, 40 cm, 60 cm, 80 cm，100 cmの5種類から撮影を行った．撮影時の実験環境を図\ref{fig:experiment_situation}に示す．
 
 
 
@@ -62,7 +62,7 @@
 \end{figure}
 
 
-撮影した画像を以下に示す.画像はそれぞれ，撮影距離　20cm, 撮影距離　40cm, 撮影距離　60cm, 撮影距離　80cmを表している．
+撮影した画像を以下に示す.画像はそれぞれ，撮影距離20 cm, 撮影距離40 cm, 撮影距離60 cm, 撮影距離80 cm, 撮影距離100 cmを表している．
 
 \begin{figure}[H]
 	\centering
@@ -92,6 +92,14 @@
 	\label{fig:dist80}
 \end{figure}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{pics/dist80.png}
+	\caption{距離100 cmから撮影したときの画像}
+	\label{fig:dist80}
+\end{figure}
+
+
 
 比較対象として，従来のモノクロQRコードの撮影を行った．撮影された画像をまとめたものが図\ref{fig:dist_mono}である．
 
@@ -104,7 +112,7 @@
 
 
 
-\section{実験結果}
+\section{実験結果1}
 はじめに，カラーQRコードに対して，色抽出処理のみを行って，その検出率の比較を行った．
 結果を表形式でまとめたものが表\ref{tab:color-extraction}である．
 
@@ -114,12 +122,12 @@
     \centering
 	\caption{色抽出処理のみを行った際の検出率の比較[\%]}
 	\label{tab:color-extraction}
-	\begin{tabular}{|l|l|l|l|l|}
+	\begin{tabular}{|l|l|l|l|l|l|}
 		\hline
-		& distance20cm & distance40cm & distance60cm & distance80cm \\ \hline
-		Blue  & 100\%        & 20\%         & 0\%          & 0\%          \\ \hline
-		Green & 100\%        & 0\%          & 0\%          & 0\%          \\ \hline
-		Red   & 100\%        & 40\%         & 0\%          & 0\%          \\ \hline
+		& distance20cm & distance40cm & distance60cm & distance80cm & distance100cm \\ \hline
+		Blue  & 100        & 100         & 100          & 0             & 0\\ \hline
+		Green & 100        & 100         & 100          & 0             & 0\\ \hline
+		Red   & 100        & 100         & 100          &10             & 0\\ \hline
 	\end{tabular}
 \end{table}
 
@@ -132,12 +140,12 @@
 	\centering
 	\caption{膨張処理時にカーネルサイズ$5\times 5$を適用した際の検出率[\%]}
 	\label{tab:kernel5}
-	\begin{tabular}{|l|l|l|l|l|}
+	\begin{tabular}{|l|l|l|l|l|l|}
 		\hline
-		& distance20cm & distance40cm & distance60cm & distance80cm \\ \hline
-		Blue  & 100        & 0         & 0          & 0          \\ \hline
-		Green & 100        & 0         & 0          & 0          \\ \hline
-		Red   & 100        & 0         & 0          & 0          \\ \hline
+		& distance20cm & distance40cm & distance60cm & distance80cm & distance100cm\\ \hline
+		Blue  & 100        & 100         & 90          & 0          &0\\ \hline
+		Green & 100        & 100         & 90          & 0          &0\\ \hline
+		Red   & 100        & 100         & 100          & 0          &0\\ \hline
 	\end{tabular}
 \end{table}
 
@@ -145,12 +153,12 @@
 	\centering
 	\caption{膨張処理時にカーネルサイズ$4\times 4$を適用した際の検出率[\%]}
 	\label{tab:kernel4}
-	\begin{tabular}{|l|l|l|l|l|}
+	\begin{tabular}{|l|l|l|l|l|l|}
 		\hline
-		& distance20cm & distance40cm & distance60cm & distance80cm \\ \hline
-		Blue  & 100        & 0         & 0          & 0          \\ \hline
-		Green & 100        & 0         & 0          & 0          \\ \hline
-		Red   & 100        & 0         & 0          & 0          \\ \hline
+		& distance20cm & distance40cm & distance60cm & distance80cm & distance100cm \\ \hline
+		Blue  & 100        & 100         & 100          & 0             & 0\\ \hline
+		Green & 100        & 100         & 100          & 0             & 0\\ \hline
+		Red   & 100        & 100         & 100          &10             & 0\\ \hline
 	\end{tabular}
 \end{table}
 
@@ -158,12 +166,12 @@
 	\centering
 	\caption{膨張処理時にカーネルサイズ$3\times3$を適用した際の検出率[\%]}
 	\label{tab:kernel3}
-	\begin{tabular}{|l|l|l|l|l|}
+	\begin{tabular}{|l|l|l|l|l|l|}
 		\hline
-		& distance20cm & distance40cm & distance60cm & distance80cm \\ \hline
-		Blue  & 100        & 20       & 0          & 0          \\ \hline
-		Green & 100        & 0        & 0          & 0          \\ \hline
-		Red   & 100        & 40       & 0          & 0          \\ \hline
+		& distance20cm & distance40cm & distance60cm & distance80cm & distance100cm \\ \hline
+		Blue  & 100        & 100         & 100          & 0             & 0\\ \hline
+		Green & 100        & 100         & 100          & 0             & 0\\ \hline
+		Red   & 100        & 100         & 100          &10             & 0\\ \hline
 	\end{tabular}
 \end{table}
 
@@ -171,12 +179,12 @@
 	\centering
 	\caption{膨張処理時にカーネルサイズ$2\times 2$を適用した際の検出率[\%]}
 	\label{tab:kernel2}
-	\begin{tabular}{|l|l|l|l|l|}
+	\begin{tabular}{|l|l|l|l|l|l|}
 		\hline
-		& distance20cm & distance40cm & distance60cm & distance80cm \\ \hline
-		Blue  & 100        & 20         & 0          & 0          \\ \hline
-		Green & 100        & 0          & 0          & 0          \\ \hline
-		Red   & 100        & 40         & 0          & 0          \\ \hline
+		& distance20cm & distance40cm & distance60cm & distance80cm & distance100cm \\ \hline
+		Blue  & 100        & 100         & 100          & 0             & 0\\ \hline
+		Green & 100        & 100         & 100          & 0             & 0\\ \hline
+		Red   & 100        & 100         & 100          &10             & 0\\ \hline
 	\end{tabular}
 \end{table}
 
@@ -184,7 +192,7 @@
 これに対し，従来のモノクロのQRコードは，距離80 cmからでも読み取りが可能であった．
 
 
-\section{考察}
+\section{考察1}
 
 実験の結果として，膨張処理の追加による検出率の向上は見られなかった．
 これは，画像処理の対象となるQRコード部分の解像度の低さが問題であると考えられる．
@@ -206,4 +214,217 @@
 	\label{fig:after_dilation}
 \end{figure}
 
-また，一般に使用されているQRコードでは，同一サイズでも撮影距離80cmから検出できることから，本実験で使用したコード検出システムは既存のものに大きく劣ることが分かった．
+また，一般に使用されているQRコードでは，同一サイズでも撮影距離80　cmから検出できることから，本実験で使用したコード検出システムは既存のものに大きく劣ることが分かった．
+
+
+
+\section{評価実験2}
+カラーQRコードの利点として，格納する文字列の分割によるQRコードの低解像度化が挙げられる(図\ref{fig:colorQR_resolution_image})．同一文字列をエンコードした際の検出距離を比較することを目的として，評価実験2を行った．
+
+ここで，一連の低解像度化処理について解説する．始めに，QRコードにする文字列を3つに分割する．次に，分割された文字列に対し，それぞれRGB単色QRコードに変換する．これにより得られた3つのQRコードを重ね合わせることでカラーQRコードを生成する．デコード時には，RGBそれぞれで得られた文字列を結合することで元の文字列を復元することが可能となる．処理前の文字列をＱＲコードに変換したときには，誤り訂正レベルM(Middle)で,バージョン4(セル数$33 \times 33$)でエンコードされた(図\ref{fig:qr_123_spec})．一方で，3つに分割された文字列を同一の誤り訂正レベルM(Middle)でエンコードした結果，バージョン2(セル数$25 \times 25$)でのエンコードが可能となった(図\ref{fig:qr_1_spec}, \ref{fig:qr_2_spec}, 及び\ref{fig:qr_3_spec})．この時，QRコードへのエンコードにはQRコード生成サイト\footnotetext{\url{https://www.cman.jp/QRcode/qr_make/}}を使用した．
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{pics/colorQR_resolution_image.png}
+	\caption{文字列分割とQRコードの低解像度化}
+	\label{fig:colorQR_resolution_image}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{pics/qr_123_spec.png}
+	\caption{低解像度化処理前QRコードの仕様}
+	\label{fig:qr_123_spec}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{pics/qr_1_spec.png}
+	\caption{低解像度化処理後QRコードの仕様1}
+	\label{fig:qr_1_spec}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{pics/qr_2_spec.png}
+	\caption{低解像度化処理後QRコードの仕様2}
+	\label{fig:qr_2_spec}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{pics/qr_3_spec.png}
+	\caption{低解像度化処理後QRコードの仕様3}
+	\label{fig:qr_3_spec}
+\end{figure}
+
+
+低解像度化処理前後のQRコードとカラーQRコードを比較したものが図\ref{fig:qr_resolution_ba}である．低解像度処理により，QRコードを構成する一片のセル数が少なくなり，一辺が同一の長さの時に，解像度が低くなっていることが分かる．
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/resolution_mono.png}
+		\caption{before}
+	\end{subfigure}
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/resolution_color.png}
+		\caption{after}
+	\end{subfigure}
+	\caption{低解像度化処理前後の比較}
+	\label{fig:qr_resolution_ba}
+\end{figure}
+\vspace{1\baselineskip}
+
+
+低解像度化処理前後の元画像に対して，距離40 cmから160 cmまで20　cmおきに撮影を行った．得られた撮影データが図\ref{fig:resolution_mono_captured}及び図\ref{fig:resolution_color_captured}である．実験環境は，4.1節に準じた．
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/mono_40.jpg}
+		\caption{撮影距離40 cm}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/mono_60.jpg}
+		\caption{撮影距離60 cm}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/mono_80.jpg}
+		\caption{撮影距離80 cm}
+	\end{subfigure}
+	\vspace{5mm}
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/mono_100.jpg}
+		\caption{撮影距離100 cm}
+	\end{subfigure}
+	\hfill	
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/mono_120.jpg}
+		\caption{撮影距離120 cm}
+	\end{subfigure}
+	\hfill	
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/mono_140.jpg}
+		\caption{撮影距離140 cm}
+	\end{subfigure}
+	\vspace{5mm}
+		\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/mono_160.jpg}
+		\caption{撮影距離160 cm}
+	\end{subfigure}
+	\caption{モノクロQRコードの撮影データ}
+	\label{fig:resolution_mono_captured}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/color_40.jpg}
+		\caption{撮影距離40 cm}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/color_60.jpg}
+		\caption{撮影距離60 cm}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/color_80.jpg}
+		\caption{撮影距離80 cm}
+	\end{subfigure}
+	\vspace{5mm}
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/color_100.jpg}
+		\caption{撮影距離100 cm}
+	\end{subfigure}
+	\hfill	
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/color_120.jpg}
+		\caption{撮影距離120 cm}
+	\end{subfigure}
+	\hfill	
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/color_140.jpg}
+		\caption{撮影距離140 cm}
+	\end{subfigure}
+	\vspace{5mm}
+	\begin{subfigure}{0.3\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{pics/color_160.jpg}
+		\caption{撮影距離160 cm}
+	\end{subfigure}
+	\caption{カラーQRコードの撮影データ}
+	\label{fig:resolution_color_captured}
+\end{figure}
+
+
+
+\section{実験結果2}
+検出結果をまとめたものが表\ref{tab:resolution_result}である．ここで表\ref{tab:resolution_result}中の1は検出可を，0は検出不可を表している．
+
+
+\begin{table}[H]
+	\centering
+	\caption{低解像度化処理前後での検出可否}
+	\label{tab:resolution_result}
+	
+	\begin{tabularx}{\linewidth}{|l|*{7}{>{\centering\arraybackslash}X|}}
+		\hline
+		& 40cm & 60cm & 80cm & 100cm & 120cm & 140cm & 160cm \\ \hline
+		Blue  & 1 & 1 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		Green & 1 & 1 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		Red   & 1 & 1 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		mono  & 1 & 1 & 1 & 0 & 0 & 0 & 0 \\ \hline
+	\end{tabularx}
+	
+\end{table}
+
+
+また，カーネルサイズ$2 \times 2$でクロージング処理を適用後に, QRコード検出を行った．検出結果をまとめたものが表\ref{tab:resolution_result_processed}である．
+
+
+\begin{table}[H]
+	\centering
+	\caption{低解像度化処理前後でのクロージング処理適用後の検出可否}
+	\label{tab:resolution_result_rocessed}
+	
+	\begin{tabularx}{\linewidth}{|l|*{7}{>{\centering\arraybackslash}X|}}
+		\hline
+		& 40cm & 60cm & 80cm & 100cm & 120cm & 140cm & 160cm \\ \hline
+		Blue  & 1 & 1 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		Green & 1 & 1 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		Red   & 1 & 1 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		mono  & 1 & 1 & 1 & 0 & 0 & 0 & 0 \\ \hline
+	\end{tabularx}
+	
+\end{table}
+
+
+
+
+\section{考察2}
+評価実験2の結果として，低解像度化処理後のカラーQRコードの方が検出精度で劣る結果となった．一方で，検出可否の差は20　cmであり，今後のカメラ性能の進歩により，検出精度の逆転が期待できる．
