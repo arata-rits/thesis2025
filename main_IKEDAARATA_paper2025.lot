@@ -1,16 +1,16 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces 歴代iPhone機種に搭載されたカメラの画素数比較}}{15}{table.caption.24}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces 歴代iPhone機種に搭載されたカメラの画素数比較}}{17}{table.caption.26}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces カラーQRコードサンプルに使用した文字列\relax }}{28}{table.caption.37}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces 色抽出処理のみを行った際の検出率の比較[\%]\relax }}{32}{table.caption.45}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces 膨張処理時にカーネルサイズ$5\times 5$を適用した際の検出率[\%]\relax }}{32}{table.caption.46}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces 膨張処理時にカーネルサイズ$4\times 4$を適用した際の検出率[\%]\relax }}{33}{table.caption.47}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces 膨張処理時にカーネルサイズ$3\times 3$を適用した際の検出率[\%]\relax }}{33}{table.caption.48}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces 膨張処理時にカーネルサイズ$2\times 2$を適用した際の検出率[\%]\relax }}{33}{table.caption.49}%
-\contentsline {table}{\numberline {4.7}{\ignorespaces 低解像度化処理前後での検出可否\relax }}{40}{table.caption.60}%
-\contentsline {table}{\numberline {4.8}{\ignorespaces 低解像度化処理前後でのクロージング処理適用後の検出可否\relax }}{41}{table.caption.61}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces カラーQRコードサンプルに使用した文字列\relax }}{30}{table.caption.39}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces 色抽出処理のみを行った際の検出率の比較[\%]\relax }}{34}{table.caption.47}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces 膨張処理時にカーネルサイズ$5\times 5$を適用した際の検出率[\%]\relax }}{34}{table.caption.48}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces 膨張処理時にカーネルサイズ$4\times 4$を適用した際の検出率[\%]\relax }}{35}{table.caption.49}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces 膨張処理時にカーネルサイズ$3\times 3$を適用した際の検出率[\%]\relax }}{35}{table.caption.50}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces 膨張処理時にカーネルサイズ$2\times 2$を適用した際の検出率[\%]\relax }}{35}{table.caption.51}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces 低解像度化処理前後での検出可否\relax }}{42}{table.caption.62}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces 低解像度化処理前後でのクロージング処理適用後の検出可否\relax }}{43}{table.caption.63}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces 使用したプロンプト\relax }}{47}{table.caption.67}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces 使用したプロンプト\relax }}{49}{table.caption.69}%
 \addvspace {10\p@ }

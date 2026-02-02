@@ -1,10 +1,10 @@
 %/**********************************************************************/
 %		第2章：
 %/**********************************************************************/
-\chapter{カラーQRコードに関する先行研究}
+\chapter{カラーQRコードに関する\\先行研究}
 \label{lbl_chptr2}
 
-本章では，カラーQRコードに関する先行研究について述べる．
+本章では，本研究に関係するカラーQRコードに関する先行研究について述べる．
 
 
 %/**********************************************************************/
@@ -14,7 +14,7 @@
 
 \section{ステゴパネル}
 本研究のアイデアの元となった，肉眼では視認不可能な情報表示LEDパネルであるステゴパネルについて述べる．
-ステゴパネル(Stego-panel)とは，画像や音声などのデータに秘密情報を埋め込む情報秘匿技術の一種であるステガノグラフィー(Steganography)と，照明パネル(Panel)を組み合わせた造語である．ステゴパネルは，カメラで撮影することで，肉眼では視認できない情報を取得することが可能となる(図\ref{fig:stego_eye}及び， \ref{fig:stego_camera})\cite{sutego2020_shimada}\cite{sutego_Shimomura_E}\cite{RKY}\cite{shimada_2020_E}\cite{sutego_shimada_E}\cite{sutego2020_shimomura}．
+ステゴパネル(Stego-panel)とは，画像や音声などのデータに秘密情報を埋め込む情報秘匿技術の一種であるステガノグラフィー(Steganography)と，照明パネル(Panel)を組み合わせた造語である．ステゴパネルは，カメラで撮影することで，肉眼では視認できない情報を取得することが可能となる(図\ref{fig:stego_eye}及び，\ref{fig:stego_camera})\cite{sutego2020_shimada}\cite{sutego_Shimomura_E}\cite{RKY}\cite{shimada_2020_E}\cite{sutego_shimada_E}\cite{sutego2020_shimomura}．
 
 \begin{figure}[H]
 	\centering
@@ -31,7 +31,7 @@
 \end{figure}
 
 
-ステゴパネルの原理は，2種類の点灯周波数を使用したLEDの点灯制御である．肉眼ではおよそ60 Hz以下の点滅しか認識することはできない．反対に，60　Hz以上の点滅は，肉眼には常時点灯していると視認される．このような現象は残像現象と呼ばれる．一方で，カメラによる撮影では，露光時間を制御することにより，肉眼に比べて瞬間の光を観測することができる．従って，カメラで高速点滅している照明やデジタルサイネージを撮影したときに，画像中に縞模様のノイズが表示される(図\ref{fig:flicker_img})．このような，ちらつき(Flicker)に由来するノイズはフリッカーノイズと呼ばれる．
+ステゴパネルの原理は，2種類の点滅周波数を利用したLEDの点灯制御である．人の肉眼はおよそ60 Hz以下の点滅しか認識することはできない．反対に，60 Hz以上の点滅は，肉眼には常時点灯していると視認される．このような現象は残像現象と呼ばれる\cite{zanzo}．一方で，カメラによる撮影では，露光時間を制御することにより，肉眼に比べて瞬間の光を観測することができる．従って，カメラで高速点滅している照明やデジタルサイネージを撮影したときに，画像中に縞模様のノイズが表示される(図\ref{fig:flicker_img})．このような，ちらつき(Flicker)に由来するノイズはフリッカノイズと呼ばれる．
 
 
 \begin{figure}[H]
@@ -41,7 +41,7 @@
 	\label{fig:flicker_img}
 \end{figure}
 
-図\ref{fig:stego_principle}は，ステゴパネルの点滅周波数と文字表現の仕組みを簡易的に表したものである．ここでは，LEDの点滅周波数を20 Hzと100 Hzと仮定している．ステゴパネルでは，文字情報部分と背景部分で違う点滅周波数を使用することで情報の秘匿を実現している．
+図\ref{fig:stego_principle}は，ステゴパネルの点滅周波数と文字表現の仕組みを簡易的に表したものである．ここでは，LEDの点滅周波数を20 Hz,及び100 Hzと仮定している．ステゴパネルでは，文字情報部分と背景部分で違う点滅周波数を使用することで情報の秘匿を実現している．
 
 
 
@@ -52,17 +52,26 @@
 	\label{fig:stego_principle}
 \end{figure}
 
-このように，ステゴパネルとは，周波数の違いを利用して異なる情報を表示する技術である．
-さらに論文\cite{rits_yamashita}では，ステゴパネルを使用してカラーマイクロQRコードの検出評価を行っている.　当研究では，RGBカラー表現が可能であるステゴパネルV用に新たに，RGBマイクロQRコード層を実装し(図\ref{fig:sutego_microQR})，フリッカカラーマイクロQRコードの検出率について，画像処理や撮影距離，色といったパラメータの影響を評価を行っている．本研究の結果として，画像処理のパラメータについて，距離に応じて適切なカーネルサイズや処理回数が存在すると結論付けている．
+以上のように，ステゴパネルとは，周波数の違いを利用して異なる情報を表示する技術である．
+更に論文\cite{rits_yamashita}では，ステゴパネルを使用してカラーマイクロQRコードの検出評価を行っている.　この研究では，RGBカラー表現が可能であるステゴパネルV用に，RGBマイクロQRコード層を実装し(図\ref{fig:stego_microQR}，及び\ref{fig:sutegoV_color})，フリッカカラーマイクロQRコードの検出率について，画像処理や撮影距離，色といったパラメータの影響について評価を行っている．本研究の結果として，画像処理のパラメータについて，距離に応じて適切なカーネルサイズや処理回数が存在すると結論付けている．
 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{pics/stego_microQR.png}
-	\caption{ステゴパネルVのRGBマイクロQR層}
+	\caption[ステゴパネルVのRGBマイクロQR層]{ステゴパネルVのRGBマイクロQR層\protect\footnotemark}
 	\label{fig:stego_microQR}
 \end{figure}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{pics/sutegoV_color.png}
+	\caption[RGBマイクロQR層によるマイクロQRコード表示]{RGBマイクロQR層によるマイクロQRコード表示\protect\footnotemark}
+	\label{fig:sutegoV_color}
+\end{figure}
+
+
+\footnotetext{\protect\cite{rits_yamashita}より引用}
 
 %これに対し，パネルに表示する色に応じて，異なる情報を表示できるのではないかというアイデアが生じた．この発案をもとにして，本研究内容であるカラーQRコードのシステムが想起された．
 
@@ -83,7 +92,7 @@
 論文\cite{mie_terada}では，実用化されているカラーコードをまとめたうえで，それらに使用されている色数の少なさを課題としている．その解決策として,
 正確な色認識技術を提案し，ニューラルネットワークを用いた色の補完技術を構築している．更には，色補完技術の評価対象としてカラーQRコードを挙げ，色の認識技術に対する実験を行いその有効性を確認している．
 
-当論文では，カラーQRコードを用いた認識実験として，2種類の実験を行っている．
+この論文では，カラーQRコードを用いた認識実験として，2種類の実験を行っている．
 
 \begin{enumerate}[label=\Alph*.]
 	\item ニューラルネットワークに対する入力画像として，カラーサンプル画像(図\ref{fig:color_sample_image})を使用した実験
@@ -95,21 +104,21 @@
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.3\linewidth]{pics/color_sample_image.png}
-	\caption{カラーサンプル画像の元データ}
+	\caption[カラーサンプル画像の元データ]{カラーサンプル画像の元データ\protect\footnotemark}
 	\label{fig:color_sample_image}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.3\linewidth]{pics/color_qr_sample_image.png}
-	\caption{学習用カラーQRコードの元データ(パターンA)}
+	\caption[学習用カラーQRコードの元データ(パターンA)]{学習用カラーQRコードの元データ(パターンA)\protect\footnotemark[1]}
 	\label{fig:color_qr_sample_image}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.3\linewidth]{pics/color_qr_sample_image_B.png}
-	\caption{学習用カラーQRコードの元データ(パターンB)}
+	\caption[学習用カラーQRコードの元データ(パターンB)]{学習用カラーQRコードの元データ(パターンB)\protect\footnotemark[1]}
 	\label{fig:color_qr_sample_image_B}
 \end{figure}
 
@@ -117,39 +126,44 @@
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{pics/mie_terada_colorQR_8.png}
-	\caption{使用色8色のカラーQRコード}
+	\caption[使用色8色のカラーQRコード]{使用色8色のカラーQRコード\protect\footnotemark[1]}
 	\label{fig:mie_terada_colorQR_8}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{pics/mie_terada_colorQR.png}
-	\caption{使用色64色のカラーQRコード}
+	\caption[使用色64色のカラーQRコード]{使用色64色のカラーQRコード\protect\footnotemark[1]}
 	\label{fig:mie_terada_colorQR}
 \end{figure}
 
+\footnotetext{\protect\cite{mie_terada}より引用}
 
 \section{Henryk Blasinskiらによる研究}
-QRコードのカラー化に関する研究は，日本のみならず，海外でも行われてきた．論文\cite{6378458}では，カラーQRコード実装において．大きな課題となる色干渉(color interference)について述べている．また，この課題に対し，印刷色材チャネルと撮影時の色チャネル間のチャネル間干渉の影響を軽減する事を目的として，印刷過程と撮影過程の物理的に動機付けられた数学モデルに基づいて，干渉除去アルゴリズムの開発を行っている(図\ref{fig:blasinski_colorQR})．性能を評価した実験の結果として，提案フレームワークは色干渉の影響をうまく克服し、対応する誤り訂正方式と併用することで、各色チャネルに対して低いビットエラー率と高いデコード率を実現することが示されたとしている．
+QRコードのカラー化に関する研究は，日本のみならず，海外でも行われてきた．論文\cite{6378458}では，カラーQRコードの実装において．大きな課題となる色干渉(color interference)について述べている．また，この課題に対し，印刷色材チャネルと撮影時の色チャネル間のチャネル間干渉の影響を軽減する事を目的として，印刷過程と撮影過程の物理的に動機付けられた数学モデルに基づいて，干渉除去アルゴリズムの開発を行っている(図\ref{fig:blasinski_colorQR})．性能を評価した実験の結果として，提案フレームワークは色干渉の影響をうまく克服し、対応する誤り訂正方式と併用することで、各色チャネルに対して低いビットエラー率と高いデコード率を実現することが示されたとしている．
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{pics/blasinski_colorQR.png}
-	\caption{Blasinskiによる色干渉除去アルゴリズムの開発}
+	\caption[Blasinskiによる色干渉除去アルゴリズムの開発]{Blasinskiによる色干渉除去アルゴリズムの開発\protect\footnotemark}
 	\label{fig:blasinski_colorQR}
 \end{figure}
 
+\footnotetext{\protect\cite{6378458}より引用}
+
 
 \section{Nutchanad Taveeradらによる研究}
-QRコードの情報容量を増加させる手法として,モジュールを多色化するカラーQRコードが提案されている.Taveeradらは,16色のカラーパレットを用いることで,1モジュールあたり4bitの情報を格納する方式を提案した\ref{7400631}. この手法では, HSV色空間を用いて色を管理し, デコード時にはRGB画像をHSVに変換後, K-meansクラスタリングにより各モジュールの色判定を行っている.
-しかし実験結果より, PC上の画像ファイルからの読み取りでは100\%の精度を示す一方で, スマートフォンカメラによる撮影画像では読取精度が75\%まで低下し, 照明条件によってさらに悪化することが報告されている\ref{fig:Taveerad_result}. これは, RGB値が撮影環境に大きく依存するため, 色判定が安定しないことを示している. 
+QRコードの情報容量を増加させる手法として，モジュールを多色化するカラーQRコードが提案されている．Taveeradらは，16色のカラーパレットを用いることで，1モジュールあたり4ビットの情報を格納する方式を提案した\cite{7400631}． この手法では， HSV色空間を用いて色を管理し，デコード時にはRGB画像をHSVに変換後，K-meansクラスタリングにより各モジュールの色判定を行っている．
+実験結果より，PC上の画像ファイルからの読み取りでは100\%の精度を示す一方で，スマートフォンカメラによる撮影画像では読取精度が75\%まで低下し，照明条件によって更に悪化することが報告されている(図\ref{fig:Taveerad_result})．これは，RGB値が撮影環境に大きく依存するため，色判定が安定しないことを示している. 
 
 この結果は, 「色数を増やすことで容量は増加するが, 色をそのまま情報として扱うと読み取り信頼性が著しく低下する」というカラーQRコードの根本的課題を示している.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{pics/Taveerad_result.png}
-	\caption{カラーQRコードの検出結果}
+	\caption[カラーQRコードの検出結果]{カラーQRコードの検出結果\protect\footnotemark}
 	\label{fig:Taveerad_result}
 \end{figure}
 
+
+\footnotetext{\protect\cite{7400631}より引用}
